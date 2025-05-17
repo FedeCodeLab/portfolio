@@ -1,0 +1,72 @@
+[
+  {
+    "id": "logo-1",
+    "name": "next",
+    "image": "/logos/next.svg"
+  },
+  {
+    "id": "logo-2",
+    "name": "typescript",
+    "image": "/logos/typescript.png"
+  },
+  {
+    "id": "logo-3",
+    "name": "Node.js",
+    "image": "/logos/node.svg"
+  },
+  {
+    "id": "logo-4",
+    "name": "PostgreSQL",
+    "image": "/logos/postgre.svg"
+  },
+  {
+    "id": "logo-5",
+    "name": "Tailwind",
+    "image": "/logos/tailwind.svg"
+  },
+  {
+    "id": "logo-6",
+    "name": "Redux",
+    "image": "/logos/redux.svg"
+  },
+  {
+    "id": "logo-7",
+    "name": "CSS",
+    "image": "/logos/css.svg"
+  },
+  {
+    "id": "logo-8",
+    "name": "React",
+    "image": "/logos/react.svg"
+  },
+  {
+    "id": "logo-9",
+    "name": "Javascript",
+    "image": "/logos/javascript.png"
+  },
+  {
+    "id": "logo-10",
+    "name": "Figma",
+    "image": "/logos/figma.svg"
+  },
+  {
+    "id": "logo-11",
+    "name": "SaSS",
+    "image": "/logos/sass.svg"
+  },
+  {
+    "id": "logo-12",
+    "name": "HTML",
+    "image": "/logos/html.svg"
+  },
+  {
+    "id": "logo-13",
+    "name": "MUI",
+    "image": "/logos/mui.svg"
+  },
+  {
+    "id": "logo-14",
+    "name": "Motion",
+    "image": "/logos/motion.svg"
+  }
+]

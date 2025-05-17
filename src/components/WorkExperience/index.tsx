@@ -9,7 +9,7 @@ const experiences = [
       "Actualmente formo parte del equipo de desarrollo como Desarrollador Frontend. Mis responsabilidades incluyen la creación de interfaces de usuario interactivas, trabajando en colaboración con el equipo de diseño UX/UI para garantizar una experiencia de usuario coherente y visualmente atractiva. Utilizo tecnologías como Next.js, JavaScript, TypeScript, Tailwind CSS y ShadCN.",
   },
   {
-    title: "Practicante de Desarrollo Web",
+    title: "Desarrollador Front-end",
     type: "Contrato de Prácticas",
     company: "Kiura (Colombia - Remoto) | May 2024 • Oct 2024",
     content:
@@ -26,17 +26,19 @@ const experiences = [
 
 export const WorkExperience = () => {
   return (
-    <section>
-      <h2>Experiencia Laboral</h2>
-      {experiences.map((exp, idx) => (
-        <ExperienceCard
-          key={idx}
-          title={exp.title}
-          type={exp.type}
-          company={exp.company}
-          content={exp.content}
-        />
-      ))}
+    <section className="w-[90%] mx-auto flex flex-col items-center justify-center gap-8 py-20">
+      <h2 className="heading-3">Experiencia Laboral</h2>
+      <div className="flex flex-col gap-6">
+        {experiences.map((exp, idx) => (
+          <ExperienceCard
+            key={idx}
+            title={exp.title}
+            type={exp.type}
+            company={exp.company}
+            content={exp.content}
+          />
+        ))}
+      </div>
     </section>
   );
 };

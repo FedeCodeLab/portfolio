@@ -14,13 +14,29 @@ export type ProjectTech =
   | "Express"
   | "PostgreSQL"
   | "Sequelize"
+  | "Shadcn"
+  | "Framer Motion"
+  | "i18n"
+  | "Firebase"
+  | "Astro"
+  | "Svelte"
+  | "Render"
+  | "MUI"
+  | "Cloudinary"
+  | "Jquery"
   | "React";
 
 export interface Project {
   title: string;
   type: string;
-  href: string;
+  repository: string;
+  deploy: string;
   content: string;
   techs: ProjectTech[];
   image: string;
+}
+
+export interface ProjectLinks {
+  repository: string;
+  deploy: string;
 }
