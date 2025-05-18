@@ -4,13 +4,13 @@ import { Shortcut } from "@/components/ui/icons";
 
 export const CTA = () => {
   return (
-    <div className="flex justify-center gap-3">
+    <div className="flex flex-col md:flex-row md:justify-center gap-3">
       <Link
         href="https://github.com/FedeCodeLab"
         className="flex justify-center items-center"
         target="_blank"
       >
-        <Button className="group">
+        <Button className="group w-full md:w-[123px]">
           <Shortcut width={20} height={20} color="#ffffff" />
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             Github
@@ -23,7 +23,7 @@ export const CTA = () => {
         className="flex justify-center items-center"
         target="_blank"
       >
-        <Button className="group">
+        <Button className="group w-full md:w-[135px]">
           <Shortcut width={20} height={20} color="#ffffff" />
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             Linkedin
@@ -33,7 +33,7 @@ export const CTA = () => {
 
       <Link
         href="mailto:federicoguzman.css@gmail.com"
-        className="flex justify-center items-center"
+        className="hidden md:flex justify-center items-center"
         target="_blank"
       >
         <Button variant={"ghost"} className="group">

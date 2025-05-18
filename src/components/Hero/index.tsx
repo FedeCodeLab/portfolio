@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section className="w-[90%] min-h-svh lg:max-w-[1250px] mx-auto flex items-center justify-center">
-      <div className="max-w-[600px] flex flex-col gap-6">
-        <div className="flex flex-col text-center">
+      <div className="md:max-w-[600px] flex flex-col gap-6">
+        <div className="flex flex-col text-center gap-3 md:gap-0">
           <motion.h3
             className="text-lg heading-[20px] text-emerald-500"
             initial={{ opacity: 0, y: 10 }}
@@ -17,7 +17,7 @@ export const Hero = () => {
           </motion.h3>
 
           <motion.div
-            className="min-h-[72px]"
+            className="hidden md:block min-h-[72px]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -27,6 +27,20 @@ export const Hero = () => {
               sequence={["Federico Guzmán"]}
               wrapper="h1"
               className="!text-[48px]"
+            />
+          </motion.div>
+
+          <motion.div
+            className="block md:hidden  min-h-[72px]"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <TypeAnimation
+              cursor={true}
+              sequence={["Federico Guzmán"]}
+              wrapper="h2"
+              className="!text-[42px] leading-[36px]"
             />
           </motion.div>
         </div>
@@ -48,6 +62,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
+            className="w-full md:auto"
           >
             <CTA />
           </motion.div>
