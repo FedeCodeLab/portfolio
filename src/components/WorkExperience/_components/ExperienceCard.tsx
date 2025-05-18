@@ -1,19 +1,33 @@
 import { Experience } from "@/types/experience";
+import Image from "next/image";
 
 export const ExperienceCard = ({
   title,
   company,
   content,
   type,
+  img,
+  name,
 }: Experience) => {
   return (
     <article className="relative overflow-hidden rounded-lg p-12">
       <div className="absolute inset-0 bg-neutral-900 opacity-50 backdrop-blur-xl z-0" />
 
-      <div className="flex flex-col gap-1 border-l-2 border-emerald-900 pl-6 relative z-10">
-        <div className="">
-          <p className="text-lg">{title}</p>
-          <p className="text-sm text-gray-400">{type}</p>
+      <div className="flex flex-col gap-4 border-l-2 border-emerald-900 pl-6 relative z-10">
+        <div className="flex items-center gap-4">
+          {img?.trim() !== "" && (
+            <Image
+              src={img}
+              width={45}
+              height={45}
+              alt={name}
+              className="rounded-full object-contain"
+            />
+          )}
+          <div>
+            <p className="text-lg">{title}</p>
+            <p className="text-sm text-gray-400">{type}</p>
+          </div>
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-base font-semibold text-gray-200">{company}</p>

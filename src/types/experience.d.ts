@@ -3,4 +3,6 @@ export interface Experience {
   type: string;
   company: string;
   content: string;
+  img: string;
+  name: string;
 }

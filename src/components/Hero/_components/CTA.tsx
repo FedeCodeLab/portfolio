@@ -6,35 +6,41 @@ export const CTA = () => {
   return (
     <div className="flex justify-center gap-3">
       <Link
-        href="#contact"
+        href="https://github.com/FedeCodeLab"
         className="flex justify-center items-center"
         target="_blank"
       >
-        <Button>
+        <Button className="group">
           <Shortcut width={20} height={20} color="#ffffff" />
-          Github
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            Github
+          </span>
         </Button>
       </Link>
 
       <Link
-        href="#projects"
+        href="https://www.linkedin.com/in/fedecodelab/"
         className="flex justify-center items-center"
         target="_blank"
       >
-        <Button>
+        <Button className="group">
           <Shortcut width={20} height={20} color="#ffffff" />
-          Linkedin
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            Linkedin
+          </span>
         </Button>
       </Link>
 
       <Link
-        href="#projects"
+        href="mailto:federicoguzman.css@gmail.com"
         className="flex justify-center items-center"
         target="_blank"
       >
-        <Button variant={"ghost"}>
+        <Button variant={"ghost"} className="group">
           <Shortcut width={20} height={20} color="#ffffff" />
-          Contactame
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            Contactame
+          </span>
         </Button>
       </Link>
     </div>

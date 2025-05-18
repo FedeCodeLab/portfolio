@@ -13,9 +13,11 @@ export const CTA = ({ repository, deploy }: ProjectLinks) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button size={"small"}>
+          <Button size={"small"} className="group">
             <Shortcut width={20} height={20} color="#ffffff" />
-            Visitar
+            <span className="transition-transform duration-300 group-hover:translate-x-1">
+              Visitar
+            </span>
           </Button>
         </Link>
       )}
@@ -26,9 +28,11 @@ export const CTA = ({ repository, deploy }: ProjectLinks) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button size={"small"}>
+          <Button size={"small"} className="group">
             <Github width={20} height={20} color="#ffffff" />
-            Repositorio
+            <span className="transition-transform duration-300 group-hover:translate-x-1">
+              Repositorio
+            </span>
           </Button>
         </Link>
       )}

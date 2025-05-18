@@ -4,13 +4,12 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "flex justify-center items-center gap-2 whitespace-nowrap rounded-m cursor-pointer transition-colors font-[500]",
+  "flex justify-center items-center gap-2 whitespace-nowrap rounded-m cursor-pointer transition-colors font-[500]  rounded-full",
   {
     variants: {
       variant: {
-        default: "bg-emerald-800 rounded-full",
-        ghost:
-          "border-2 border-emerald-800 bg-transparent text-white rounded-full px-6 py-2",
+        default: "bg-emerald-800 hover:bg-emerald-900",
+        ghost: "border-2 border-emerald-800 bg-transparent",
 
         disabled: "bg-dark border-default text-disabled cursor-not-allowed",
       },

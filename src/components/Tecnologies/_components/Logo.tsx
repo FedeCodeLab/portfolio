@@ -8,13 +8,13 @@ export const Logo = ({ name, image, position = "bottom-2" }: BrandProps) => {
       : "bottom-2 translate-y-full";
 
   return (
-    <div className="relative flex justify-center items-center size-[120px] py-10 group overflow-visible">
+    <div className="relative flex justify-center items-center size-[80px] md:size-[120px] py-10 group overflow-visible">
       <Image
         src={image}
         height={100}
         width={100}
         alt={name}
-        className="object-contain size-[100px]"
+        className="object-contain size-[60px] md:size-[100px]"
       />
       <span
         className={`absolute ${positionClasses} px-2 py-1 text-xs font-semibold bg-emerald-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap`}

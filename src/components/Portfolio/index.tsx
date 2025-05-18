@@ -1,5 +1,6 @@
 import { ProjectCard } from "./_components/ProjectCard";
 import { Project } from "@/types/project";
+import { forwardRef } from "react";
 
 const projects: Project[] = [
   {
@@ -95,9 +96,12 @@ const projects: Project[] = [
   },
 ];
 
-export const Portfolio = () => {
+export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <section className="w-[90%] mx-auto flex flex-col items-center justify-center gap-8">
+    <section
+      ref={ref}
+      className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
+    >
       <h2 className="heading-3">Proyectos</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
         {projects.map((project, idx) => (
@@ -115,4 +119,4 @@ export const Portfolio = () => {
       </div>
     </section>
   );
-};
+});

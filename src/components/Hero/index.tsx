@@ -1,14 +1,22 @@
 import { CTA } from "./_components/CTA";
+import { TypeAnimation } from "react-type-animation";
 
 export const Hero = () => {
   return (
-    <section className="min-h-svh flex items-center justify-center">
+    <section className="w-[90%] min-h-svh lg:max-w-[1250px] mx-auto flex items-center justify-center">
       <div className="max-w-[600px] flex flex-col gap-6">
         <div className="flex flex-col text-center">
           <h3 className="text-lg heading-[20px] text-emerald-500">
             &lt;Frontend Developer /&gt;
           </h3>
-          <h1 className="text-[48px]">Federico Guzmán</h1>
+          <div className="min-h-[72px]">
+            <TypeAnimation
+              cursor={true}
+              sequence={["Federico Guzmán"]}
+              wrapper="h1"
+              className="!text-[48px]"
+            />
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center text-center gap-6">
           <p className="text-lg">

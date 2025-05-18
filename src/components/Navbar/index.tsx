@@ -1,44 +1,92 @@
-import Image from "next/image";
-import { Button } from "../ui/Button";
-import { Download } from "../ui/icons";
-import Link from "next/link";
+"use client";
 
-export const Navbar = () => {
+import { RefObject } from "react";
+import { useEffect, useState } from "react";
+import { LeftNav } from "./_components/LeftNav";
+import { RightNav } from "./_components/RightNav";
+import { NavbarMobile } from "./_components/NavbarMobile";
+
+export const Navbar = ({
+  experienceRef,
+  porfolioRef,
+  skillsRef,
+  timelineRef,
+}: NavbarProps) => {
+  // ---------------- Para el cambio del fondo de la navbar al hacer scroll ----------------
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // ---------------- Para scrollear a distintas secciones ----------------
+
+  const scrollToSection = (ref: RefObject<HTMLElement>) => {
+    if (ref.current) {
+      const offsetTop = ref.current.offsetTop;
+      const offset = 40;
+      window.scrollTo({
+        top: offsetTop - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <header className="absolute z-30 top-0 w-full h-[85px] flex justify-between items-center px-6">
-      <h1 className="heading-5 w-[200px]">FedeCodeLab</h1>
-      <nav>
-        <ul className="flex gap-5 items-center text-[16px] font-[500]">
-          <li>
-            <button className="cursor-pointer">Experiencia</button>
-          </li>
+    <>
+      <NavbarMobile />
+      <header
+        className={`hidden fixed z-30 top-0 w-full h-[85px] lg:flex justify-between items-center px-6 transition-all duration-300 ${
+          isScrolled ? "backdrop-blur-md bg-white/30 dark:bg-black/30" : ""
+        }`}
+      >
+        <LeftNav />
+        <nav>
+          <ul className="flex gap-5 items-center text-[16px] font-[500]">
+            <li>
+              <button
+                onClick={() => scrollToSection(skillsRef)}
+                className="cursor-pointer text-slate-300 font-semibold hover:text-white"
+              >
+                Habilidades
+              </button>
+            </li>
 
-          <li>
-            <button className="cursor-pointer">Portafolio</button>
-          </li>
+            <li>
+              <button
+                onClick={() => scrollToSection(experienceRef)}
+                className="cursor-pointer  text-slate-300 font-semibold hover:text-white"
+              >
+                Experiencia
+              </button>
+            </li>
 
-          <li>
-            <button className="cursor-pointer">Habilidades</button>
-          </li>
+            <li>
+              <button
+                onClick={() => scrollToSection(porfolioRef)}
+                className="cursor-pointer text-slate-300  font-semibold hover:text-white"
+              >
+                Portafolio
+              </button>
+            </li>
 
-          <li>
-            <button className="cursor-pointer">Certificados</button>
-          </li>
-        </ul>
-      </nav>
-
-      <div className=" w-[200px]">
-        <Link
-          href="#projects"
-          className="flex justify-center items-center"
-          target="_blank"
-        >
-          <Button variant={"ghost"} size={"small"}>
-            <Download width={20} height={20} color="#ffffff" />
-            Descargar CV
-          </Button>
-        </Link>
-      </div>
-    </header>
+            <li>
+              <button
+                onClick={() => scrollToSection(timelineRef)}
+                className="cursor-pointer text-slate-300 font-semibold hover:text-white"
+              >
+                Certificados
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <RightNav />
+      </header>
+    </>
   );
 };
