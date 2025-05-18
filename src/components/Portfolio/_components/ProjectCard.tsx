@@ -1,6 +1,11 @@
+"use client"; // si estás usando App Router
+
 import { Project } from "@/types/project";
 import Image from "next/image";
 import { CTA } from "./CTA";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 export const ProjectCard = ({
   title,
@@ -11,8 +16,33 @@ export const ProjectCard = ({
   techs,
   image,
 }: Project) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [inView, controls]);
+
   return (
-    <article className="relative overflow-hidden rounded-lg flex flex-col">
+    <motion.article
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 40 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, ease: "easeOut" },
+        },
+      }}
+      className="relative overflow-hidden rounded-lg flex flex-col"
+    >
       <div className="absolute inset-0 bg-neutral-900 opacity-50 backdrop-blur-xl z-0" />
 
       <div className="relative z-10 flex flex-col h-full">
@@ -44,6 +74,6 @@ export const ProjectCard = ({
           <Image src={image} fill alt="Portada" className="object-cover" />
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
