@@ -1,12 +1,12 @@
 [
   {
     "id": "logo-1",
-    "name": "next",
+    "name": "Next.js",
     "image": "/logos/next.svg"
   },
   {
     "id": "logo-2",
-    "name": "typescript",
+    "name": "Typescript",
     "image": "/logos/typescript.png"
   },
   {

@@ -1,0 +1,35 @@
+import Link from "next/link";
+import { Github, Instagram, Linkedin, Whatsapp } from "@/components/ui/icons";
+
+export const CTA = () => {
+  return (
+    <div className="flex gap-4">
+      <Link href="https://github.com/FedeCodeLab" target="_blank">
+        <div className="bg-transparent bg-gradient-to-tr from-gray-800 to-purple-800 p-2 rounded-full hover:from-purple-800 hover:to-gray-800 transition-colors duration-600">
+          <Github width={25} height={25} color="#ffffff" />
+        </div>
+      </Link>
+
+      <Link href="https://www.linkedin.com/in/fedecodelab/" target="_blank">
+        <div className="bg-transparent bg-gradient-to-tr from-blue-900 to-blue-500 p-2 rounded-full hover:from-blue-500 hover:to-blue-900 transition-colors duration-600">
+          <Linkedin width={25} height={25} color="#ffffff" />
+        </div>
+      </Link>
+
+      <Link
+        href="https://api.whatsapp.com/send?phone=543804533759"
+        target="_blank"
+      >
+        <div className="bg-transparent bg-gradient-to-tr from-emerald-800 to-emerald-500 p-2 rounded-full hover:from-emerald-500 hover:to-emerald-800 transition-colors duration-600">
+          <Whatsapp width={25} height={25} color="#ffffff" />
+        </div>
+      </Link>
+
+      <Link href="https://www.instagram.com/fede.fpg" target="_blank">
+        <div className="bg-transparent bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 rounded-full hover:from-purple-600 hover:to-yellow-300 transition-colors duration-600">
+          <Instagram width={25} height={25} color="#ffffff" />
+        </div>
+      </Link>
+    </div>
+  );
+};
