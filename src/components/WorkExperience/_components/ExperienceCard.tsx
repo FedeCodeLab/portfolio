@@ -60,7 +60,7 @@ export const ExperienceCard = ({
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-base font-semibold text-gray-200">{company}</p>
+          <p className="text-base font-medium text-gray-200">{company}</p>
           <p className="text-gray-400">{content}</p>
         </div>
       </div>

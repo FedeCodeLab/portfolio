@@ -9,6 +9,8 @@
 @theme {
   /* Colores */
   --color-destacado: #ff0000;
+  /* Fuentes */
+  --font-gtWalsheimPro: "GT Walsheim Pro", sans-serif;
 }
 
 @theme inline {
@@ -97,7 +99,7 @@
 body {
   background-color: transparent !important;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-gtWalsheimPro), sans-serif;
 }
 
 .heading-1 {

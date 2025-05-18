@@ -47,7 +47,7 @@ export const Hero = () => {
 
         <div className="flex flex-col items-center justify-center text-center gap-6">
           <motion.p
-            className="text-lg"
+            className="text-lg text-gray-300"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
