@@ -21,7 +21,7 @@ const projects: Project[] = [
       "i18n",
       "Firebase",
     ],
-    image: "/portadas/bebot.png",
+    image: "/portadas/bebot.PNG",
   },
   {
     title: "Spotify Clone",
