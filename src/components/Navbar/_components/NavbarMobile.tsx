@@ -5,7 +5,7 @@ import { Download } from "@/components/ui/icons";
 export const NavbarMobile = () => {
   return (
     <div className="absolute top-0 w-full h-[85px] px-6 flex lg:hidden items-center justify-between z-50 ">
-      <h1 className="heading-5 inline text-slate-300 hover:text-white cursor-pointer transition-colors duration-300">
+      <h1 className="font-pixelifySans heading-5 inline text-slate-300 hover:text-white cursor-pointer transition-colors duration-300">
         FedeCodeLab
       </h1>
       <Link

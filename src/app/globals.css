@@ -8,10 +8,15 @@
   --foreground: #171717;
 }
 
+li,
+button {
+  transition: all 0.5s ease;
+}
+
 body {
   background-color: transparent !important;
   color: var(--foreground);
-  font-family: var(--font-mono);
+  font-family: var(--font-inter);
 }
 
 @theme {
@@ -20,19 +25,20 @@ body {
   /* Fuentes */
   --font-inter: "Inter", sans-serif;
   --font-gtWalsheimPro: "GT Walsheim Pro", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-pixelify: "Pixelify Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 .font-inter {
   font-family: var(--font-inter);
 }
 
-.font-mono {
-  font-family: var(--font-mono);
+.font-pixelifySans {
+  font-family: var(--font-pixelifySans);
 }
 
 button {
-  font-family: var(--font-mono) !important;
+  font-family: var(--font-pixelifySans);
 }
 
 @theme inline {

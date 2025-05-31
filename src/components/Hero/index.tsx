@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="md:max-w-[1000px] flex flex-col gap-6">
         <div className="flex flex-col gap-3 md:gap-0 text-center md:text-start">
           <motion.h3
-            className="text-lg text-blue-400 heading-4 font-[500]"
+            className="text-lg text-blue-400 heading-4 font-[500] font-pixelifySans"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}

@@ -38,7 +38,7 @@ export const Navbar = ({
   };
 
   return (
-    <>
+    <div>
       <NavbarMobile />
       <header
         className={`hidden fixed z-30 top-0 w-full h-[85px] lg:flex justify-between items-center px-6 transition-all duration-300 ${
@@ -47,7 +47,7 @@ export const Navbar = ({
       >
         <LeftNav />
         <nav>
-          <ul className="flex gap-5 items-center text-[16px] font-[500]">
+          <ul className="flex gap-5 items-center text-[17px] font-[400]">
             <li>
               <button
                 onClick={() => scrollToSection(skillsRef)}
@@ -91,6 +91,6 @@ export const Navbar = ({
         </nav>
         <RightNav />
       </header>
-    </>
+    </div>
   );
 };

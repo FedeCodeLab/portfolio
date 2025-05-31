@@ -13,7 +13,7 @@ export const RightNav = () => {
       >
         <Button variant="ghost" size="small" className="group">
           <Download width={20} height={20} color="#cad5e2" />
-          <span className="transition-transform text-slate-300 duration-300 group-hover:translate-x-1">
+          <span className="transition-transform text-slate-300 duration-300 group-hover:translate-x-1 text-[16px]">
             Descargar CV
           </span>
         </Button>

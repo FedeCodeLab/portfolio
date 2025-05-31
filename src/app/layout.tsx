@@ -1,34 +1,64 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
-import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const GTWalsheimPro = localFont({
+const pixelify = localFont({
   src: [
     {
-      path: "../../public/fonts/GT-Walsheim-Regular.ttf",
+      path: "../../public/fonts/PixelifySans-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/GT-Walsheim-Medium.ttf",
+      path: "../../public/fonts/PixelifySans-Medium.ttf",
       weight: "500",
       style: "medium",
     },
+    {
+      path: "../../public/fonts/PixelifySans-Bold.ttf",
+      weight: "600",
+      style: "bold",
+    },
+    {
+      path: "../../public/fonts/PixelifySans-SemiBold.ttf",
+      weight: "700",
+      style: "semibold",
+    },
   ],
-  variable: "--font-gtWalsheimPro",
+  variable: "--font-pixelifySans",
 });
+
+const inter = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Inter_18pt-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Inter_18pt-Regular.ttf",
+      weight: "400",
+      style: "regular",
+    },
+    {
+      path: "../../public/fonts/Inter_18pt-Medium.ttf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "../../public/fonts/Inter_18pt-SemiBold.ttf",
+      weight: "600",
+      style: "semibold",
+    },
+    {
+      path: "../../public/fonts/Inter_18pt-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
+  variable: "--font-inter",
+});
+
 export const metadata: Metadata = {
   title: "FedeCodeLab",
   description: "Junior Frontend Developer",
@@ -41,24 +71,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${GTWalsheimPro.variable} antialiased relative`}
+        className={`${pixelify.variable} ${inter.variable} antialiased relative`}
       >
         {children}
       </body>
