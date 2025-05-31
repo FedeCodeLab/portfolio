@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section className="w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center justify-center md:justify-start">
-      <div className="md:max-w-[1000px] flex flex-col gap-6">
+      <div className="md:max-w-[1100px] flex flex-col gap-6">
         <div className="flex flex-col gap-3 md:gap-0 text-center md:text-start">
           <motion.h3
             className="text-lg text-blue-400 heading-4 font-[500] font-pixelifySans"
@@ -52,10 +52,10 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
           >
-            Un apasionado desarrollador front-end con un enfoque en crear
-            experiencias web cautivadoras. Desde diseños elegantes hasta
-            funcionalidades dinámicas, mi objetivo es combinar creatividad y
-            habilidades técnicas para dar vida a proyectos innovadores.
+            Desarrollador Front-end enfocado en construir interfaces web
+            funcionales, accesibles y de alta calidad. Combino conocimientos
+            técnicos con atención al detalle para crear soluciones modernas y
+            orientadas a la experiencia del usuario.
           </motion.p>
 
           <motion.div
