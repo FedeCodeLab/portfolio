@@ -53,6 +53,7 @@ export const Navbar = ({
                 onClick={() => scrollToSection(skillsRef)}
                 className="cursor-pointer text-slate-300 hover:text-white"
               >
+                <span className="text-blue-400">01. </span>
                 Habilidades
               </button>
             </li>
@@ -62,6 +63,7 @@ export const Navbar = ({
                 onClick={() => scrollToSection(experienceRef)}
                 className="cursor-pointer  text-slate-300 hover:text-white"
               >
+                <span className="text-blue-400">02. </span>
                 Experiencia
               </button>
             </li>
@@ -71,6 +73,7 @@ export const Navbar = ({
                 onClick={() => scrollToSection(porfolioRef)}
                 className="cursor-pointer text-slate-300 hover:text-white"
               >
+                <span className="text-blue-400">03. </span>
                 Portafolio
               </button>
             </li>
@@ -80,6 +83,7 @@ export const Navbar = ({
                 onClick={() => scrollToSection(timelineRef)}
                 className="cursor-pointer text-slate-300 hover:text-white"
               >
+                <span className="text-blue-400">04. </span>
                 Certificados
               </button>
             </li>

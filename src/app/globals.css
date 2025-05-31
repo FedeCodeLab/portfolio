@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -6,11 +8,31 @@
   --foreground: #171717;
 }
 
+body {
+  background-color: transparent !important;
+  color: var(--foreground);
+  font-family: var(--font-mono);
+}
+
 @theme {
   /* Colores */
   --color-destacado: #ff0000;
   /* Fuentes */
+  --font-inter: "Inter", sans-serif;
   --font-gtWalsheimPro: "GT Walsheim Pro", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+button {
+  font-family: var(--font-mono) !important;
 }
 
 @theme inline {
@@ -94,12 +116,6 @@
     --weight-regular: 400;
     --weight-medium: 500;
   }
-}
-
-body {
-  background-color: transparent !important;
-  color: var(--foreground);
-  font-family: var(--font-gtWalsheimPro), sans-serif;
 }
 
 .heading-1 {

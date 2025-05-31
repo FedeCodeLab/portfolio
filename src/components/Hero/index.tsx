@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="w-[90%] min-h-svh lg:max-w-[1250px] mx-auto flex items-center justify-center">
-      <div className="md:max-w-[600px] flex flex-col gap-6">
-        <div className="flex flex-col text-center gap-3 md:gap-0">
+    <section className="w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center">
+      <div className="md:max-w-[1000px] flex flex-col gap-6">
+        <div className="flex flex-col gap-3 md:gap-0">
           <motion.h3
-            className="text-lg heading-[20px] text-emerald-500"
+            className="text-lg text-blue-400 heading-4 font-[500]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -17,7 +17,7 @@ export const Hero = () => {
           </motion.h3>
 
           <motion.div
-            className="hidden md:block min-h-[72px]"
+            className="hidden md:block min-h-[72px] font-inter font-bold text-[#CAD7F8]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -45,7 +45,7 @@ export const Hero = () => {
           </motion.div>
         </div>
 
-        <div className="flex flex-col items-center justify-center text-center gap-6">
+        <div className="flex flex-col gap-6">
           <motion.p
             className="text-lg text-gray-300"
             initial={{ opacity: 0, y: 10 }}

@@ -17,7 +17,7 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
         <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color="#ffffff" />
               </div>
               <path
@@ -33,13 +33,13 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               description="En este curso, aprendí los fundamentos y conceptos avanzados de TypeScript. Abarcamos desde la configuración de herramientas y la integración de TypeScript en aplicaciones, hasta el uso de tipos avanzados, clases, genéricos y utilidades. También adquirí habilidades en la configuración del compilador, ESLint, y la implementación de interfaces y clases abstractas. Este conocimiento me permite escribir código más seguro, legible y fácil de mantener."
               url="https://www.linkedin.com/learning/certificates/648b258b58e0ebe7d2a99b69585b03cf4eeed8e81588f9437e29416be50870ed?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BXGfzqLSWTLS5giqmdSedUA%3D%3D"
             />
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -56,13 +56,13 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://cursos.desafiolatam.com/certificates/g8fvpwkd2f"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -79,12 +79,12 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://cursos.desafiolatam.com/certificates/pbywfvioj4"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -101,13 +101,13 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://drive.google.com/file/d/1hDSqnfZ_llRaZjaA30NxB7oxsPCbGsRs/view"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-600" />
           </li>
 
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -124,13 +124,13 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://drive.google.com/file/d/1JHJeWuqUm1NzCtJ9DaGoJfEXXMC7MfSW/view?usp=sharing"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -148,12 +148,12 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://s3.amazonaws.com/public-lessons.crehana.com/images/certificate/participation-pdf/9f26c0ad/3486e01c.pdf?source_page=User%20Dashboard&source_detail=Diploma%20Card"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -170,13 +170,13 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9e30cf9d-c055-4b00-8200-e562a44636cf.pdf"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-emerald-800 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path
@@ -193,13 +193,13 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               url="https://drive.google.com/file/d/1YNxNgE2wgyNYk2f2KK35EcaLhxQP_OjJ/view?usp=sharing"
             />
 
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-emerald-800" />
+            <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-emerald-800 border-2 bg-gradient-to-tr from-emerald-900 to-emerald-500 rounded-full p-2">
+              <div className="border-blue-800 border-2 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
                 <School height={24} width={24} color={"#ffffff"} />
               </div>
               <path

@@ -16,8 +16,8 @@ export const ExperienceCard = ({
 }: Experience) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.3, // se activa cuando el 30% del elemento es visible
-    triggerOnce: true, // solo se activa una vez
+    threshold: 0.3,
+    triggerOnce: true,
   });
 
   useEffect(() => {
@@ -39,11 +39,11 @@ export const ExperienceCard = ({
           transition: { duration: 0.6, ease: "easeOut" },
         },
       }}
-      className="relative overflow-hidden rounded-lg p-12"
+      className="relative overflow-hidden rounded-lg p-6 md:p-12"
     >
       <div className="absolute inset-0 bg-neutral-900 opacity-50 backdrop-blur-xl z-0" />
 
-      <div className="flex flex-col gap-4 border-l-2 border-emerald-900 pl-6 relative z-10">
+      <div className="flex flex-col gap-4 border-l-2 border-blue-600 pl-6 relative z-10">
         <div className="flex items-center gap-4">
           {img?.trim() !== "" && (
             <Image

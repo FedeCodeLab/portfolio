@@ -49,7 +49,7 @@ export const ProjectCard = ({
         <div className="p-6 flex flex-col flex-1">
           <div className="flex flex-col gap-2">
             <div>
-              <h4 className="text-lg">{title}</h4>
+              <h4 className="text-lg font-semibold">{title}</h4>
               <p className="text-sm text-gray-400">{type}</p>
             </div>
             <p className="text-gray-400">{content}</p>
@@ -58,7 +58,7 @@ export const ProjectCard = ({
               {techs.map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-emerald-800 text-white text-xs px-2 py-1 rounded-md"
+                  className="bg-blue-800 text-white text-xs px-2 py-1 rounded-md"
                 >
                   {tech}
                 </span>

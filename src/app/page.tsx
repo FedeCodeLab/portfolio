@@ -16,15 +16,13 @@ export default function Home() {
   const timelineRef = useRef(null);
   useLenis();
   return (
-    <>
+    <div className="bg-[#061932]">
       <Navbar
         experienceRef={experienceRef}
         porfolioRef={porfolioRef}
         skillsRef={skillsRef}
         timelineRef={timelineRef}
       />
-
-      <div className="fixed top-0 left-0 w-full h-screen bg-gradient-to-b from-green-800 from-0% to-60% to-neutral-900 -z-10 opacity-50" />
       <main className="relative z-10">
         <Hero />
         <div className="relative overflow-hidden" ref={skillsRef}>
@@ -34,6 +32,6 @@ export default function Home() {
         <Portfolio ref={porfolioRef} />
         <Timeline ref={timelineRef} />
       </main>
-    </>
+    </div>
   );
 }
