@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center">
+    <section className="w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center justify-center md:justify-start">
       <div className="md:max-w-[1000px] flex flex-col gap-6">
-        <div className="flex flex-col gap-3 md:gap-0">
+        <div className="flex flex-col gap-3 md:gap-0 text-center md:text-start">
           <motion.h3
             className="text-lg text-blue-400 heading-4 font-[500]"
             initial={{ opacity: 0, y: 10 }}
@@ -47,7 +47,7 @@ export const Hero = () => {
 
         <div className="flex flex-col gap-6">
           <motion.p
-            className="text-lg text-gray-300"
+            className="text-lg text-gray-300 text-center md:text-start"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}

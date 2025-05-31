@@ -43,7 +43,7 @@ export const ProjectCard = ({
       }}
       className="relative overflow-hidden rounded-lg flex flex-col"
     >
-      <div className="absolute inset-0 bg-neutral-900 opacity-50 backdrop-blur-xl z-0" />
+      <div className="absolute inset-0 bg-blue-950 opacity-50 backdrop-blur-xl z-0" />
 
       <div className="relative z-10 flex flex-col h-full">
         <div className="p-6 flex flex-col flex-1">

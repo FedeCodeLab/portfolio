@@ -8,6 +8,7 @@ import Tecnologies from "@/components/Tecnologies";
 import { Timeline } from "@/components/timeline";
 import { WorkExperience } from "@/components/WorkExperience";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   const experienceRef = useRef(null);
@@ -32,6 +33,7 @@ export default function Home() {
         <Portfolio ref={porfolioRef} />
         <Timeline ref={timelineRef} />
       </main>
+      <Footer />
     </div>
   );
 }

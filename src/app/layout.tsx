@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/Footer";
 import localFont from "next/font/local";
 import Head from "next/head";
 
@@ -62,7 +61,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${GTWalsheimPro.variable} antialiased relative`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   );

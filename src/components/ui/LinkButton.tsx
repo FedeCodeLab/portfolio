@@ -12,7 +12,8 @@ export const LinkButton = ({
   const classes = cn(
     "max-w-[150px] text-center",
     buttonVariants({ variant: "default", size: "small" }),
-    disabled && "bg-gray-400 cursor-not-allowed hover:bg-gray-400"
+    disabled &&
+      "bg-gray-400 cursor-not-allowed border-gray-400 hover:bg-gray-400"
   );
 
   if (disabled) {

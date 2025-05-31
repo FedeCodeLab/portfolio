@@ -9,7 +9,7 @@ const experiences = [
     name: "BeBot",
     img: "/brands/bebot.jpg",
     content:
-      "Actualmente formo parte del equipo de desarrollo como Desarrollador Frontend. Mis responsabilidades incluyen la creación de interfaces de usuario interactivas, trabajando en colaboración con el equipo de diseño UX/UI para garantizar una experiencia de usuario coherente y visualmente atractiva. Utilizo tecnologías como Next.js, JavaScript, TypeScript, Tailwind CSS y ShadCN.",
+      "Actualmente formo parte del equipo de desarrollo como Desarrollador Frontend, donde me especializo en construir interfaces intuitivas e interactivas. Trabajo en estrecha colaboración con el equipo de diseño UX/UI para garantizar una experiencia de usuario coherente, accesible y visualmente atractiva. Utilizo tecnologías modernas como Next.js, TypeScript, Tailwind CSS y ShadCN, y he implementado soporte multilenguaje con i18n para escalar la aplicación a usuarios globales.",
   },
   {
     title: "Desarrollador Front-end",

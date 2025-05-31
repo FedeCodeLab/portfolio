@@ -41,7 +41,7 @@ export const ExperienceCard = ({
       }}
       className="relative overflow-hidden rounded-lg p-6 md:p-12"
     >
-      <div className="absolute inset-0 bg-neutral-900 opacity-50 backdrop-blur-xl z-0" />
+      <div className="absolute inset-0 bg-blue-950 opacity-50 backdrop-blur-xl z-0" />
 
       <div className="flex flex-col gap-4 border-l-2 border-blue-600 pl-6 relative z-10">
         <div className="flex items-center gap-4">

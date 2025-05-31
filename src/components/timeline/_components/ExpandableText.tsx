@@ -11,12 +11,15 @@ export const ExpandableText = ({ text }: { text: string }) => {
   const previewText = text.length > 200 ? text.slice(0, 200) + "..." : text;
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
       <p className="text-neutral-800 dark:text-neutral-400 max-w-2xl">
         {isExpanded ? text : previewText}
       </p>
       {text.length > 100 && (
-        <span onClick={toggleReadMore} className="text-blue-400 cursor-pointer">
+        <span
+          onClick={toggleReadMore}
+          className="text-blue-400 hover:underline cursor-pointer"
+        >
           {isExpanded ? " Ver menos" : " Ver más"}
         </span>
       )}
