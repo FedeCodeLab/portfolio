@@ -28,9 +28,8 @@ export const Hero = () => {
               className="!text-[48px]"
             />
           </motion.div>
-
           <motion.div
-            className="block md:hidden  min-h-[72px]"
+            className="block md:hidden"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
