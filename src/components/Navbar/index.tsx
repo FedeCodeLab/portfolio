@@ -38,7 +38,7 @@ export const Navbar = ({
   };
 
   return (
-    <div>
+    <div className="select-none">
       <NavbarMobile />
       <header
         className={`hidden fixed z-30 top-0 w-full h-[85px] lg:flex justify-between items-center px-6 transition-all duration-500 ${
