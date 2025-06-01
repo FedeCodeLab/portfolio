@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { LeftNav } from "./_components/LeftNav";
 import { RightNav } from "./_components/RightNav";
 import { NavbarMobile } from "./_components/NavbarMobile";
+import { motion } from "framer-motion";
 
 export const Navbar = ({
   experienceRef,
@@ -38,7 +39,12 @@ export const Navbar = ({
   };
 
   return (
-    <div className="select-none">
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="select-none"
+    >
       <NavbarMobile />
       <div
         className={`hidden fixed z-30 top-0 h-[85px] lg:flex transition-all duration-500 w-full ${
@@ -101,6 +107,6 @@ export const Navbar = ({
           <RightNav />
         </header>
       </div>
-    </div>
+    </motion.div>
   );
 };
