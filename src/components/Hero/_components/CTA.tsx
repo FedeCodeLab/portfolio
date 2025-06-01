@@ -33,10 +33,10 @@ export const CTA = () => {
 
       <Link
         href="mailto:federicoguzman.css@gmail.com"
-        className="hidden md:flex justify-center items-center"
+        className="flex justify-center items-center"
         target="_blank"
       >
-        <Button variant={"ghost"} className="group">
+        <Button variant={"ghost"} className="group w-full">
           <Shortcut width={20} height={20} color="#ffffff" />
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             ¡Hablemos!

@@ -46,7 +46,7 @@ export function Download({ width, height, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="icon icon-tabler icon-tabler-file-download"
+      className="icon icon-tabler icon-tabler-file-download min-w-[20px] min-h-[20px]"
       width={width}
       height={height}
       viewBox="0 0 24 24"

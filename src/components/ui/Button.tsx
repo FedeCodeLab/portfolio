@@ -8,14 +8,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "border-2 border-blue-700 bg-blue-700 hover:bg-blue-800",
-        ghost: "border-2 border-blue-700 hover:border-blue-400",
-
+        default: "border border-blue-700 bg-blue-800 hover:bg-blue-900",
+        ghost: "border border-blue-700 hover:border-blue-900",
+        ghostGray:
+          "border-1 border-gray-400 hover:bg-[#1E293B] hover:border-[#1E293B]",
         disabled: "bg-dark border-default text-disabled cursor-not-allowed",
       },
       size: {
         default: "px-6 py-3 text-[16px]",
-        small: "px-6 py-3 text-[14px]",
+        small: "px-6 py-2 text-[14px]",
       },
     },
     defaultVariants: {

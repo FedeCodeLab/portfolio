@@ -40,65 +40,67 @@ export const Navbar = ({
   return (
     <div className="select-none">
       <NavbarMobile />
-      <header
-        className={`hidden fixed z-30 top-0 w-full h-[85px] lg:flex justify-between items-center px-6 transition-all duration-500 ${
+      <div
+        className={`hidden fixed z-30 top-0 h-[85px] lg:flex transition-all duration-500 w-full ${
           isScrolled ? "backdrop-blur-md bg-white/30 dark:bg-black/30" : ""
         }`}
       >
-        <LeftNav />
-        <nav>
-          <ul className="flex gap-5 items-center text-[17px] font-[400]">
-            <li>
-              <button
-                onClick={() => scrollToSection(skillsRef)}
-                className="group cursor-pointer text-slate-300"
-              >
-                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
-                  01.{" "}
-                </span>
-                <span className="group-hover:text-white">Habilidades</span>
-              </button>
-            </li>
+        <header className="mx-auto w-[90%] flex justify-between items-center">
+          <LeftNav />
+          <nav>
+            <ul className="flex gap-5 items-center text-[17px] font-[400]">
+              <li>
+                <button
+                  onClick={() => scrollToSection(skillsRef)}
+                  className="group cursor-pointer text-slate-300"
+                >
+                  <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                    01.{" "}
+                  </span>
+                  <span className="group-hover:text-white">Habilidades</span>
+                </button>
+              </li>
 
-            <li>
-              <button
-                onClick={() => scrollToSection(experienceRef)}
-                className="group cursor-pointer text-slate-300"
-              >
-                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
-                  02.{" "}
-                </span>
-                <span className="group-hover:text-white">Experiencia</span>
-              </button>
-            </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection(experienceRef)}
+                  className="group cursor-pointer text-slate-300"
+                >
+                  <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                    02.{" "}
+                  </span>
+                  <span className="group-hover:text-white">Experiencia</span>
+                </button>
+              </li>
 
-            <li>
-              <button
-                onClick={() => scrollToSection(porfolioRef)}
-                className="group cursor-pointer text-slate-300"
-              >
-                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
-                  03.{" "}
-                </span>
-                <span className="group-hover:text-white">Portfolio</span>
-              </button>
-            </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection(porfolioRef)}
+                  className="group cursor-pointer text-slate-300"
+                >
+                  <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                    03.{" "}
+                  </span>
+                  <span className="group-hover:text-white">Portfolio</span>
+                </button>
+              </li>
 
-            <li>
-              <button
-                onClick={() => scrollToSection(timelineRef)}
-                className="group cursor-pointer text-slate-300"
-              >
-                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
-                  04.{" "}
-                </span>
-                <span className="group-hover:text-white">Certificados</span>
-              </button>
-            </li>
-          </ul>
-        </nav>
-        <RightNav />
-      </header>
+              <li>
+                <button
+                  onClick={() => scrollToSection(timelineRef)}
+                  className="group cursor-pointer text-slate-300"
+                >
+                  <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                    04.{" "}
+                  </span>
+                  <span className="group-hover:text-white">Certificados</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <RightNav />
+        </header>
+      </div>
     </div>
   );
 };
