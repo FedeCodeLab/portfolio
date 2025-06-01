@@ -10,7 +10,7 @@ export const Hero = () => {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-700 font-[500] font-pixelifySans text-[17px]"
           >
             Hola, mi nombre es
@@ -19,7 +19,7 @@ export const Hero = () => {
             className="hidden md:block min-h-[72px] font-inter font-bold text-[#bfccee]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
           >
             <TypeAnimation
               cursor={true}
@@ -33,7 +33,7 @@ export const Hero = () => {
             className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-700 heading-4 font-[500] font-pixelifySans"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
           >
             &lt;Frontend Developer /&gt;
           </motion.h3>
@@ -42,7 +42,7 @@ export const Hero = () => {
             className="block md:hidden  min-h-[72px]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
+            transition={{ duration: 0.5, delay: 1.5 }}
           >
             <TypeAnimation
               cursor={true}
@@ -58,7 +58,7 @@ export const Hero = () => {
             className="text-lg text-gray-400 text-center md:text-start"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
+            transition={{ duration: 0.5, delay: 1.8 }}
           >
             Desarrollador Front-end enfocado en construir interfaces web
             funcionales, accesibles y de alta calidad. Combino conocimientos
@@ -69,7 +69,7 @@ export const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.8 }}
+            transition={{ duration: 0.5, delay: 2.1 }}
             className="w-full md:auto"
           >
             <CTA />
