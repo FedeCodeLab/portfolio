@@ -41,7 +41,7 @@ export const Navbar = ({
     <div>
       <NavbarMobile />
       <header
-        className={`hidden fixed z-30 top-0 w-full h-[85px] lg:flex justify-between items-center px-6 transition-all duration-300 ${
+        className={`hidden fixed z-30 top-0 w-full h-[85px] lg:flex justify-between items-center px-6 transition-all duration-500 ${
           isScrolled ? "backdrop-blur-md bg-white/30 dark:bg-black/30" : ""
         }`}
       >
@@ -51,40 +51,48 @@ export const Navbar = ({
             <li>
               <button
                 onClick={() => scrollToSection(skillsRef)}
-                className="cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300 hover:text-white"
               >
-                <span className="text-blue-400">01. </span>
-                Habilidades
+                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                  01.{" "}
+                </span>
+                <span className="group-hover:text-white">Habilidades</span>
               </button>
             </li>
 
             <li>
               <button
                 onClick={() => scrollToSection(experienceRef)}
-                className="cursor-pointer  text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300 hover:text-white"
               >
-                <span className="text-blue-400">02. </span>
-                Experiencia
+                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                  02.{" "}
+                </span>
+                <span className="group-hover:text-white">Experiencia</span>
               </button>
             </li>
 
             <li>
               <button
                 onClick={() => scrollToSection(porfolioRef)}
-                className="cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300 hover:text-white"
               >
-                <span className="text-blue-400">03. </span>
-                Portafolio
+                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                  03.{" "}
+                </span>
+                <span className="group-hover:text-white">Portfolio</span>
               </button>
             </li>
 
             <li>
               <button
                 onClick={() => scrollToSection(timelineRef)}
-                className="cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300 hover:text-white"
               >
-                <span className="text-blue-400">04. </span>
-                Certificados
+                <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
+                  04.{" "}
+                </span>
+                <span className="group-hover:text-white">Certificados</span>
               </button>
             </li>
           </ul>
