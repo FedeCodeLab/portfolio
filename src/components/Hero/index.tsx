@@ -29,15 +29,6 @@ export const Hero = () => {
             />
           </motion.div>
 
-          <motion.h3
-            className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-700 heading-4 font-[500] font-pixelifySans"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-          >
-            &lt;Frontend Developer /&gt;
-          </motion.h3>
-
           <motion.div
             className="block md:hidden  min-h-[72px]"
             initial={{ opacity: 0, y: 10 }}
@@ -51,6 +42,15 @@ export const Hero = () => {
               className="!text-[42px] leading-[36px]"
             />
           </motion.div>
+
+          <motion.h3
+            className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-700 heading-4 font-[500] font-pixelifySans"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+          >
+            &lt;Frontend Developer /&gt;
+          </motion.h3>
         </div>
 
         <div className="flex flex-col gap-6">
