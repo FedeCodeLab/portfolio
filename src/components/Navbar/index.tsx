@@ -51,7 +51,7 @@ export const Navbar = ({
             <li>
               <button
                 onClick={() => scrollToSection(skillsRef)}
-                className="group cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300"
               >
                 <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
                   01.{" "}
@@ -63,7 +63,7 @@ export const Navbar = ({
             <li>
               <button
                 onClick={() => scrollToSection(experienceRef)}
-                className="group cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300"
               >
                 <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
                   02.{" "}
@@ -75,7 +75,7 @@ export const Navbar = ({
             <li>
               <button
                 onClick={() => scrollToSection(porfolioRef)}
-                className="group cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300"
               >
                 <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
                   03.{" "}
@@ -87,7 +87,7 @@ export const Navbar = ({
             <li>
               <button
                 onClick={() => scrollToSection(timelineRef)}
-                className="group cursor-pointer text-slate-300 hover:text-white"
+                className="group cursor-pointer text-slate-300"
               >
                 <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
                   04.{" "}
