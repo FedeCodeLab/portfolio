@@ -39,7 +39,7 @@ export const CTA = () => {
         <Button variant={"ghost"} className="group">
           <Shortcut width={20} height={20} color="#ffffff" />
           <span className="transition-transform duration-300 group-hover:translate-x-1">
-            Contactame
+            ¡Hablemos!
           </span>
         </Button>
       </Link>
