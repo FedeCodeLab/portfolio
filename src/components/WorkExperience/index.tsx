@@ -20,15 +20,6 @@ const experiences = [
     content:
       "Formé parte del equipo de desarrollo, contribuyendo al diseño y desarrollo de interfaces de usuario interactivas. También colaboré con el equipo back-end en la integración de APIs y trabajé junto a diseñadores UX/UI para asegurar una experiencia de usuario coherente y visualmente atractiva. Utilicé tecnologías como React, JavaScript, TypeScript, Tailwind CSS, Material UI y Redux para construir y optimizar las interfaces, garantizando una alta calidad en el diseño y la funcionalidad.",
   },
-  {
-    title: "Desarrollador FullStack",
-    type: "Freelance",
-    company: "Perniciosa Ediciones (Argentina - Remoto) | Ene 2023 • Nov 2023",
-    name: "Perniciosa Ediciones",
-    img: "",
-    content:
-      "Desarrollé y diseñé el sitio web para una editorial de libros de poesía, con sede en San Luis, Argentina. Utilicé HTML, CSS, JavaScript, jQuery, PHP y MySQL para construir la página. También diseñé la base de datos, implementé la conexión entre el frontend y el backend, y aseguré la correcta integración y funcionalidad de los formularios y consultas. Además, creé un diseño web visualmente atractivo y funcional, adaptado a las necesidades de la editorial.",
-  },
 ];
 
 export const WorkExperience = forwardRef<HTMLDivElement>((_, ref) => {
