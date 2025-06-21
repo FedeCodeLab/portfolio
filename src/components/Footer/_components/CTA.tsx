@@ -10,7 +10,7 @@ export const CTA = () => {
         </div>
       </Link>
 
-      <Link href="https://www.linkedin.com/in/fedecodelab/" target="_blank">
+      <Link href="https://www.linkedin.com/in/federico-guzman/" target="_blank">
         <div className="bg-transparent bg-gradient-to-tr from-blue-900 to-blue-500 p-2 rounded-full hover:from-blue-500 hover:to-blue-900 transition-colors duration-600">
           <Linkedin width={25} height={25} color="#ffffff" />
         </div>

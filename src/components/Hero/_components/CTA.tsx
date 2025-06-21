@@ -19,7 +19,7 @@ export const CTA = () => {
       </Link>
 
       <Link
-        href="https://www.linkedin.com/in/fedecodelab/"
+        href="https://www.linkedin.com/in/federico-guzman/"
         className="flex justify-center items-center"
         target="_blank"
       >
