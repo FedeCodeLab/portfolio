@@ -16,14 +16,14 @@ export const CTA = () => {
         </div>
       </Link>
 
-      <Link
-        href="https://api.whatsapp.com/send?phone=543804533759"
-        target="_blank"
-      >
-        <div className="bg-transparent bg-gradient-to-tr from-emerald-800 to-emerald-500 p-2 rounded-full hover:from-emerald-500 hover:to-emerald-800 transition-colors duration-600">
-          <Whatsapp width={25} height={25} color="#ffffff" />
-        </div>
-      </Link>
+      // <Link
+      //   href="https://api.whatsapp.com/send?phone=543804533759"
+      //   target="_blank"
+      // >
+      //   <div className="bg-transparent bg-gradient-to-tr from-emerald-800 to-emerald-500 p-2 rounded-full hover:from-emerald-500 hover:to-emerald-800 transition-colors duration-600">
+      //     <Whatsapp width={25} height={25} color="#ffffff" />
+      //   </div>
+      // </Link>
 
       <Link href="https://www.instagram.com/fede.fpg" target="_blank">
         <div className="bg-transparent bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-600 p-2 rounded-full hover:from-purple-600 hover:to-yellow-300 transition-colors duration-600">
