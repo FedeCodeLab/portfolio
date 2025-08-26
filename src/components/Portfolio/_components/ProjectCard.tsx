@@ -65,7 +65,7 @@ export const ProjectCard = ({
               ))}
             </div>
           </div>
-          <div className="mt-auto pt-4">
+          <div className="mt-auto pt-6">
             <CTA repository={repository} deploy={deploy} />
           </div>
         </div>
