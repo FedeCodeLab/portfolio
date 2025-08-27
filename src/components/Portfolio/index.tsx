@@ -24,6 +24,25 @@ const projects: Project[] = [
     image: "/portadas/bebot.PNG",
   },
   {
+    title: "Conversational UX Academy",
+    type: "Experiencia Laboral",
+    content:
+      "Actualmente me encuentro participando en el desarrollo de la página oficial de Cux Academy para la empresa BeBot, contribuyendo a la optimización de la experiencia digital y al crecimiento de su presencia online..",
+    repository: "",
+    deploy: "",
+    techs: [
+      "Next.js",
+      "Typescript",
+      "Tailwind",
+      "CSS",
+      "Framer Motion",
+      "Firebase",
+      "Octopus",
+      "Voiceflow",
+    ],
+    image: "/portadas/cux.png",
+  },
+  {
     title: "Spotify Clone",
     type: "Proyecto",
     content:
