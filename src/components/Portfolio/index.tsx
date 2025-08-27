@@ -1,6 +1,8 @@
+"use client";
+
 import { ProjectCard } from "./_components/ProjectCard";
 import { Project } from "@/types/project";
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
 
 const projects: Project[] = [
   {
@@ -27,7 +29,7 @@ const projects: Project[] = [
     title: "Conversational UX Academy",
     type: "Experiencia Laboral",
     content:
-      "Actualmente me encuentro participando en el desarrollo de la página oficial de Cux Academy para la empresa BeBot, contribuyendo a la optimización de la experiencia digital y al crecimiento de su presencia online..",
+      "Actualmente me encuentro participando en el desarrollo de la página oficial de Cux Academy para la empresa BeBot, contribuyendo a la optimización de la experiencia digital y al crecimiento de su presencia online.",
     repository: "",
     deploy: "",
     techs: [
@@ -39,6 +41,7 @@ const projects: Project[] = [
       "Firebase",
       "Octopus",
       "Voiceflow",
+      "FTP",
     ],
     image: "/portadas/cux.png",
   },
@@ -116,6 +119,12 @@ const projects: Project[] = [
 ];
 
 export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const handleLoadMore = () => {
+    setVisibleCount(projects.length);
+  };
+
   return (
     <section
       ref={ref}
@@ -123,7 +132,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
     >
       <h2 className="heading-3">Proyectos</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        {projects.map((project, idx) => (
+        {projects.slice(0, visibleCount).map((project, idx) => (
           <ProjectCard
             key={idx}
             title={project.title}
@@ -136,6 +145,15 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
           />
         ))}
       </div>
+
+      {visibleCount < projects.length && (
+        <button
+          onClick={handleLoadMore}
+          className="px-6 py-3 rounded-md border-blue-700 bg-blue-800 hover:bg-blue-900 text-white"
+        >
+          Ver más
+        </button>
+      )}
     </section>
   );
 });
