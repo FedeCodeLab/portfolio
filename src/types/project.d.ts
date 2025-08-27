@@ -23,6 +23,7 @@ export type ProjectTech =
   | "Render"
   | "Octopus"
   | "Voiceflow"
+  | "FTP"
   | "MUI"
   | "Cloudinary"
   | "Jquery"
