@@ -23,7 +23,7 @@ const projects: Project[] = [
       "i18n",
       "Firebase",
     ],
-    image: "/portadas/bebot.PNG",
+    image: "/portadas/bebot.png",
   },
   {
     title: "Conversational UX Academy",
