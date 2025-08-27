@@ -21,6 +21,8 @@ export type ProjectTech =
   | "Astro"
   | "Svelte"
   | "Render"
+  | "Octopus"
+  | "Voiceflow"
   | "MUI"
   | "Cloudinary"
   | "Jquery"
