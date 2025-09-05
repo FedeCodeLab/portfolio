@@ -31,7 +31,7 @@ const projects: Project[] = [
     content:
       "Actualmente me encuentro participando en el desarrollo de la página oficial de Cux Academy para la empresa BeBot, contribuyendo a la optimización de la experiencia digital y al crecimiento de su presencia online.",
     repository: "",
-    deploy: "",
+    deploy: "https://cux.academy/",
     techs: [
       "Next.js",
       "Typescript",
