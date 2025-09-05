@@ -27,11 +27,13 @@ export type ProjectTech =
   | "MUI"
   | "Cloudinary"
   | "Jquery"
-  | "React";
+  | "React"
+  | "Zustand";
 
 export interface Project {
   title: string;
   type: string;
+  list?: string[];
   repository: string;
   deploy: string;
   content: string;

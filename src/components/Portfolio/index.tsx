@@ -31,7 +31,16 @@ const projects: Project[] = [
     content:
       "Actualmente me encuentro participando en el desarrollo de la página oficial de Cux Academy para la empresa BeBot, contribuyendo a la optimización de la experiencia digital y al crecimiento de su presencia online.",
     repository: "",
-    deploy: "",
+    list: [
+      "Implementación de Chatbot creado a través de Voiceflow.",
+      "Renderizado del lado del servidor (Server-side Rendering - SSR) para mejorar la performance y el SEO.",
+      "Creación de animaciones complejas con Framer Motion para enriquecer la experiencia de usuario.",
+      "Uso de Tailwind CSS para un diseño escalable y consistente.",
+      "Deploy estático en entorno de producción vía FTP, asegurando estabilidad y disponibilidad.",
+      "Implementación de script de Octopus para la implementación de suscripciones.",
+      "Implementación de estados globales utilizando Zustand.",
+    ],
+    deploy: "https://cux.academy/",
     techs: [
       "Next.js",
       "Typescript",
@@ -42,6 +51,7 @@ const projects: Project[] = [
       "Octopus",
       "Voiceflow",
       "FTP",
+      "Zustand",
     ],
     image: "/portadas/cux.png",
   },
@@ -119,7 +129,7 @@ const projects: Project[] = [
 ];
 
 export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const handleLoadMore = () => {
     setVisibleCount(projects.length);
@@ -131,7 +141,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
       className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
     >
       <h2 className="heading-3">Proyectos</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6">
         {projects.slice(0, visibleCount).map((project, idx) => (
           <ProjectCard
             key={idx}
@@ -142,6 +152,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
             deploy={project.deploy}
             image={project.image}
             techs={project.techs}
+            list={project.list}
           />
         ))}
       </div>

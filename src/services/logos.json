@@ -68,5 +68,15 @@
     "id": "logo-14",
     "name": "Motion",
     "image": "/logos/motion.svg"
+  },
+  {
+    "id": "logo-15",
+    "name": "Firebase",
+    "image": "/logos/firebase.svg"
+  },
+  {
+    "id": "logo-15",
+    "name": "Vercel",
+    "image": "/logos/vercel.svg"
   }
 ]
