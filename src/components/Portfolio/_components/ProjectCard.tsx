@@ -44,14 +44,25 @@ export const ProjectCard = ({
       }}
       className="relative overflow-hidden rounded-lg flex flex-col"
     >
-      <div className="relative z-10 flex flex-col md:flex-row">
-        <div className="p-6 md:p-[0] md:pr-16 flex flex-col flex-3">
+      <div className="relative z-10 flex flex-col lg:flex-row">
+        <div className="relative block lg:hidden w-full h-[250px]">
+          <Image
+            src={image}
+            fill
+            alt="Portada"
+            className="object-cover rounded-md"
+          />
+        </div>
+        <div className="pt-6 lg:py-0 lg:pl-0 lg:pr-16 flex flex-col flex-3">
           <div className="flex flex-col gap-2">
-            <div>
-              <h4 className="text-lg font-semibold">{title}</h4>
+            <div className="pb-4">
+              <h4 className="text-[2rem] font-semibold">{title}</h4>
               <p className="text-sm text-gray-400">{type}</p>
             </div>
-            <p className="text-gray-400 md:max-w-[500px]">{content}</p>
+            <p
+              className="text-gray-400 lg:max-w-[500px]"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
 
             {list && (
               <ul className="text-gray-400 text-[14px]">
@@ -72,13 +83,18 @@ export const ProjectCard = ({
               ))}
             </div>
           </div>
-          <div className="mt-auto pt-6">
+          <div className="mt-auto md:mt-0 pt-6">
             <CTA repository={repository} deploy={deploy} />
           </div>
         </div>
 
-        <div className="relative w-full md:w-auto md:min-w-[500px] md:max-h-[300px]">
-          <Image src={image} fill alt="Portada" className="object-cover" />
+        <div className="relative w-full hidden lg:block md:w-auto md:min-w-[500px] md:h-[400px] rounded-md">
+          <Image
+            src={image}
+            fill
+            alt="Portada"
+            className="object-cover rounded-md"
+          />
         </div>
       </div>
     </motion.article>

@@ -9,7 +9,7 @@ const projects: Project[] = [
     title: "BeBot Design",
     type: "Experiencia Laboral",
     content:
-      "BeBot Design es una web que presenta la propuesta de la empresa en la creación de bots con identidad propia, mediante una interfaz clara y profesional que refuerza su presencia digital.",
+      "✨ Implementé Next-intl para la internacionalización (i18n) en múltiples idiomas y apliqué renderizado del lado del servidor (SSR) para optimizar la performance y el SEO. Desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable, consistente y orientado a la experiencia del usuario.<br/><br/>🧪 Llevé a cabo tareas de optimización SEO técnico, identificando y resolviendo problemas de indexación y rendimiento. Finalmente, realicé el deploy con Firebase Hosting y Functions, asegurando estabilidad y disponibilidad en producción.",
     repository: "",
     deploy: "https://bebot.design/",
     techs: [
@@ -26,21 +26,12 @@ const projects: Project[] = [
     image: "/portadas/bebot.PNG",
   },
   {
-    title: "Conversational UX Academy",
+    title: "CUX Academy",
     type: "Experiencia Laboral",
     content:
-      "Actualmente me encuentro participando en el desarrollo de la página oficial de Cux Academy para la empresa BeBot, contribuyendo a la optimización de la experiencia digital y al crecimiento de su presencia online.",
+      "✨ Implementé un chatbot creado con Voiceflow, optimizando la integración y garantizando un flujo conversacional fluido. Para enriquecer la experiencia de usuario, desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable y consistente.<br/><br/>🧪 Realicé el deploy estático en producción vía FTP, asegurando estabilidad y disponibilidad. Además, integré un script de Octopus para la gestión de suscripciones e implementé estados globales con Zustand para un control eficiente de la aplicación.",
     repository: "",
-    list: [
-      "Implementación de Chatbot creado a través de Voiceflow.",
-      "Renderizado del lado del servidor (Server-side Rendering - SSR) para mejorar la performance y el SEO.",
-      "Creación de animaciones complejas con Framer Motion para enriquecer la experiencia de usuario.",
-      "Uso de Tailwind CSS para un diseño escalable y consistente.",
-      "Deploy estático en entorno de producción vía FTP, asegurando estabilidad y disponibilidad.",
-      "Implementación de script de Octopus para la implementación de suscripciones.",
-      "Implementación de estados globales utilizando Zustand.",
-    ],
-    deploy: "https://cux.academy/",
+    deploy: "https://www.cux.academy/",
     techs: [
       "Next.js",
       "Typescript",
@@ -59,7 +50,7 @@ const projects: Project[] = [
     title: "Spotify Clone",
     type: "Proyecto",
     content:
-      "Clon de Spotify realizado con Astro.js en el cual se puede reproducir música, interactuar con el volumen y cambiar las canciones entre albums.",
+      "✨ Desarrollé un clon de Spotify con Astro.js, recreando la experiencia de un reproductor de música moderno y funcional.<br/><br/>🧪 Implementé la reproducción de canciones, control de volumen e interacción entre distintos álbumes, logrando una interfaz responsiva y fluida que emula la experiencia original de la plataforma.",
     repository: "https://github.com/FedeCodeLab/SpotifyClone",
     deploy: "https://spotify-clone-fedecodelab.vercel.app/",
     techs: [
@@ -72,6 +63,16 @@ const projects: Project[] = [
       "Vercel",
     ],
     image: "/portadas/spotify.png",
+  },
+  {
+    title: "Expansiva",
+    type: "Proyecto",
+    content:
+      "✨ Desarrollé el sitio web de Expansiva, una plataforma para un evento artístico que fusiona poesía, tecnología y estética visual. El sitio muestra el programa, artistas invitados, imagen generativa y contenido multimedia de una forma inmersiva y moderna.<br/><br/>🧪 Implementé una experiencia interactiva que combina diseño visual con contenido poético, integré galerías de imágenes, programación de actividades y secciones de contenido artístico, prioricé una interfaz responsiva y estilizada para dispositivos móviles y de escritorio y colaboré con el equipo creativo para reflejar el espíritu experimental del proyecto.",
+    repository: "https://github.com/FedeCodeLab/Expansiva",
+    deploy: "https://expansiva.vercel.app/",
+    techs: ["React", "Javascript", "Tailwind"],
+    image: "/portadas/expansiva.png",
   },
   {
     title: "Deliveloz",
@@ -141,7 +142,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
       className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
     >
       <h2 className="heading-3">Proyectos</h2>
-      <div className="grid grid-cols-1 gap-6">
+      <div className="grid grid-cols-1 gap-16">
         {projects.slice(0, visibleCount).map((project, idx) => (
           <ProjectCard
             key={idx}
