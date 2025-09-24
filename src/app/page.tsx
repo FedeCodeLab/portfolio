@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import { useLenis } from "@/hooks/lenis";
 import { Hero } from "@/components/Hero";
 import { Portfolio } from "@/components/Portfolio";
 import Tecnologies from "@/components/Tecnologies";
@@ -15,7 +14,6 @@ export default function Home() {
   const porfolioRef = useRef(null);
   const skillsRef = useRef(null);
   const timelineRef = useRef(null);
-  useLenis();
   return (
     <div className="bg-[#061932]">
       <Navbar

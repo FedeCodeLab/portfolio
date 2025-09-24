@@ -161,7 +161,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
       {visibleCount < projects.length && (
         <button
           onClick={handleLoadMore}
-          className="px-6 py-3 rounded-md border-blue-700 bg-blue-800 hover:bg-blue-900 text-white"
+          className="px-6 py-3 rounded-md border-blue-700 bg-blue-800 hover:bg-blue-900 text-white cursor-pointer"
         >
           Ver más
         </button>
