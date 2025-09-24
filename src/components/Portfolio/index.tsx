@@ -12,6 +12,7 @@ const projects: Project[] = [
       "✨ Implementé Next-intl para la internacionalización (i18n) en múltiples idiomas y apliqué renderizado del lado del servidor (SSR) para optimizar la performance y el SEO. Desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable, consistente y orientado a la experiencia del usuario.<br/><br/>🧪 Llevé a cabo tareas de optimización SEO técnico, identificando y resolviendo problemas de indexación y rendimiento. Finalmente, realicé el deploy con Firebase Hosting y Functions, asegurando estabilidad y disponibilidad en producción.",
     repository: "",
     deploy: "https://bebot.design/",
+    logo: "/brands/bebot.jpg",
     techs: [
       "Next.js",
       "Typescript",
@@ -28,6 +29,7 @@ const projects: Project[] = [
   {
     title: "CUX Academy",
     type: "Experiencia Laboral",
+    logo: "/brands/Iso.png",
     content:
       "✨ Implementé un chatbot creado con Voiceflow, optimizando la integración y garantizando un flujo conversacional fluido. Para enriquecer la experiencia de usuario, desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable y consistente.<br/><br/>🧪 Realicé el deploy estático en producción vía FTP, asegurando estabilidad y disponibilidad. Además, integré un script de Octopus para la gestión de suscripciones e implementé estados globales con Zustand para un control eficiente de la aplicación.",
     repository: "",
@@ -154,6 +156,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
             image={project.image}
             techs={project.techs}
             list={project.list}
+            logo={project.logo}
           />
         ))}
       </div>

@@ -33,6 +33,7 @@ export type ProjectTech =
 export interface Project {
   title: string;
   type: string;
+  logo?: string;
   list?: string[];
   repository: string;
   deploy: string;

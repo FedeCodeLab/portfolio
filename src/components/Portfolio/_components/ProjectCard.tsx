@@ -15,6 +15,7 @@ export const ProjectCard = ({
   deploy,
   techs,
   image,
+  logo,
   list,
 }: Project) => {
   const controls = useAnimation();
@@ -54,9 +55,20 @@ export const ProjectCard = ({
           />
         </div>
         <div className="pt-6 lg:py-0 lg:pl-0 lg:pr-16 flex flex-col flex-3">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col justify-center gap-2">
             <div className="pb-4">
-              <h4 className="text-[2rem] font-semibold">{title}</h4>
+              <div className="flex items-center gap-4">
+                {logo && (
+                  <Image
+                    src={logo}
+                    alt="Portada"
+                    width={32}
+                    height={32}
+                    className="size-[2rem] rounded-full"
+                  />
+                )}
+                <h4 className="text-[2rem] font-semibold">{title}</h4>
+              </div>
               <p className="text-sm text-gray-400">{type}</p>
             </div>
             <p
