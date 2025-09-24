@@ -59,10 +59,10 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.8 }}
           >
-            Desarrollador Front-end enfocado en construir interfaces web
-            funcionales, accesibles y de alta calidad. Combino conocimientos
-            técnicos con atención al detalle para crear soluciones modernas y
-            orientadas a la experiencia del usuario.
+            Enfocado en construir interfaces web funcionales, accesibles y de
+            alta calidad. Combino conocimientos técnicos con atención al detalle
+            para crear soluciones modernas y orientadas a la experiencia del
+            usuario.
           </motion.p>
 
           <motion.div
