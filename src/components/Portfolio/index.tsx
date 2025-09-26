@@ -73,7 +73,7 @@ const projects: Project[] = [
       "✨ Desarrollé el sitio web de Expansiva, una plataforma para un evento artístico que fusiona poesía, tecnología y estética visual. El sitio muestra el programa, artistas invitados, imagen generativa y contenido multimedia de una forma inmersiva y moderna.<br/><br/>🧪 Implementé una experiencia interactiva que combina diseño visual con contenido poético, integré galerías de imágenes, programación de actividades y secciones de contenido artístico, prioricé una interfaz responsiva y estilizada para dispositivos móviles y de escritorio y colaboré con el equipo creativo para reflejar el espíritu experimental del proyecto.",
     repository: "https://github.com/FedeCodeLab/Expansiva",
     deploy: "https://expansiva.vercel.app/",
-    techs: ["Javascript", "CSS"],
+    techs: ["Javascript", "CSS", "HTML"],
     image: "/portadas/expansiva.png",
   },
   {
