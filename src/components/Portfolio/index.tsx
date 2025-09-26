@@ -7,7 +7,7 @@ import { forwardRef, useState } from "react";
 const projects: Project[] = [
   {
     title: "BeBot Design",
-    type: "Experiencia Laboral",
+    type: "Experiencia laboral",
     content:
       "✨ Implementé Next-intl para la internacionalización (i18n) en múltiples idiomas y apliqué renderizado del lado del servidor (SSR) para optimizar la performance y el SEO. Desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable, consistente y orientado a la experiencia del usuario.<br/><br/>🧪 Llevé a cabo tareas de optimización SEO técnico, identificando y resolviendo problemas de indexación y rendimiento. Finalmente, realicé el deploy con Firebase Hosting y Functions, asegurando estabilidad y disponibilidad en producción.",
     repository: "",
@@ -28,7 +28,7 @@ const projects: Project[] = [
   },
   {
     title: "CUX Academy",
-    type: "Experiencia Laboral",
+    type: "Experiencia laboral",
     logo: "/brands/Iso.png",
     content:
       "✨ Implementé un chatbot creado con Voiceflow, optimizando la integración y garantizando un flujo conversacional fluido. Para enriquecer la experiencia de usuario, desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable y consistente.<br/><br/>🧪 Realicé el deploy estático en producción vía FTP, asegurando estabilidad y disponibilidad. Además, integré un script de Octopus para la gestión de suscripciones e implementé estados globales con Zustand para un control eficiente de la aplicación.",
@@ -68,7 +68,7 @@ const projects: Project[] = [
   },
   {
     title: "Expansiva",
-    type: "Proyecto",
+    type: "Experiencia laboral freelance",
     content:
       "✨ Desarrollé el sitio web de Expansiva, una plataforma para un evento artístico que fusiona poesía, tecnología y estética visual. El sitio muestra el programa, artistas invitados, imagen generativa y contenido multimedia de una forma inmersiva y moderna.<br/><br/>🧪 Implementé una experiencia interactiva que combina diseño visual con contenido poético, integré galerías de imágenes, programación de actividades y secciones de contenido artístico, prioricé una interfaz responsiva y estilizada para dispositivos móviles y de escritorio y colaboré con el equipo creativo para reflejar el espíritu experimental del proyecto.",
     repository: "https://github.com/FedeCodeLab/Expansiva",
