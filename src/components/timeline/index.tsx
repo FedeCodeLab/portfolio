@@ -27,12 +27,35 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
               />
             </div>
             <Content
+              year="2025"
+              title="Curso de Iniciación al Desarrollo con IA"
+              institution="BIG School"
+              description="En este curso aprendí a utilizar NotebookLM para alimentar modelos de inteligencia artificial. También profundicé en la ingeniería de prompts, la integración avanzada de herramientas, la implementación de buenas prácticas de seguridad y auditoría, además de explorar el uso de n8n para automatizar flujos de trabajo de manera eficiente."
+              url="https://drive.google.com/file/d/1-dCdNxa6NywMxT4WctUqamVKOwxhP6Bi/view?usp=sharing"
+            />
+            <hr className="bg-blue-800" />
+          </li>
+
+          <li>
+            <hr className="bg-blue-800" />
+            <div className="timeline-middle">
+              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+                <School height={24} width={24} color={"#ffffff"} />
+              </div>
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </div>
+            <Content
               year="2024"
               title="Typescript Esencial"
               institution="Linkedin Learning - Remoto"
               description="En este curso, aprendí los fundamentos y conceptos avanzados de TypeScript. Abarcamos desde la configuración de herramientas y la integración de TypeScript en aplicaciones, hasta el uso de tipos avanzados, clases, genéricos y utilidades. También adquirí habilidades en la configuración del compilador, ESLint, y la implementación de interfaces y clases abstractas. Este conocimiento me permite escribir código más seguro, legible y fácil de mantener."
               url="https://www.linkedin.com/learning/certificates/648b258b58e0ebe7d2a99b69585b03cf4eeed8e81588f9437e29416be50870ed?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BXGfzqLSWTLS5giqmdSedUA%3D%3D"
             />
+
             <hr className="bg-blue-800" />
           </li>
 
