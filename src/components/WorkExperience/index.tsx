@@ -9,7 +9,7 @@ const experiences = [
     name: "BeBot",
     img: "/brands/bebot.jpg",
     content:
-      "Actualmente formo parte del equipo de desarrollo como Desarrollador Frontend, donde me especializo en construir interfaces intuitivas e interactivas. Trabajo en estrecha colaboración con el equipo de diseño UX/UI para garantizar una experiencia de usuario coherente, accesible y visualmente atractiva. Utilizo tecnologías modernas como Next.js, TypeScript, Tailwind CSS y ShadCN, y he implementado soporte multilenguaje con i18n para escalar la aplicación a usuarios globales.",
+      "Actualmente formo parte del equipo de desarrollo como Desarrollador Frontend, donde construyo interfaces escalables, mantenibles y orientadas al detalle. Desarrollo componentes reutilizables y animaciones con Framer Motion, aplicando Tailwind CSS para lograr un diseño coherente y visualmente atractivo. Implemento un chatbot con Voiceflow, optimizo la integración y aplico SSR para mejorar el rendimiento y el SEO. Además, gestiono el estado global con Zustand, integro i18n con Next-intl para la internacionalización y realizo despliegues en Firebase y vía FTP, garantizando estabilidad y entregas confiables. Trabajo en conjunto con el equipo de diseño UX para asegurar una experiencia de usuario fluida y consistente.",
   },
   {
     title: "Desarrollador Front-end",
