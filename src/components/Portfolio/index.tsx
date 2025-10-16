@@ -49,6 +49,16 @@ const projects: Project[] = [
     image: "/portadas/cux.png",
   },
   {
+    title: "Github Users Finder",
+    type: "Proyecto",
+    content:
+      "✨ GitHub Users Finder — Aplicación desarrollada con Next.js, Zustand y Tailwind CSS que permite buscar usuarios de GitHub, visualizar su información detallada y explorar sus repositorios públicos en tiempo real mediante la API de GitHub.",
+    repository: "https://github.com/FedeCodeLab/github-users-finder",
+    deploy: "https://github-users-finder-sepia.vercel.app/",
+    techs: ["Next.js", "Typescript", "Tailwind", "Zustand"],
+    image: "/portadas/github.png",
+  },
+  {
     title: "Spotify Clone",
     type: "Proyecto",
     content:
