@@ -28,7 +28,8 @@ export type ProjectTech =
   | "Cloudinary"
   | "Jquery"
   | "React"
-  | "Zustand";
+  | "Zustand"
+  | "API REST";
 
 export interface Project {
   title: string;

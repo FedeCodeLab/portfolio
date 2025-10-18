@@ -49,13 +49,23 @@ const projects: Project[] = [
     image: "/portadas/cux.png",
   },
   {
+    title: "Traductor",
+    type: "Proyecto",
+    content:
+      "✨ AI Translator — Aplicación desarrollada con Next.js, TypeScript y Zustand que permite traducir texto en tiempo real, detectar automáticamente el idioma, convertir voz a texto y reproducir la traducción con síntesis de voz utilizando APIs nativas del navegador (Translator, LanguageDetector, SpeechRecognition y SpeechSynthesis).",
+    repository: "https://github.com/FedeCodeLab/Traductor",
+    deploy: "https://traductor-two.vercel.app/",
+    techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
+    image: "/portadas/traductor.png",
+  },
+  {
     title: "Github Users Finder",
     type: "Proyecto",
     content:
       "✨ GitHub Users Finder — Aplicación desarrollada con Next.js, Zustand y Tailwind CSS que permite buscar usuarios de GitHub, visualizar su información detallada y explorar sus repositorios públicos en tiempo real mediante la API de GitHub.",
     repository: "https://github.com/FedeCodeLab/github-users-finder",
     deploy: "https://github-users-finder-sepia.vercel.app/",
-    techs: ["Next.js", "Typescript", "Tailwind", "Zustand"],
+    techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
     image: "/portadas/github.png",
   },
   {
