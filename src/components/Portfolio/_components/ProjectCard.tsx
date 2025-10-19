@@ -102,7 +102,7 @@ export const ProjectCard = ({
           </div>
         </div>
 
-        <div className="relative w-full hidden lg:block md:w-auto md:min-w-[500px] md:h-[400px] rounded-md">
+        <div className="relative w-full hidden lg:block md:w-auto md:min-w-[500px] md:h-[300px] rounded-md">
           <Image
             src={image}
             fill
