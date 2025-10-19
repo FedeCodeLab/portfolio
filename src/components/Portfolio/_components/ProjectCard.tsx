@@ -69,7 +69,9 @@ export const ProjectCard = ({
                 )}
                 <h4 className="text-[2rem] font-semibold">{title}</h4>
               </div>
-              <p className="text-sm text-gray-400">{type}</p>
+              <p className="text-[12px] py-[2px] font-semibold bg-blue-600 w-fit text-white px-2 rounded-[5px]">
+                {type}
+              </p>
             </div>
             <p
               className="text-gray-400 lg:max-w-[500px]"
