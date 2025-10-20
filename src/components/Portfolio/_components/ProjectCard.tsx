@@ -69,7 +69,7 @@ export const ProjectCard = ({
                 )}
                 <h4 className="text-[2rem] font-semibold">{title}</h4>
               </div>
-              <p className="text-[12px] py-[2px] font-semibold bg-blue-600 w-fit text-white px-2 rounded-[5px]">
+              <p className="text-[12px] py-[2px] font-semibold bg-[#1E293B] w-fit text-white px-2 rounded-[5px]">
                 {type}
               </p>
             </div>
@@ -90,7 +90,7 @@ export const ProjectCard = ({
               {techs.map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-blue-800 text-white text-xs px-2 py-1 rounded-md"
+                  className="bg-[#1E293B] text-white text-xs px-2 py-1 rounded-md font-semibold"
                 >
                   {tech}
                 </span>
