@@ -1,5 +1,5 @@
 import { ExpandableText } from "./ExpandableText";
-import { LinkButton } from "@/components/ui/LinkButton";
+import { CertifiedButton } from "@/components/ui/CertifiedButton";
 import { TimelineProps } from "@/types/timeline";
 
 export const Content = ({
@@ -19,7 +19,7 @@ export const Content = ({
       </div>
       <div className="flex flex-col gap-6">
         <ExpandableText text={description} />
-        <LinkButton href={url} disabled={!active} />
+        <CertifiedButton href={url} disabled={!active} />
       </div>
     </div>
   );

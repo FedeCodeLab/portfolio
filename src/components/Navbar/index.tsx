@@ -3,7 +3,7 @@
 import { RefObject } from "react";
 import { useEffect, useState } from "react";
 import { LeftNav } from "./_components/LeftNav";
-import { RightNav } from "./_components/RightNav";
+import { ButtonCV } from "./_components/ButtonCV";
 import { NavbarMobile } from "./_components/NavbarMobile";
 import { motion } from "framer-motion";
 
@@ -104,7 +104,7 @@ export const Navbar = ({
               </li>
             </ul>
           </nav>
-          <RightNav />
+          <ButtonCV />
         </header>
       </div>
     </motion.div>
