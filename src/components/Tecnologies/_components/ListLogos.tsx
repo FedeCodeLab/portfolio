@@ -1,6 +1,6 @@
-import { Logo } from "./Logo";
-import logos from "@/services/logos.json";
 import { ListLogosProps } from "@/types/useVelocity";
+import logos from "@/services/logos.json";
+import { Logo } from "./Logo";
 
 export const ListLogos = ({ start, end, animation }: ListLogosProps) => {
   const logoss = logos.slice(start, end);
