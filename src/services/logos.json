@@ -75,8 +75,13 @@
     "image": "/logos/firebase.svg"
   },
   {
-    "id": "logo-15",
+    "id": "logo-16",
     "name": "Vercel",
     "image": "/logos/vercel.svg"
+  },
+  {
+    "id": "logo-17",
+    "name": "Zustand",
+    "image": "/logos/zustand.svg"
   }
 ]

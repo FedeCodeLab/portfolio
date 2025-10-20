@@ -165,7 +165,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
       className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
     >
       <h2 className="heading-3">Proyectos</h2>
-      <div className="grid grid-cols-1 gap-16">
+      <div className="grid grid-cols-1 gap-16 w-full">
         {projects.slice(0, visibleCount).map((project, idx) => (
           <ProjectCard
             key={idx}
