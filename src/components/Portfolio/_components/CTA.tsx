@@ -1,40 +1,25 @@
-import { Button } from "@/components/ui/Button";
 import { Shortcut, Github } from "@/components/ui/icons";
-import Link from "next/link";
+import { LinkButton } from "@/components/ui/LinkButton";
 import { ProjectLinks } from "@/types/project";
 
 export const CTA = ({ repository, deploy }: ProjectLinks) => {
   return (
     <div className="flex gap-3">
       {deploy && (
-        <Link
-          href={deploy}
-          className="flex justify-center items-center"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button size={"small"} className="group">
-            <Shortcut width={20} height={20} color="#ffffff" />
-            <span className="transition-transform duration-300 group-hover:translate-x-1">
-              Visitar
-            </span>
-          </Button>
-        </Link>
+        <LinkButton href={deploy} size={"small"}>
+          <Shortcut width={20} height={20} color="#ffffff" />
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            Visitar
+          </span>
+        </LinkButton>
       )}
       {repository && (
-        <Link
-          href={repository}
-          className="flex justify-center items-center"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button size={"small"} className="group">
-            <Github width={20} height={20} color="#ffffff" />
-            <span className="transition-transform duration-300 group-hover:translate-x-1">
-              Repositorio
-            </span>
-          </Button>
-        </Link>
+        <LinkButton href={repository} size={"small"}>
+          <Github width={20} height={20} color="#ffffff" />
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            Repositorio
+          </span>
+        </LinkButton>
       )}
     </div>
   );

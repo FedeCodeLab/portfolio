@@ -3,6 +3,7 @@
 import { ProjectCard } from "./_components/ProjectCard";
 import { Project } from "@/types/project";
 import { forwardRef, useState } from "react";
+import { Button } from "../ui/Button";
 
 const projects: Project[] = [
   {
@@ -182,12 +183,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
       </div>
 
       {visibleCount < projects.length && (
-        <button
-          onClick={handleLoadMore}
-          className="px-6 py-3 rounded-md border-blue-700 bg-blue-800 hover:bg-blue-900 text-white cursor-pointer"
-        >
-          Ver más
-        </button>
+        <Button onClick={handleLoadMore}>Ver más</Button>
       )}
     </section>
   );

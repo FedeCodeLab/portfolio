@@ -48,7 +48,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            &lt;Frontend Developer /&gt;
+            &lt;Desarrollador Frontend /&gt;
           </motion.h3>
         </div>
 
