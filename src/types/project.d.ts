@@ -29,6 +29,8 @@ export type ProjectTech =
   | "Jquery"
   | "React"
   | "Zustand"
+  | "Gemini"
+  | "LLM"
   | "API REST";
 
 export interface Project {
