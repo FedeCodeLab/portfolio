@@ -172,7 +172,7 @@ Los componentes están diseñados para ser reutilizables y fáciles de modificar
 
 **Federico Guzmán**
 - GitHub: [@FedeCodeLab](https://github.com/FedeCodeLab)
-- Portfolio: [En desarrollo]
+- Portfolio: [https://fedecodelab.vercel.app/]
 
 ## 📄 Licencia
 
