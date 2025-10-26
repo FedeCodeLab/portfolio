@@ -1,5 +1,5 @@
-import { Shortcut, Github } from "@/components/ui/icons";
-import { LinkButton } from "@/components/ui/LinkButton";
+import { Shortcut, Github } from "@/_components/ui/icons";
+import { LinkButton } from "@/_components/ui/LinkButton";
 import { ProjectLinks } from "@/types/project";
 
 export const CTA = ({ repository, deploy }: ProjectLinks) => {

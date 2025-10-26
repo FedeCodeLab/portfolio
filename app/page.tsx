@@ -1,8 +1,8 @@
-import { WorkExperience } from "@/components/WorkExperience";
-import { Portfolio } from "@/components/Portfolio";
-import Tecnologies from "@/components/Tecnologies";
-import { Timeline } from "@/components/timeline";
-import { Hero } from "@/components/Hero";
+import { WorkExperience } from "@/_components/workExperience";
+import { Portfolio } from "@/_components/portfolio";
+import Tecnologies from "@/_components/tecnologies";
+import { Timeline } from "@/_components/timeline";
+import { Hero } from "@/_components/hero";
 
 export default function Home() {
   return (

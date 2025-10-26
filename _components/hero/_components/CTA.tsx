@@ -1,5 +1,5 @@
-import { Linkedin, Shortcut, Github } from "@/components/ui/icons";
-import { LinkButton } from "@/components/ui/LinkButton";
+import { Linkedin, Shortcut, Github } from "@/_components/ui/icons";
+import { LinkButton } from "@/_components/ui/LinkButton";
 
 export const CTA = () => {
   return (

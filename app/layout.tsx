@@ -1,8 +1,9 @@
 import { metadata as siteMetadata } from "@/lib/metadata";
 import { pixelify, inter } from "@/lib/fonts";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
+import { Navbar } from "@/_components/navbar";
+import { Footer } from "@/_components/footer";
 import "./globals.css";
+import { FloatToggleTheme } from "@/_components/ui/FloatToggleTheme";
 
 export const metadata = siteMetadata;
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <FloatToggleTheme />
       </body>
     </html>
   );

@@ -41,7 +41,7 @@ export const ExperienceCard = ({
       }}
       className="relative overflow-hidden rounded-lg p-6 md:p-12 bg-[#1e293b] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1e293b] dark:via-[#0f172a] dark:to-transparent dark:hover:from-transparent dark:hover:to-[#1e293b] transition-colors duration-300"
     >
-      <div className="flex flex-col gap-4 border-l-2 border-blue-600 pl-6 relative z-10">
+      <div className="flex flex-col gap-4 md:border-l-2 border-blue-600 md:pl-6 relative z-10">
         <div className="flex items-center gap-4">
           {img?.trim() !== "" && (
             <Image

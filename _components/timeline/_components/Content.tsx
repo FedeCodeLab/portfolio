@@ -1,4 +1,4 @@
-import { CertifiedButton } from "@/components/ui/CertifiedButton";
+import { CertifiedButton } from "@/_components/ui/CertifiedButton";
 import { ExpandableText } from "./ExpandableText";
 import { TimelineProps } from "@/types/timeline";
 
