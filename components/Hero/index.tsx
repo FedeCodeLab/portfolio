@@ -1,3 +1,5 @@
+"use client";
+
 import { CTA } from "./_components/CTA";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";

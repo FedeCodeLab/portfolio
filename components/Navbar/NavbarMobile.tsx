@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Button } from "../../ui/Button";
-import { Download } from "../../ui/icons";
+import { Button } from "../ui/Button";
+import { Download } from "../ui/icons";
 
 export const NavbarMobile = () => {
   return (

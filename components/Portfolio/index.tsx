@@ -1,8 +1,9 @@
 "use client";
 
 import { ProjectCard } from "./_components/ProjectCard";
-import { Project } from "../../types/project";
-import { forwardRef, useState } from "react";
+import { useRefsStore } from "@/store/useRefsStore";
+import { useState, useRef, useEffect } from "react";
+import { Project } from "@/types/project";
 import { Button } from "../ui/Button";
 
 const projects: Project[] = [
@@ -164,8 +165,14 @@ const projects: Project[] = [
   },
 ];
 
-export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
+export const Portfolio = () => {
   const [visibleCount, setVisibleCount] = useState(3);
+  const portfolioRef = useRef<HTMLDivElement>(null);
+  const setRefs = useRefsStore((state) => state.setRefs);
+
+  useEffect(() => {
+    setRefs({ portfolioRef });
+  }, [setRefs]);
 
   const handleLoadMore = () => {
     setVisibleCount(projects.length);
@@ -173,7 +180,7 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
 
   return (
     <section
-      ref={ref}
+      ref={portfolioRef}
       className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
     >
       <h2 className="heading-3">Proyectos</h2>
@@ -199,4 +206,4 @@ export const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
       )}
     </section>
   );
-});
+};

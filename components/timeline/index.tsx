@@ -1,11 +1,20 @@
-import { School } from "../ui/icons";
-import { Content } from "./_components/Content";
-import { forwardRef } from "react";
+"use client";
 
-export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
+import { useRefsStore } from "@/store/useRefsStore";
+import { useRef, useEffect } from "react";
+import { Content } from "./_components/Content";
+import { School } from "../ui/icons";
+
+export const Timeline = () => {
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const setRefs = useRefsStore((state) => state.setRefs);
+
+  useEffect(() => {
+    setRefs({ timelineRef });
+  }, [setRefs]);
   return (
     <section
-      ref={ref}
+      ref={timelineRef}
       className="w-[90%] max-w-[1250px] mx-auto py-20"
       id="education"
     >
@@ -244,4 +253,4 @@ export const Timeline = forwardRef<HTMLDivElement>((_, ref) => {
       </div>
     </section>
   );
-});
+};

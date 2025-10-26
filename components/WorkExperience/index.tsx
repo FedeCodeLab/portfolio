@@ -1,5 +1,8 @@
-import { forwardRef } from "react";
+"use client";
+
 import { ExperienceCard } from "./_components/ExperienceCard";
+import { useRefsStore } from "@/store/useRefsStore";
+import { useEffect, useRef } from "react";
 
 const experiences = [
   {
@@ -22,10 +25,17 @@ const experiences = [
   },
 ];
 
-export const WorkExperience = forwardRef<HTMLDivElement>((_, ref) => {
+export const WorkExperience = () => {
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const setRefs = useRefsStore((state) => state.setRefs);
+
+  useEffect(() => {
+    setRefs({ experienceRef });
+  }, [setRefs]);
+
   return (
     <section
-      ref={ref}
+      ref={experienceRef}
       className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
     >
       <h2 className="heading-3">Experiencia Laboral</h2>
@@ -44,4 +54,4 @@ export const WorkExperience = forwardRef<HTMLDivElement>((_, ref) => {
       </div>
     </section>
   );
-});
+};
