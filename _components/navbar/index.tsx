@@ -30,7 +30,7 @@ export const Navbar = () => {
       <div
         className={`hidden fixed z-30 top-0 h-[85px] lg:flex transition-all duration-500 w-full ${
           isScrolled
-            ? "backdrop-blur-md bg-white/30 dark:bg-neutral-950/30 border-b border-blue-950"
+            ? "backdrop-blur-md bg-[#cadef8] dark:bg-neutral-950/30 border-b border-blue-950"
             : "border-b border-transparent"
         }`}
       >

@@ -202,7 +202,12 @@ export const Portfolio = () => {
       </div>
 
       {visibleCount < projects.length && (
-        <Button onClick={handleLoadMore}>Ver más</Button>
+        <Button
+          className="text-white dark:text-[#1e293b]"
+          onClick={handleLoadMore}
+        >
+          Ver más
+        </Button>
       )}
     </section>
   );
