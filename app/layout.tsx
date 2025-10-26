@@ -22,7 +22,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <FloatToggleTheme />
+        {/* <FloatToggleTheme /> */}
       </body>
     </html>
   );
