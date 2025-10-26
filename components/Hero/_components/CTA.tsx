@@ -5,14 +5,14 @@ export const CTA = () => {
   return (
     <div className="flex flex-col md:flex-row gap-3">
       <LinkButton href="https://github.com/FedeCodeLab">
-        <Github width={20} height={20} color="#ffffff" />
+        <Github size={20} color="#ffffff" />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
           Github
         </span>
       </LinkButton>
 
       <LinkButton href="https://www.linkedin.com/in/federico-guzman/">
-        <Linkedin width={20} height={20} color="#ffffff" />
+        <Linkedin size={20} color="#ffffff" />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
           Linkedin
         </span>
@@ -22,7 +22,7 @@ export const CTA = () => {
         href="mailto:federicoguzman.css@gmail.com"
         variant={"ghostGray"}
       >
-        <Shortcut width={20} height={20} color="#ffffff" />
+        <Shortcut size={20} color="#ffffff" />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
           ¡Hablemos!
         </span>

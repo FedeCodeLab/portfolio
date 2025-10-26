@@ -1,5 +1,5 @@
 import { metadata as siteMetadata } from "@/lib/metadata";
-import { NavbarContainer } from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar";
 import { pixelify, inter } from "@/lib/fonts";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
@@ -12,11 +12,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className="dark">
       <body
-        className={`${pixelify.variable} ${inter.variable} antialiased relative bg-[#061932]`}
+        className={`${pixelify.variable} ${inter.variable} antialiased relative bg-white dark:bg-[#061932]`}
       >
-        <NavbarContainer />
+        <Navbar />
         {children}
         <Footer />
       </body>

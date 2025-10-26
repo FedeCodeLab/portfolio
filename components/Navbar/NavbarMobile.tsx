@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { Button } from "../ui/Button";
 import { Download } from "../ui/icons";
+import { Button } from "../ui/Button";
+import Link from "next/link";
 
 export const NavbarMobile = () => {
   return (
@@ -15,7 +15,7 @@ export const NavbarMobile = () => {
         download={true}
       >
         <Button variant="ghostGray" size="small" className="group">
-          <Download width={20} height={20} color="#cad5e2" />
+          <Download size={20} color="#cad5e2" />
           <span className="transition-transform text-slate-300 duration-300 group-hover:translate-x-1">
             Descargar CV
           </span>

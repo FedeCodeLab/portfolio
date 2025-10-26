@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type DivRef = React.RefObject<HTMLDivElement | null>;
+type DivRef = React.RefObject<HTMLDivElement>;
 
 interface RefsState {
   experienceRef: DivRef | null;

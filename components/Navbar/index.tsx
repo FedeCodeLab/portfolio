@@ -1,19 +1,43 @@
 "use client";
 
-import { useRefsStore } from "@/store/useRefsStore";
-import { Navbar } from "./Navbar";
+import { NavbarMobile } from "./NavbarMobile";
+import { useEffect, useState } from "react";
+import { CenterNav } from "./CenterNav";
+import { motion } from "framer-motion";
+import { LeftNav } from "./LeftNav";
+import { CTA } from "./CTA";
 
-export const NavbarContainer = () => {
-  const { experienceRef, portfolioRef, skillsRef, timelineRef } =
-    useRefsStore();
+export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div>
-      <Navbar
-        experienceRef={experienceRef}
-        porfolioRef={portfolioRef}
-        skillsRef={skillsRef}
-        timelineRef={timelineRef}
-      />
-    </div>
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+      className="select-none"
+    >
+      <NavbarMobile />
+      <div
+        className={`hidden fixed z-30 top-0 h-[85px] lg:flex transition-all duration-500 w-full ${
+          isScrolled ? "backdrop-blur-md bg-white/30 dark:bg-black/30" : ""
+        }`}
+      >
+        <header className="mx-auto w-[90%] flex justify-between items-center">
+          <LeftNav />
+          <CenterNav />
+          <CTA />
+        </header>
+      </div>
+    </motion.div>
   );
 };
