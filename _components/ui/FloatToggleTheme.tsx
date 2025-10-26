@@ -3,18 +3,18 @@
 import useThemeStore from "@/store/themeStore";
 import { Moon, Sun } from "../ui/icons";
 
-export const ToggleTheme = () => {
+export const FloatToggleTheme = () => {
   const { theme, toggleTheme } = useThemeStore();
 
   return (
     <button
-      className="flex items-center justify-center cursor-pointer size-10 border-2 border-gray-400 hover:bg-[#1E293B] hover:border-[#1E293B] rounded-[10px]"
+      className="flex items-center fixed right-6 bottom-6 z-50 justify-center cursor-pointer size-14 border-2 bg-neutral-950 border-gray-400 rounded-full"
       onClick={toggleTheme}
     >
       {theme === "dark" ? (
-        <Moon size={20} color="#FFFFFF" />
+        <Moon size={24} color="#FFFFFF" />
       ) : (
-        <Sun size={20} color="#FFFFFF" />
+        <Sun size={24} color="#FFFFFF" />
       )}
     </button>
   );

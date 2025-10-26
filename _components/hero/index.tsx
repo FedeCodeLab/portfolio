@@ -1,7 +1,7 @@
 "use client";
 
-import { CTA } from "./_components/CTA";
 import { TypeAnimation } from "react-type-animation";
+import { CTA } from "./_components/CTA";
 import { motion } from "framer-motion";
 
 export const Hero = () => {
@@ -13,12 +13,12 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-700 font-[500] font-pixelifySans text-[17px]"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-400 via-pink-700 font-[500] font-pixelifySans text-[17px]"
           >
             Hola, mi nombre es
           </motion.p>
           <motion.div
-            className="hidden md:block min-h-[72px] font-inter font-bold text-[#bfccee]"
+            className="hidden md:block min-h-[72px] font-inter font-bold !text-neutral-800 dark:!text-[#BFCCEE]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
@@ -31,7 +31,7 @@ export const Hero = () => {
             />
           </motion.div>
           <motion.div
-            className="block md:hidden"
+            className="block md:hidden !text-neutral-800 dark:!text-[#BFCCEE]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
@@ -45,7 +45,7 @@ export const Hero = () => {
           </motion.div>
 
           <motion.h3
-            className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-700 heading-4 font-[500] font-pixelifySans"
+            className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-400 via-pink-700 heading-4 font-[500] font-pixelifySans"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
@@ -56,7 +56,7 @@ export const Hero = () => {
 
         <div className="flex flex-col gap-6">
           <motion.p
-            className="text-lg text-gray-400 text-center md:text-start"
+            className="text-lg text-gray-700 dark:text-gray-400 text-center md:text-start font-medium"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.8 }}

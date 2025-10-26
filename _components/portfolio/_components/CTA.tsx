@@ -1,10 +1,10 @@
-import { Shortcut, Github } from "@/components/ui/icons";
-import { LinkButton } from "@/components/ui/LinkButton";
+import { Shortcut, Github } from "@/_components/ui/icons";
+import { LinkButton } from "@/_components/ui/LinkButton";
 import { ProjectLinks } from "@/types/project";
 
 export const CTA = ({ repository, deploy }: ProjectLinks) => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 text-white">
       {deploy && (
         <LinkButton href={deploy} size={"small"}>
           <Shortcut size={20} color="#ffffff" />

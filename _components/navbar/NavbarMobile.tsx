@@ -10,16 +10,11 @@ export const NavbarMobile = () => {
       </h1>
       <Link
         href="/CV_GuzmanFederico_Frontend.pdf"
-        className="flex justify-center items-center"
+        className="font-pixelifySans flex justify-center items-center gap-2 whitespace-nowrap rounded-[50px] cursor-pointer font-[500] px-6 py-2 text-[14px] border-2 border-gray-400 bg-[#1E293B] hover:bg-[#32425e] dark:bg-transparent dark:hover:bg-[#1E293B] hover:border-[#1E293B] max-w-[130px] text-slate-300 hover:text-white transition duration-300 "
         target="_blank"
         download={true}
       >
-        <Button variant="ghostGray" size="small" className="group">
-          <Download size={20} color="#cad5e2" />
-          <span className="transition-transform text-slate-300 duration-300 group-hover:translate-x-1">
-            Descargar CV
-          </span>
-        </Button>
+        Descargar CV
       </Link>
     </div>
   );

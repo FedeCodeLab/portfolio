@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { buttonVariants } from "./Button";
-import { cn } from "../../lib/utils";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export const CertifiedButton = ({
   href,
@@ -10,7 +10,7 @@ export const CertifiedButton = ({
   disabled?: boolean;
 }) => {
   const classes = cn(
-    "max-w-[150px] text-center",
+    "max-w-[150px] text-center text-white dark:text-[#e5e5e5]",
     buttonVariants({ variant: "default", size: "small" }),
     disabled &&
       "bg-gray-400 cursor-not-allowed border-gray-400 hover:bg-gray-400"

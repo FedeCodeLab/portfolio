@@ -74,7 +74,7 @@ export const ProjectCard = ({
               </p>
             </div>
             <p
-              className="text-gray-400 lg:max-w-[500px]"
+              className="text-gray-800 font-semibold dark:text-gray-400 lg:max-w-[500px]"
               dangerouslySetInnerHTML={{ __html: content }}
             />
 
