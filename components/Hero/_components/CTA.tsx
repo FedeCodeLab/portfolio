@@ -1,9 +1,9 @@
-import { Linkedin, Shortcut, Github } from "../../ui/icons";
-import { LinkButton } from "../../ui/LinkButton";
+import { Linkedin, Shortcut, Github } from "@/components/ui/icons";
+import { LinkButton } from "@/components/ui/LinkButton";
 
 export const CTA = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-3">
+    <div className="flex flex-col md:flex-row gap-3 text-slate-300">
       <LinkButton href="https://github.com/FedeCodeLab">
         <Github size={20} color="#ffffff" />
         <span className="transition-transform duration-300 group-hover:translate-x-1">

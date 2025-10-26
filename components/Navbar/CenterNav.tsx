@@ -7,9 +7,10 @@ export const CenterNav = () => {
   const { experienceRef, portfolioRef, skillsRef, timelineRef } =
     useRefsStore();
 
-  const scrollToSection = (ref: RefObject<HTMLElement> | null) => {
-    if (ref?.current) {
-      const offsetTop = ref.current.offsetTop;
+  const scrollToSection = (ref: RefObject<HTMLElement | null> | null) => {
+    const element = ref?.current;
+    if (element) {
+      const offsetTop = element.offsetTop;
       const offset = 40;
       window.scrollTo({
         top: offsetTop - offset,
