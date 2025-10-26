@@ -13,7 +13,9 @@ export const Logo = ({ name, image }: BrandProps) => {
           className="object-contain size-[60px] md:size-[80px]"
         />
       </div>
-      <span className="text-xs font-semibold">{name}</span>
+      <span className="text-xs font-semibold text-neutral-800 dark:text-neutral-200">
+        {name}
+      </span>
     </div>
   );
 };

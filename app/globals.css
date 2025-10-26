@@ -7,16 +7,6 @@
   --foreground: #171717;
 }
 
-li,
-button {
-  transition: all 0.5s ease;
-}
-
-body {
-  color: var(--foreground);
-  font-family: var(--font-inter);
-}
-
 @theme {
   /* Colores */
   --color-destacado: #ff0000;
@@ -120,6 +110,19 @@ button {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+li,
+button {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+body {
+  font-family: var(--font-inter);
 }
 
 .heading-1 {

@@ -11,7 +11,7 @@ export const Content = ({
   active = true,
 }: TimelineProps) => {
   return (
-    <div className="timeline-end mb-10 pl-2 flex flex-col gap-6">
+    <div className="timeline-end mb-10 pl-2 flex flex-col gap-6 text-neutral-800 dark:text-neutral-200">
       <div className="pt-4">
         <p className="text-sm text-blue-400 font-semibold">{year}</p>
         <h4 className="text-lg font-medium">{title}</h4>
