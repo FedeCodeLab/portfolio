@@ -1,6 +1,6 @@
+import { CertifiedButton } from "@/components/ui/CertifiedButton";
 import { ExpandableText } from "./ExpandableText";
-import { CertifiedButton } from "../../ui/CertifiedButton";
-import { TimelineProps } from "../../../types/timeline";
+import { TimelineProps } from "@/types/timeline";
 
 export const Content = ({
   year,
