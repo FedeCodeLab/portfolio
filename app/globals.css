@@ -1,21 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 @plugin "daisyui";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-li,
-button {
-  transition: all 0.5s ease;
-}
-
-body {
-  color: var(--foreground);
-  font-family: var(--font-inter);
 }
 
 @theme {
@@ -45,82 +34,95 @@ button {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* sizing */
+
+  --x-half: 2.5px;
+  --x: 5px;
+  --x2: 10px;
+  --x3: 15px;
+  --x4: 20px;
+  --x5: 25px;
+  --x6: 30px;
+  --x7: 35px;
+  --x8: 40px;
+  --x9: 45px;
+  --x10: 50px;
+  --x11: 55px;
+  --x12: 60px;
+  --x13: 65px;
+  --x14: 70px;
+  --x15: 75px;
+  --x16: 80px;
+  --x17: 85px;
+  --x18: 90px;
+  --x19: 95px;
+  --x20: 100px;
+  --x25: 125px;
+  --x30: 150px;
+  --x40: 200px;
+
+  /* scale */
+
+  --scale--2: 14px;
+  --scale--1: 16px;
+  --scale-0: 18px;
+  --scale-1: 20px;
+  --scale-2: 23px;
+  --scale-3: 26px;
+  --scale-4: 29px;
+  --scale-5: 32px;
+  --scale-6: 36px;
+  --scale-7: 41px;
+  --scale-8: 46px;
+  --scale-9: 52px;
+  --scale-10: 58px;
+  --scale-11: 66px;
+  --scale-12: 74px;
+  --scale-13: 83px;
+  --scale-14: 94px;
+  --scale-15: 105px;
+
+  /* Tokens/Sizing */
+
+  --space-2xs: var(--x-half);
+  --space-xs: var(--x);
+  --space-s: var(--x3);
+  --space-m: var(--x6);
+  --space-b: var(--x10);
+  --space-xb: var(--x15);
+  --space-2xb: var(--x30);
+
+  --size-s: var(--x7);
+  --size-m: var(--x10);
+  --size-b: var(--x12);
+  --size-xb: var(--x20);
+  --size-2xb: var(--x30);
+
+  /* Peso */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-
-    /* sizing */
-
-    --x-half: 2.5px;
-    --x: 5px;
-    --x2: 10px;
-    --x3: 15px;
-    --x4: 20px;
-    --x5: 25px;
-    --x6: 30px;
-    --x7: 35px;
-    --x8: 40px;
-    --x9: 45px;
-    --x10: 50px;
-    --x11: 55px;
-    --x12: 60px;
-    --x13: 65px;
-    --x14: 70px;
-    --x15: 75px;
-    --x16: 80px;
-    --x17: 85px;
-    --x18: 90px;
-    --x19: 95px;
-    --x20: 100px;
-    --x25: 125px;
-    --x30: 150px;
-    --x40: 200px;
-
-    /* scale */
-
-    --scale--2: 14px;
-    --scale--1: 16px;
-    --scale-0: 18px;
-    --scale-1: 20px;
-    --scale-2: 23px;
-    --scale-3: 26px;
-    --scale-4: 29px;
-    --scale-5: 32px;
-    --scale-6: 36px;
-    --scale-7: 41px;
-    --scale-8: 46px;
-    --scale-9: 52px;
-    --scale-10: 58px;
-    --scale-11: 66px;
-    --scale-12: 74px;
-    --scale-13: 83px;
-    --scale-14: 94px;
-    --scale-15: 105px;
-
-    /* Tokens/Sizing */
-
-    --space-2xs: var(--x-half);
-    --space-xs: var(--x);
-    --space-s: var(--x3);
-    --space-m: var(--x6);
-    --space-b: var(--x10);
-    --space-xb: var(--x15);
-    --space-2xb: var(--x30);
-
-    --size-s: var(--x7);
-    --size-m: var(--x10);
-    --size-b: var(--x12);
-    --size-xb: var(--x20);
-    --size-2xb: var(--x30);
-
-    /* Peso */
-    --weight-light: 300;
-    --weight-regular: 400;
-    --weight-medium: 500;
   }
+}
+
+li,
+button {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+body {
+  font-family: var(--font-inter);
 }
 
 .heading-1 {

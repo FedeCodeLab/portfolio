@@ -38,7 +38,9 @@ export const WorkExperience = () => {
       ref={experienceRef}
       className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
     >
-      <h2 className="heading-3">Experiencia Laboral</h2>
+      <h2 className="heading-3 text-neutral-800 dark:text-neutral-200">
+        Experiencia Laboral
+      </h2>
       <div className="flex flex-col gap-6">
         {experiences.map((exp, idx) => (
           <ExperienceCard

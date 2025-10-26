@@ -27,7 +27,7 @@ export const Timeline = () => {
           <li>
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color="#ffffff" />
+                <School size={24} color="#ffffff" />
               </div>
               <path
                 fillRule="evenodd"
@@ -49,7 +49,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -72,7 +72,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -95,7 +95,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -117,7 +117,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -140,7 +140,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -163,7 +163,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -186,7 +186,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -209,7 +209,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"
@@ -232,7 +232,7 @@ export const Timeline = () => {
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
               <div className="border-blue-800 border-2 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
-                <School height={24} width={24} color={"#ffffff"} />
+                <School size={24} color={"#ffffff"} />
               </div>
               <path
                 fillRule="evenodd"

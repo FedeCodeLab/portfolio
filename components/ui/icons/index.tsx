@@ -1,12 +1,12 @@
-import { IconProps } from "../../../types/icon";
+import { IconProps } from "@/types/icon";
 
-export function Github({ width, height, color }: IconProps) {
+export function Github({ size, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-github"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -20,13 +20,13 @@ export function Github({ width, height, color }: IconProps) {
   );
 }
 
-export function Shortcut({ width, height, color }: IconProps) {
+export function Shortcut({ size, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-external-link"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -42,13 +42,13 @@ export function Shortcut({ width, height, color }: IconProps) {
   );
 }
 
-export function Download({ width, height, color }: IconProps) {
+export function Download({ size, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-file-download min-w-[20px] min-h-[20px]"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -65,13 +65,13 @@ export function Download({ width, height, color }: IconProps) {
   );
 }
 
-export function Light({ width, height, color }: IconProps) {
+export function Light({ size, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brightness-up"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -93,13 +93,13 @@ export function Light({ width, height, color }: IconProps) {
   );
 }
 
-export function School({ width, height, color }: IconProps) {
+export function School({ size, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-school"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -114,13 +114,13 @@ export function School({ width, height, color }: IconProps) {
   );
 }
 
-export function Instagram({ width, height, color }: IconProps) {
+export function Instagram({ size, color }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-instagram"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -136,13 +136,13 @@ export function Instagram({ width, height, color }: IconProps) {
   );
 }
 
-export function Linkedin({ color, height, width }: IconProps) {
+export function Linkedin({ color, size }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-linkedin"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -160,13 +160,13 @@ export function Linkedin({ color, height, width }: IconProps) {
   );
 }
 
-export function Whatsapp({ color, height, width }: IconProps) {
+export function Whatsapp({ color, size }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-whatsapp"
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke={color}
@@ -177,6 +177,47 @@ export function Whatsapp({ color, height, width }: IconProps) {
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
       <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+    </svg>
+  );
+}
+
+export function Sun({ color, size }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-sun"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+      <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+    </svg>
+  );
+}
+
+export function Moon({ color, size }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-moon"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
     </svg>
   );
 }

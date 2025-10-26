@@ -55,7 +55,9 @@ export const ExperienceCard = ({
             />
           )}
           <div>
-            <p className="text-lg">{title}</p>
+            <p className="text-lg text-neutral-800 dark:text-neutral-200">
+              {title}
+            </p>
             <p className="text-sm text-gray-400">{type}</p>
           </div>
         </div>
