@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="dark">
       <body
-        className={`${pixelify.variable} ${inter.variable} antialiased relative bg-white dark:bg-[#020617]`}
+        className={`${pixelify.variable} ${inter.variable} antialiased relative bg-[#e2e8f0] dark:bg-[#020617]`}
       >
         <Navbar />
         {children}
