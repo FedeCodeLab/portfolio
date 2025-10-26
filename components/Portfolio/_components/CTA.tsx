@@ -4,7 +4,7 @@ import { ProjectLinks } from "@/types/project";
 
 export const CTA = ({ repository, deploy }: ProjectLinks) => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 text-white dark:text-[#1e293b]">
       {deploy && (
         <LinkButton href={deploy} size={"small"}>
           <Shortcut size={20} color="#ffffff" />

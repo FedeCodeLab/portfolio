@@ -25,7 +25,7 @@ export const CenterNav = () => {
         <li>
           <button
             onClick={() => scrollToSection(skillsRef)}
-            className="group cursor-pointer text-slate-300"
+            className="group cursor-pointer text-neutral-800 dark:text-slate-300"
           >
             <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
               01.{" "}
@@ -37,7 +37,7 @@ export const CenterNav = () => {
         <li>
           <button
             onClick={() => scrollToSection(experienceRef)}
-            className="group cursor-pointer text-slate-300"
+            className="group cursor-pointer text-neutral-800 dark:text-slate-300"
           >
             <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
               02.{" "}
@@ -49,7 +49,7 @@ export const CenterNav = () => {
         <li>
           <button
             onClick={() => scrollToSection(portfolioRef)}
-            className="group cursor-pointer text-slate-300"
+            className="group cursor-pointer text-neutral-800 dark:text-slate-300"
           >
             <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
               03.{" "}
@@ -61,7 +61,7 @@ export const CenterNav = () => {
         <li>
           <button
             onClick={() => scrollToSection(timelineRef)}
-            className="group cursor-pointer text-slate-300"
+            className="group cursor-pointer text-neutral-800 dark:text-slate-300"
           >
             <span className="text-blue-400 group-hover:text-blue-200 transition-color duration-500">
               04.{" "}
