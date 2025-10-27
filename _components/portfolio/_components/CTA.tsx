@@ -7,7 +7,7 @@ export const CTA = ({ repository, deploy }: ProjectLinks) => {
     <div className="flex gap-3 text-white">
       {deploy && (
         <LinkButton href={deploy} size={"small"}>
-          <Shortcut size={20} color="#ffffff" />
+          <Shortcut size={20} />
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             Visitar
           </span>
@@ -15,7 +15,7 @@ export const CTA = ({ repository, deploy }: ProjectLinks) => {
       )}
       {repository && (
         <LinkButton href={repository} size={"small"} variant={"ghostGray"}>
-          <Github size={20} color="#ffffff" />
+          <Github size={20} />
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             Repositorio
           </span>

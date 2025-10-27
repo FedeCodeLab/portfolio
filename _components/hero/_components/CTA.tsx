@@ -3,9 +3,9 @@ import { LinkButton } from "@/_components/ui/LinkButton";
 
 export const CTA = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-3 text-slate-300">
+    <div className="flex flex-col md:flex-row gap-3">
       <LinkButton href="https://github.com/FedeCodeLab">
-        <Github size={20} color="#ffffff" />
+        <Github size={20} />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
           Github
         </span>
@@ -22,7 +22,7 @@ export const CTA = () => {
         href="mailto:federicoguzman.css@gmail.com"
         variant={"ghostGray"}
       >
-        <Shortcut size={20} color="#ffffff" />
+        <Shortcut size={20} />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
           ¡Hablemos!
         </span>

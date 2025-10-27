@@ -6,7 +6,7 @@ export const CTA = () => {
     <div className="flex gap-4">
       <Link href="https://github.com/FedeCodeLab" target="_blank">
         <div className="bg-transparent bg-gradient-to-tr from-gray-800 to-purple-800 p-2 rounded-full hover:from-purple-800 hover:to-gray-800 transition-colors duration-600">
-          <Github size={25} color="#ffffff" />
+          <Github size={25} />
         </div>
       </Link>
 
