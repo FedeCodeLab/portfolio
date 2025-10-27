@@ -1,6 +1,6 @@
 import { IconProps } from "@/types/icon";
 
-export function Github({ size, color }: IconProps) {
+export function Github({ size }: { size: number }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,7 @@ export function Github({ size, color }: IconProps) {
       height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke={color}
+      stroke="currentColor"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -20,7 +20,7 @@ export function Github({ size, color }: IconProps) {
   );
 }
 
-export function Shortcut({ size, color }: IconProps) {
+export function Shortcut({ size }: { size: number }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export function Shortcut({ size, color }: IconProps) {
       height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke={color}
+      stroke="currentColor"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -181,7 +181,7 @@ export function Whatsapp({ color, size }: IconProps) {
   );
 }
 
-export function Sun({ color, size }: IconProps) {
+export function Sun({ size }: { size: number }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@ export function Sun({ color, size }: IconProps) {
   );
 }
 
-export function Moon({ color, size }: IconProps) {
+export function Moon({ size }: { size: number }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +210,7 @@ export function Moon({ color, size }: IconProps) {
       height={size}
       viewBox="0 0 24 24"
       fill="none"
-      stroke={color}
+      stroke="currentColor"
       strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"

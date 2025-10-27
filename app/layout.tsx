@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="es" className="dark">
       <body
         className={`${pixelify.variable} ${inter.variable} antialiased relative 
-      min-h-screen  bg-[#dbeaff] dark:bg-[#020617] md:bg-transparent md:bg-gradient-to-tl md:from-[30%] md:from-[#a6c5ee] md:via-[#b4cff3] md:to-[#dbeaff] 
+      min-h-screen  bg-[#F6FAFF] dark:bg-[#020617] dark:md:bg-transparent md:bg-gradient-to-tl md:from-[30%]
       md:dark:from-[#020617] md:dark:via-[#10122a] md:dark:to-[#1a1b3d] md:bg-fixed`}
       >
         <Navbar />

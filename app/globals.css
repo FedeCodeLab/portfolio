@@ -103,6 +103,7 @@ button {
   --weight-light: 300;
   --weight-regular: 400;
   --weight-medium: 500;
+  --weight-semibold: 600;
 }
 
 @media (prefers-color-scheme: dark) {

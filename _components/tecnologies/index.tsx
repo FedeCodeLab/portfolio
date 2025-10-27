@@ -15,9 +15,12 @@ export default function Tecnologies() {
 
   return (
     <section ref={skillsRef} className="relative overflow-hidden">
-      <div className="overflow-visible flex flex-col gap-8 md:pt-16">
-        <h2 className="heading-3 font-normal text-center text-neutral-800 dark:text-neutral-200">
-          Stack
+      <div className="overflow-visible flex flex-col gap-14 md:pt-16">
+        <h2 className="heading-3 md:!text-[3rem] !font-semibold text-center text-neutral-800 dark:text-neutral-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
+            Habilidades
+          </span>{" "}
+          Técnicas
         </h2>
         <div className="flex flex-col gap-6">
           <UseVelocity baseVelocity={2}>

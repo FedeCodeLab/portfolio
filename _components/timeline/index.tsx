@@ -18,9 +18,12 @@ export const Timeline = () => {
       className="w-[90%] max-w-[1250px] mx-auto py-20"
       id="education"
     >
-      <div className="">
-        <h2 className="heading-3 font-normal mb-16 text-center text-neutral-800 dark:text-neutral-200">
-          Certificaciones
+      <div>
+        <h2 className="md:!text-[3rem] !font-semibold heading-3 mb-16 text-center text-neutral-800 dark:text-neutral-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
+            Educación
+          </span>{" "}
+          y Certificaciones
         </h2>
 
         <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">

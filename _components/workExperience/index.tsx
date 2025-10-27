@@ -36,12 +36,15 @@ export const WorkExperience = () => {
   return (
     <section
       ref={experienceRef}
-      className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-8 pt-20"
+      className="w-[90%] max-w-[1250px] mx-auto flex flex-col items-center justify-center gap-14 pt-20"
     >
-      <h2 className="heading-3 text-neutral-800 dark:text-neutral-200">
-        Experiencia Laboral
+      <h2 className="heading-3 md:!text-[3rem] !font-semibold text-neutral-800 dark:text-neutral-200">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
+          Experiencia
+        </span>{" "}
+        Laboral
       </h2>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 min-w-full">
         {experiences.map((exp, idx) => (
           <ExperienceCard
             key={idx}
