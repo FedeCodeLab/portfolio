@@ -5,7 +5,7 @@ export const CTA = () => {
   return (
     <div className="flex flex-col md:flex-row gap-3">
       <LinkButton href="https://github.com/FedeCodeLab">
-        <Github size={20} color="#ffffff" />
+        <Github size={20} />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
           Github
         </span>
