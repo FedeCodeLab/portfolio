@@ -42,7 +42,7 @@ export function Shortcut({ size }: { size: number }) {
   );
 }
 
-export function Download({ size, color }: IconProps) {
+export function Download({ size }: { size: number }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export function Download({ size, color }: IconProps) {
       height={size}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke={color}
+      stroke="currentColor"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
