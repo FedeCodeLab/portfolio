@@ -22,7 +22,7 @@ export const LeftContent = () => {
           </div>
           <div className="text-white font-[600]">
             <p className="text-[15px]">Email</p>
-            <p className="text-[14px] text-neutral-400">
+            <p className="text-[14px] dark:text-neutral-400">
               federicoguzman.css@gmail.com
             </p>
           </div>
@@ -34,7 +34,7 @@ export const LeftContent = () => {
           </div>
           <div className="text-white font-[600]">
             <p className="text-[15px]">Ubicación</p>
-            <p className="text-[14px] text-neutral-400">
+            <p className="text-[14px] dark:text-neutral-400">
               La Rioja, La Rioja, Argentina
             </p>
           </div>
