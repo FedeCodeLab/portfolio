@@ -51,7 +51,7 @@ export default function ContactForm() {
     <div className="flex flex-col md:flex-row w-full rounded-[25px]">
       <LeftContent />
 
-      <div className="bg-[#f3e3d4] dark:bg-[#0f172a] p-10 flex-1">
+      <div className="bg-[#f3e3d4] dark:bg-[#0f172a] px-[20px] pt-[20px] pb-20 md:p-10 flex-1">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
           <h3 className="heading-5 !font-[600] text-[#0a0a3a] dark:text-blue-500">
             Enviame un mensaje
