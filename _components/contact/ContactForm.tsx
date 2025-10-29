@@ -126,6 +126,7 @@ export default function ContactForm() {
           </div>
 
           <button
+            type="submit"
             disabled={loading}
             className="rounded-full bg-[#3098F3] hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 text-white py-3 px-4 cursor-pointer"
           >
