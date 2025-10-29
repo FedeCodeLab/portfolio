@@ -1,7 +1,6 @@
 "use client";
 
 import { useRefsStore } from "@/store/useRefsStore";
-import { RefObject } from "react";
 import { Item } from "./Item";
 
 export const Nav = () => {

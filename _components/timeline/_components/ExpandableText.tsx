@@ -18,7 +18,7 @@ export const ExpandableText = ({ text }: { text: string }) => {
       {text.length > 100 && (
         <span
           onClick={toggleReadMore}
-          className="text-blue-800 dark:text-blue-400 hover:underline cursor-pointer underline"
+          className="text-blue-600 dark:text-blue-400 hover:underline cursor-pointer underline"
         >
           {isExpanded ? " Ver menos" : " Ver más"}
         </span>
