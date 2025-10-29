@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CTA } from "./CTA";
+import { Email } from "../ui/icons";
 
 export const Links = () => {
   return (
@@ -11,12 +12,15 @@ export const Links = () => {
 
         <div className="flex flex-col justify-center lg:justify-start gap-3 text-white">
           <CTA />
-          <Link
-            href="mailto:federicoguzman.css@gmail.com"
-            className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-500 text-base underline"
-          >
-            federicoguzman.css@gmail.com
-          </Link>
+          <div className="flex gap-1 items-center text-neutral-800 dark:text-gray-400">
+            <Email size={20} />
+            <Link
+              href="mailto:federicoguzman.css@gmail.com"
+              className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-500 text-base underline"
+            >
+              federicoguzman.css@gmail.com
+            </Link>
+          </div>
         </div>
       </div>
     </div>
