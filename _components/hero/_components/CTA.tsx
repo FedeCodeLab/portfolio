@@ -12,7 +12,7 @@ export const CTA = () => {
     const element = ref?.current;
     if (element) {
       const offsetTop = element.offsetTop;
-      const offset = 40;
+      const offset = 10;
       window.scrollTo({
         top: offsetTop - offset,
         behavior: "smooth",
