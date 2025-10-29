@@ -2,6 +2,7 @@ import { WorkExperience } from "@/_components/workExperience";
 import { Portfolio } from "@/_components/portfolio";
 import Tecnologies from "@/_components/tecnologies";
 import { Timeline } from "@/_components/timeline";
+import { Contact } from "@/_components/contact";
 import { Hero } from "@/_components/hero";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <WorkExperience />
       <Portfolio />
       <Timeline />
+      <Contact />
     </main>
   );
 }
