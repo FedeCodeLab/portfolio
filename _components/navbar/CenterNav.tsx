@@ -4,7 +4,7 @@ import { useRefsStore } from "@/store/useRefsStore";
 import { Item } from "./Item";
 
 export const CenterNav = () => {
-  const { experienceRef, portfolioRef, skillsRef, timelineRef } =
+  const { experienceRef, portfolioRef, skillsRef, timelineRef, contactRef } =
     useRefsStore();
 
   return (
@@ -24,6 +24,10 @@ export const CenterNav = () => {
 
         <Item span="04." sectionRef={timelineRef}>
           Certificados
+        </Item>
+
+        <Item span="05." sectionRef={contactRef}>
+          Contacto
         </Item>
       </ul>
     </nav>

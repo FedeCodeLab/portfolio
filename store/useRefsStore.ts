@@ -7,6 +7,7 @@ interface RefsState {
   portfolioRef: DivRef | null;
   skillsRef: DivRef | null;
   timelineRef: DivRef | null;
+  contactRef: DivRef | null;
   setRefs: (refs: Partial<Omit<RefsState, "setRefs">>) => void;
 }
 
@@ -15,5 +16,6 @@ export const useRefsStore = create<RefsState>((set) => ({
   portfolioRef: null,
   skillsRef: null,
   timelineRef: null,
+  contactRef: null,
   setRefs: (refs) => set(refs),
 }));
