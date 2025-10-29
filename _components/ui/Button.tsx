@@ -13,7 +13,7 @@ const buttonVariants = cva(
         ghost:
           "border-2 border-transparent dark:border-[#3098F3] dark:border-blue-700 hover:border-blue-700 dark:hover:border-blue-800",
         ghostGray:
-          "border-2 border-gray-400 hover:bg-[#1E293B] hover:border-[#1E293B]",
+          "text-neutral-800 dark:text-slate-300 border-2 border-gray-400 dark:hover:bg-[#1E293B] hover:border-[#1E293B] bg-gray-200 hover:bg-gray-300 dark:bg-transparent",
         disabled: "bg-dark border-default text-disabled cursor-not-allowed",
       },
       size: {

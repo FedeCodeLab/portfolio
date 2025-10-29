@@ -36,7 +36,11 @@ export const CTA = () => {
         </span>
       </LinkButton>
 
-      <Button onClick={() => scrollToSection(contactRef)} variant={"ghostGray"}>
+      <Button
+        className="text-neutral-700 dark:text-[#f1f8ff]"
+        onClick={() => scrollToSection(contactRef)}
+        variant={"ghostGray"}
+      >
         Hablemos
       </Button>
     </div>
