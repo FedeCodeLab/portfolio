@@ -201,8 +201,12 @@ body {
 
 .grecaptcha-badge {
   transform: scale(0.7);
-  opacity: 0.6;
+  opacity: 0;
   bottom: 10px !important;
   left: 10px !important;
   z-index: 9999;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
 }
