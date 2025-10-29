@@ -8,8 +8,10 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "border border-blue-700 bg-blue-800 hover:bg-blue-900",
-        ghost: "border-2 border-blue-700 hover:border-blue-900",
+        default:
+          "border border-transparent dark:border-blue-700 bg-[#3098F3] dark:bg-blue-800 hover:bg-blue-700 dark:hover:bg-blue-900",
+        ghost:
+          "border-2 border-transparent dark:border-[#3098F3] dark:border-blue-700 hover:border-blue-700 dark:hover:border-blue-900",
         ghostGray:
           "text-neutral-800 dark:text-slate-300 border-2 border-gray-400 dark:hover:bg-[#1E293B] hover:border-[#1E293B] bg-gray-200 hover:bg-gray-300 dark:bg-transparent",
         disabled: "bg-dark border-default text-disabled cursor-not-allowed",
