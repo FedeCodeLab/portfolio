@@ -65,7 +65,7 @@ export default function ContactForm() {
               id="name"
               {...register("name")}
               placeholder="Daenerys Targaryen"
-              className="p-3 rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b]"
+              className="p-3 rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b] focus:ring-2 focus:ring-pink-700 focus:outline-0 focus:border-transparent"
             />
             {errors.name && (
               <div className="w-fit bg-red-200 border border-red-600 px-3 py-[2px] text-red-600  rounded-[6px]">
@@ -82,7 +82,7 @@ export default function ContactForm() {
               id="subject"
               {...register("subject")}
               placeholder="Tengo que conquistar Westeros"
-              className="p-3 rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b]"
+              className="p-3 rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b] focus:ring-2 focus:ring-pink-700 focus:outline-0 focus:border-transparent"
             />
             {errors.subject && (
               <div className="w-fit bg-red-200 border border-red-600 px-3 py-[2px] text-red-600  rounded-[6px]">
@@ -99,7 +99,7 @@ export default function ContactForm() {
               id="email"
               {...register("email")}
               placeholder="dany-dracarys@targaryen.com"
-              className="p-3 rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b]"
+              className="p-3 rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b] focus:ring-2 focus:ring-pink-700 focus:outline-0 focus:border-transparent"
             />
             {errors.email && (
               <div className="w-fit bg-red-200 border border-red-600 px-3 py-[2px] text-red-600  rounded-[6px]">
@@ -116,7 +116,7 @@ export default function ContactForm() {
               id="message"
               {...register("message")}
               placeholder="Contame qué tenés en mente…"
-              className="p-3 h-32 resize-none rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b]"
+              className="p-3 h-32 resize-none rounded border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-[#090e1b] focus:ring-2 focus:ring-pink-700 focus:outline-0 focus:border-transparent"
             />
             {errors.message && (
               <div className="w-fit bg-red-200 border border-red-600 px-3 py-[2px] text-red-600  rounded-[6px]">
