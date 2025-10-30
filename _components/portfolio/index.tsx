@@ -18,6 +18,7 @@ const projects: Project[] = [
     techs: [
       "Next.js",
       "Typescript",
+      "Ssr",
       "Javascript",
       "Tailwind",
       "Shadcn",
@@ -25,7 +26,6 @@ const projects: Project[] = [
       "Framer Motion",
       "i18n",
       "Firebase",
-      "SSR",
     ],
     image: "/portadas/bebot.PNG",
   },
@@ -40,6 +40,7 @@ const projects: Project[] = [
     techs: [
       "Next.js",
       "Typescript",
+      "Ssr",
       "Tailwind",
       "CSS",
       "Framer Motion",
@@ -48,7 +49,6 @@ const projects: Project[] = [
       "Voiceflow",
       "FTP",
       "Zustand",
-      "SSR",
     ],
     image: "/portadas/cux.png",
   },
