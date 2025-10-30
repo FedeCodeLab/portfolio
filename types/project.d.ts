@@ -31,7 +31,7 @@ export type ProjectTech =
   | "Zustand"
   | "Gemini"
   | "LLM"
-  | "SSR"
+  | "Ssr"
   | "API REST";
 
 export interface Project {
