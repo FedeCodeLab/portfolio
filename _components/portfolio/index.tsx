@@ -67,7 +67,7 @@ const projects: Project[] = [
     type: "Proyecto",
     content:
       "✨ AI Translator — Aplicación desarrollada con Next.js, TypeScript y Zustand que permite traducir texto en tiempo real, detectar automáticamente el idioma, convertir voz a texto y reproducir la traducción con síntesis de voz utilizando APIs nativas del navegador (Translator, LanguageDetector, SpeechRecognition y SpeechSynthesis).",
-    repository: "https://github.com/FedeCodeLab/Traductor",
+    repository: "https://github.com/FedeCodeLab/traductor",
     deploy: "https://traductor-two.vercel.app/",
     techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
     image: "/portadas/traductor.png",
@@ -87,7 +87,7 @@ const projects: Project[] = [
     type: "Proyecto",
     content:
       "✨ Desarrollé un clon de Spotify con Astro.js, recreando la experiencia de un reproductor de música moderno y funcional.<br/><br/>🧪 Implementé la reproducción de canciones, control de volumen e interacción entre distintos álbumes, logrando una interfaz responsiva y fluida que emula la experiencia original de la plataforma.",
-    repository: "https://github.com/FedeCodeLab/SpotifyClone",
+    repository: "https://github.com/FedeCodeLab/spotify-clone",
     deploy: "https://spotify-clone-fedecodelab.vercel.app/",
     techs: [
       "Astro",
@@ -105,7 +105,7 @@ const projects: Project[] = [
     type: "Experiencia laboral",
     content:
       "✨ Desarrollé el sitio web de Expansiva, una plataforma para un evento artístico que fusiona poesía, tecnología y estética visual. El sitio muestra el programa, artistas invitados, imagen generativa y contenido multimedia de una forma inmersiva y moderna.<br/><br/>🧪 Implementé una experiencia interactiva que combina diseño visual con contenido poético, integré galerías de imágenes, programación de actividades y secciones de contenido artístico, prioricé una interfaz responsiva y estilizada para dispositivos móviles y de escritorio y colaboré con el equipo creativo para reflejar el espíritu experimental del proyecto.",
-    repository: "https://github.com/FedeCodeLab/Expansiva",
+    repository: "https://github.com/FedeCodeLab/expansiva",
     deploy: "https://expansiva.vercel.app/",
     techs: ["Javascript", "CSS", "HTML"],
     image: "/portadas/expansiva.png",
@@ -115,7 +115,7 @@ const projects: Project[] = [
     type: "Proyecto",
     content:
       "Pagina web de delivery de comidas en donde uno puede registrarse, ingresar, usar carrito de comprar y pagar a través de Mercado Pago.",
-    repository: "https://github.com/Delivelozz/DeliVeloz",
+    repository: "https://github.com/Delivelozz/deliveloz",
     deploy: "https://deliveloz.netlify.app/home",
     techs: [
       "React",
@@ -148,7 +148,7 @@ const projects: Project[] = [
     type: "Proyecto",
     content:
       "Aplicación web de juego de Ta Te Ti desarrollada para poner en práctica mis conocimientos en Javascript.",
-    repository: "https://github.com/FedeCodeLab/Ta-Te-Ti",
+    repository: "https://github.com/FedeCodeLab/ta-te-ti",
     deploy: "https://ta-te-ti-hazel.vercel.app/",
     techs: ["React", "Typescript", "Javascript", "CSS", "Vercel"],
     image: "/portadas/tateti.png",
@@ -158,7 +158,7 @@ const projects: Project[] = [
     type: "Proyecto",
     content:
       "Aplicación web de preguntas y respuestas desarrollada para poner en práctica mis conocimientos en Javascript.",
-    repository: "https://github.com/FedeCodeLab/Game-Of-Thrones-Quiz",
+    repository: "https://github.com/FedeCodeLab/game-of-thrones-quiz",
     deploy: "https://game-of-thrones-quiz.vercel.app/",
     techs: ["React", "Typescript", "Javascript", "CSS", "Vercel"],
     image: "/portadas/gameofthrones.png",
