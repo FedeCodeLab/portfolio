@@ -28,8 +28,8 @@ export const Filters = () => {
           size={"small"}
           className={`${
             filterType === "Todos"
-              ? ""
-              : "dark:bg-[#1E293B] hover:dark:bg-blue-950"
+              ? "text-white hover:bg-[#3098F3] hover:dark:bg-blue-800"
+              : "!bg-gray-200 border-2 border-gray-400 dark:border-transparent dark:!bg-[#1E293B] hover:!bg-[#3074f3] hover:dark:!bg-blue-950 hover:text-white"
           }`}
           onClick={() => handleSetFilterType("Todos")}
         >
@@ -40,8 +40,8 @@ export const Filters = () => {
           size={"small"}
           className={`${
             filterType === "Proyecto"
-              ? ""
-              : "dark:bg-[#1E293B] hover:dark:bg-blue-950"
+              ? "text-white hover:bg-[#3098F3] hover:dark:bg-blue-800"
+              : "!bg-gray-200 border-2 border-gray-400 dark:border-transparent dark:!bg-[#1E293B] hover:!bg-[#3074f3] hover:dark:!bg-blue-950 hover:text-white"
           }`}
           onClick={() => handleSetFilterType("Proyecto")}
         >
@@ -52,8 +52,8 @@ export const Filters = () => {
           size={"small"}
           className={`${
             filterType === "Experiencia laboral"
-              ? "bg-blue-600"
-              : "dark:bg-[#1E293B] hover:dark:bg-blue-950"
+              ? "text-white hover:bg-[#3098F3] hover:dark:bg-blue-800"
+              : "!bg-gray-200 border-2 border-gray-400 dark:border-transparent dark:!bg-[#1E293B] hover:!bg-[#3074f3] hover:dark:!bg-blue-950 hover:text-white"
           }`}
           onClick={() => handleSetFilterType("Experiencia laboral")}
         >
