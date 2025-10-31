@@ -10,7 +10,7 @@ import {
   useAnimationFrame,
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
-import { ParallaxProps } from "../../../types/useVelocity";
+import { ParallaxProps } from "@/types/useVelocity";
 
 export default function UseVelocity({
   children,
@@ -27,7 +27,7 @@ export default function UseVelocity({
     clamp: false,
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-10, -35, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-10, -43.4, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
@@ -49,7 +49,7 @@ export default function UseVelocity({
         className="relative z-[15] text-[190px] flex whitespace-nowrap flex-nowrap text-default font-normal overflow-visible"
         style={{ x }}
       >
-        {Array.from({ length: 4 }).map((_, index) => (
+        {Array.from({ length: 3 }).map((_, index) => (
           <span key={index} className="flex overflow-visible ">
             {children}
           </span>

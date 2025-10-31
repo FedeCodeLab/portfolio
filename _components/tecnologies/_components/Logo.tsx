@@ -1,4 +1,4 @@
-import { BrandProps } from "../../../types/useVelocity";
+import { BrandProps } from "@/types/useVelocity";
 import Image from "next/image";
 
 export const Logo = ({ name, image }: BrandProps) => {
