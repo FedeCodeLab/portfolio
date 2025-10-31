@@ -15,12 +15,12 @@ export const Timeline = () => {
   return (
     <section
       ref={timelineRef}
-      className="w-[90%] max-w-[1250px] mx-auto py-20"
+      className="w-[90%] max-w-[1250px] mx-auto pt-20"
       id="education"
     >
       <div>
         <h2 className="md:!text-[3rem] !font-semibold heading-3 mb-16 text-center text-neutral-800 dark:text-neutral-200">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r  from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
             Educación
           </span>{" "}
           y Certificaciones
@@ -29,7 +29,7 @@ export const Timeline = () => {
         <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color="#ffffff" />
               </div>
               <path
@@ -45,13 +45,13 @@ export const Timeline = () => {
               description="En este curso aprendí a utilizar NotebookLM para alimentar modelos de inteligencia artificial. También profundicé en la ingeniería de prompts, la integración avanzada de herramientas, la implementación de buenas prácticas de seguridad y auditoría, además de explorar el uso de n8n para automatizar flujos de trabajo de manera eficiente."
               url="https://drive.google.com/file/d/1-dCdNxa6NywMxT4WctUqamVKOwxhP6Bi/view?usp=sharing"
             />
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -68,13 +68,13 @@ export const Timeline = () => {
               url="https://www.linkedin.com/learning/certificates/648b258b58e0ebe7d2a99b69585b03cf4eeed8e81588f9437e29416be50870ed?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BXGfzqLSWTLS5giqmdSedUA%3D%3D"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -91,13 +91,13 @@ export const Timeline = () => {
               url="https://cursos.desafiolatam.com/certificates/g8fvpwkd2f"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -114,12 +114,12 @@ export const Timeline = () => {
               url="https://cursos.desafiolatam.com/certificates/pbywfvioj4"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -136,13 +136,13 @@ export const Timeline = () => {
               url="https://drive.google.com/file/d/1hDSqnfZ_llRaZjaA30NxB7oxsPCbGsRs/view"
             />
 
-            <hr className="bg-blue-600" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -159,13 +159,13 @@ export const Timeline = () => {
               url="https://drive.google.com/file/d/1JHJeWuqUm1NzCtJ9DaGoJfEXXMC7MfSW/view?usp=sharing"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -183,12 +183,12 @@ export const Timeline = () => {
               url="https://s3.amazonaws.com/public-lessons.crehana.com/images/certificate/participation-pdf/9f26c0ad/3486e01c.pdf?source_page=User%20Dashboard&source_detail=Diploma%20Card"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -205,13 +205,13 @@ export const Timeline = () => {
               url="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9e30cf9d-c055-4b00-8200-e562a44636cf.pdf"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
             <hr className="bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-2 border-blue-800 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path
@@ -228,13 +228,13 @@ export const Timeline = () => {
               url="https://drive.google.com/file/d/1YNxNgE2wgyNYk2f2KK35EcaLhxQP_OjJ/view?usp=sharing"
             />
 
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
           </li>
 
           <li>
-            <hr className="bg-blue-800" />
+            <hr className="bg-[#3098F3] dark:bg-blue-800" />
             <div className="timeline-middle">
-              <div className="border-blue-800 border-2 bg-gradient-to-tr from-blue-900 to-blue-500 rounded-full p-2">
+              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
                 <School size={24} color={"#ffffff"} />
               </div>
               <path

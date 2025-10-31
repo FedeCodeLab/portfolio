@@ -1,7 +1,25 @@
-import { Linkedin, Shortcut, Github } from "@/_components/ui/icons";
+"use client";
+import { Linkedin, Github } from "@/_components/ui/icons";
 import { LinkButton } from "@/_components/ui/LinkButton";
+import { Button } from "@/_components/ui/Button";
+import { useRefsStore } from "@/store/useRefsStore";
+import { RefObject } from "react";
 
 export const CTA = () => {
+  const { contactRef } = useRefsStore();
+
+  const scrollToSection = (ref: RefObject<HTMLElement | null> | null) => {
+    const element = ref?.current;
+    if (element) {
+      const offsetTop = element.offsetTop;
+      const offset = 10;
+      window.scrollTo({
+        top: offsetTop - offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="flex flex-col md:flex-row gap-3">
       <LinkButton href="https://github.com/FedeCodeLab">
@@ -18,15 +36,13 @@ export const CTA = () => {
         </span>
       </LinkButton>
 
-      <LinkButton
-        href="mailto:federicoguzman.css@gmail.com"
+      <Button
+        className="text-neutral-700 dark:text-[#f1f8ff]"
+        onClick={() => scrollToSection(contactRef)}
         variant={"ghostGray"}
       >
-        <Shortcut size={20} />
-        <span className="transition-transform duration-300 group-hover:translate-x-1">
-          ¡Hablemos!
-        </span>
-      </LinkButton>
+        Hablemos
+      </Button>
     </div>
   );
 };

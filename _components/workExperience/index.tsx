@@ -8,11 +8,11 @@ const experiences = [
   {
     title: "Desarrollador Front-end",
     type: "Contrato Temporal",
-    company: "BeBot (Argentina - Remoto) | Oct 2024 • Actualidad",
+    company: "BeBot (Argentina - Remoto) | Oct 2024 • Nov 2025",
     name: "BeBot",
     img: "/brands/bebot.jpg",
     content:
-      "Actualmente formo parte del equipo de desarrollo como Desarrollador Frontend, donde construyo interfaces escalables, mantenibles y orientadas al detalle. Desarrollo componentes reutilizables y animaciones con Framer Motion, aplicando Tailwind CSS para lograr un diseño coherente y visualmente atractivo. Implemento un chatbot con Voiceflow, optimizo la integración y aplico SSR para mejorar el rendimiento y el SEO. Además, gestiono el estado global con Zustand, integro i18n con Next-intl para la internacionalización y realizo despliegues en Firebase y vía FTP, garantizando estabilidad y entregas confiables. Trabajo en conjunto con el equipo de diseño UX para asegurar una experiencia de usuario fluida y consistente.",
+      "Trabajé junto al equipo de Bebot como Desarrollador Frontend, donde construí interfaces escalables, mantenibles y orientadas al detalle. Desarrollé componentes reutilizables y animaciones con Framer Motion, aplicando Tailwind CSS para lograr un diseño coherente y visualmente atractivo. Implementé un chatbot con Voiceflow, optimicé la integración y apliqué SSR para mejorar el rendimiento y el SEO. Además, gestioné el estado global con Zustand, integré i18n con Next-intl para la internacionalización y realicé despliegues en Firebase y vía FTP, garantizando estabilidad y entregas confiables. Colaboré con el equipo de diseño UX para asegurar una experiencia de usuario fluida y consistente.",
   },
   {
     title: "Desarrollador Front-end",
