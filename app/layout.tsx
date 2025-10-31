@@ -1,5 +1,4 @@
 import { GoogleReCaptcha } from "@/_components/contact/GoogleReCaptcha";
-import { FloatToggleTheme } from "@/_components/ui/FloatToggleTheme";
 import { metadata as siteMetadata } from "@/lib/metadata";
 import { pixelify, inter } from "@/lib/fonts";
 import { Navbar } from "@/_components/navbar";
@@ -23,7 +22,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <FloatToggleTheme />
         </GoogleReCaptcha>
       </body>
     </html>

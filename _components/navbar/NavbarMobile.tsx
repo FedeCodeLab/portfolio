@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const NavbarMobile = () => {
   return (
-    <div className="absolute top-0 w-full h-[85px] px-6 flex lg:hidden items-center justify-between z-50 ">
+    <div className="fixed bg-[#FFFFFF] shadow-lg dark:bg-[#0b0d18] w-full py-3 px-6 flex lg:hidden items-center justify-between z-50 ">
       <h1 className="font-pixelifySans heading-5 inline  text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-700 hover:from-pink-700 hover:to-blue-400 cursor-pointer transition-colors duration-300">
         FedeCodeLab
       </h1>
