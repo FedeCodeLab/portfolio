@@ -2,12 +2,170 @@
 
 import { useFilterStore } from "@/store/filterStore";
 import { useRefsStore } from "@/store/useRefsStore";
-import { projects } from "@/data/projectsData";
 import { ProjectCard } from "./ProjectCard";
 import { Project } from "@/types/project";
 import { useRef, useEffect } from "react";
 import { Button } from "../ui/Button";
 import { Filters } from "./Filters";
+
+const projects: Project[] = [
+  {
+    title: "BeBot Design",
+    type: "Experiencia laboral",
+    content:
+      "✨ Implementé Next-intl para la internacionalización (i18n) en múltiples idiomas y apliqué renderizado del lado del servidor (SSR) para optimizar la performance y el SEO. Desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable, consistente y orientado a la experiencia del usuario.<br/><br/>🧪 Llevé a cabo tareas de optimización SEO técnico, identificando y resolviendo problemas de indexación y rendimiento. Finalmente, realicé el deploy con Firebase Hosting y Functions, asegurando estabilidad y disponibilidad en producción.",
+    repository: "",
+    deploy: "https://bebot.design/",
+    logo: "/brands/bebot.jpg",
+    techs: [
+      "Next.js",
+      "Typescript",
+      "Ssr",
+      "Javascript",
+      "Tailwind",
+      "Shadcn",
+      "CSS",
+      "Framer Motion",
+      "i18n",
+      "Firebase",
+    ],
+    image: "/portadas/bebot.PNG",
+  },
+  {
+    title: "CUX Academy",
+    type: "Experiencia laboral",
+    logo: "/brands/Iso.png",
+    content:
+      "✨ Implementé un chatbot creado con Voiceflow, optimizando la integración y garantizando un flujo conversacional fluido. Para enriquecer la experiencia de usuario, desarrollé animaciones complejas con Framer Motion y diseñé la interfaz con Tailwind CSS, logrando un sistema escalable y consistente.<br/><br/>🧪 Realicé el deploy estático en producción vía FTP, asegurando estabilidad y disponibilidad. Además, integré un script de Octopus para la gestión de suscripciones e implementé estados globales con Zustand para un control eficiente de la aplicación.",
+    repository: "",
+    deploy: "https://www.cux.academy/",
+    techs: [
+      "Next.js",
+      "Typescript",
+      "Ssr",
+      "Tailwind",
+      "CSS",
+      "Framer Motion",
+      "Firebase",
+      "Octopus",
+      "Voiceflow",
+      "FTP",
+      "Zustand",
+    ],
+    image: "/portadas/cux.png",
+  },
+  {
+    title: "Chatbot",
+    type: "Proyecto",
+    content:
+      "✨ Chatbot interactivo que implementa el modelo LLM Gemini de Google para generar respuestas contextuales e inteligentes en tiempo real. Presenta animaciones de carga, detección dinámica de mensajes y una experiencia de conversación fluida con el asistente virtual.",
+    repository: "https://github.com/FedeCodeLab/chatbot",
+    deploy: "https://chatbot-fedecodelab.vercel.app/",
+    techs: ["Javascript", "HTML", "CSS", "LLM", "Gemini"],
+    image: "/portadas/chatbot.png",
+  },
+  {
+    title: "Traductor",
+    type: "Proyecto",
+    content:
+      "✨ AI Translator — Aplicación desarrollada con Next.js, TypeScript y Zustand que permite traducir texto en tiempo real, detectar automáticamente el idioma, convertir voz a texto y reproducir la traducción con síntesis de voz utilizando APIs nativas del navegador (Translator, LanguageDetector, SpeechRecognition y SpeechSynthesis).",
+    repository: "https://github.com/FedeCodeLab/traductor",
+    deploy: "https://traductor-two.vercel.app/",
+    techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
+    image: "/portadas/traductor.png",
+  },
+  {
+    title: "Github Users Finder",
+    type: "Proyecto",
+    content:
+      "✨ GitHub Users Finder — Aplicación desarrollada con Next.js, Zustand y Tailwind CSS que permite buscar usuarios de GitHub, visualizar su información detallada y explorar sus repositorios públicos en tiempo real mediante la API de GitHub.",
+    repository: "https://github.com/FedeCodeLab/github-users-finder",
+    deploy: "https://github-users-finder-sepia.vercel.app/",
+    techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
+    image: "/portadas/github.png",
+  },
+  {
+    title: "Spotify Clone",
+    type: "Proyecto",
+    content:
+      "✨ Desarrollé un clon de Spotify con Astro.js, recreando la experiencia de un reproductor de música moderno y funcional.<br/><br/>🧪 Implementé la reproducción de canciones, control de volumen e interacción entre distintos álbumes, logrando una interfaz responsiva y fluida que emula la experiencia original de la plataforma.",
+    repository: "https://github.com/FedeCodeLab/spotify-clone",
+    deploy: "https://spotify-clone-fedecodelab.vercel.app/",
+    techs: [
+      "Astro",
+      "Typescript",
+      "Javascript",
+      "Svelte",
+      "React",
+      "Tailwind",
+      "Vercel",
+    ],
+    image: "/portadas/spotify.png",
+  },
+  {
+    title: "Expansiva",
+    type: "Experiencia laboral",
+    content:
+      "✨ Desarrollé el sitio web de Expansiva, una plataforma para un evento artístico que fusiona poesía, tecnología y estética visual. El sitio muestra el programa, artistas invitados, imagen generativa y contenido multimedia de una forma inmersiva y moderna.<br/><br/>🧪 Implementé una experiencia interactiva que combina diseño visual con contenido poético, integré galerías de imágenes, programación de actividades y secciones de contenido artístico, prioricé una interfaz responsiva y estilizada para dispositivos móviles y de escritorio y colaboré con el equipo creativo para reflejar el espíritu experimental del proyecto.",
+    repository: "https://github.com/FedeCodeLab/expansiva",
+    deploy: "https://expansiva.vercel.app/",
+    techs: ["Javascript", "CSS", "HTML"],
+    image: "/portadas/expansiva.png",
+  },
+  {
+    title: "Deliveloz",
+    type: "Proyecto",
+    content:
+      "Pagina web de delivery de comidas en donde uno puede registrarse, ingresar, usar carrito de comprar y pagar a través de Mercado Pago.",
+    repository: "https://github.com/Delivelozz/deliveloz",
+    deploy: "https://deliveloz.netlify.app/home",
+    techs: [
+      "React",
+      "Javascript",
+      "Tailwind",
+      "CSS",
+      "Vercel",
+      "Render",
+      "Firebase",
+      "Sequelize",
+      "Express",
+      "PostgreSQL",
+      "MUI",
+      "Cloudinary",
+    ],
+    image: "/portadas/deliveloz.png",
+  },
+  {
+    title: "Academia de Alemán",
+    type: "Proyecto",
+    content:
+      "Landing Page diseñada y desarrollada como proyecto final para el curso Maquetación de sitios web dinámicos con Javascript y jQuery desde cero.",
+    repository: "",
+    deploy: "https://curso-aleman.surge.sh/",
+    techs: ["Javascript", "Jquery", "HTML", "CSS"],
+    image: "/portadas/academia.png",
+  },
+  {
+    title: "Ta Te Ti",
+    type: "Proyecto",
+    content:
+      "Aplicación web de juego de Ta Te Ti desarrollada para poner en práctica mis conocimientos en Javascript.",
+    repository: "https://github.com/FedeCodeLab/ta-te-ti",
+    deploy: "https://ta-te-ti-hazel.vercel.app/",
+    techs: ["React", "Typescript", "Javascript", "CSS", "Vercel"],
+    image: "/portadas/tateti.png",
+  },
+  {
+    title: "Game of Thrones Quiz",
+    type: "Proyecto",
+    content:
+      "Aplicación web de preguntas y respuestas desarrollada para poner en práctica mis conocimientos en Javascript.",
+    repository: "https://github.com/FedeCodeLab/game-of-thrones-quiz",
+    deploy: "https://game-of-thrones-quiz.vercel.app/",
+    techs: ["React", "Typescript", "Javascript", "CSS", "Vercel"],
+    image: "/portadas/gameofthrones.png",
+  },
+];
 
 export const Portfolio = () => {
   const portfolioRef = useRef<HTMLDivElement>(null);
