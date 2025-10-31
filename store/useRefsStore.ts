@@ -1,13 +1,12 @@
 import { create } from "zustand";
-
-type DivRef = React.RefObject<HTMLDivElement | null>;
+import { RefObject } from "react";
 
 interface RefsState {
-  experienceRef: DivRef | null;
-  portfolioRef: DivRef | null;
-  skillsRef: DivRef | null;
-  timelineRef: DivRef | null;
-  contactRef: DivRef | null;
+  experienceRef: RefObject<HTMLDivElement | null> | null;
+  portfolioRef: RefObject<HTMLDivElement | null> | null;
+  skillsRef: RefObject<HTMLDivElement | null> | null;
+  timelineRef: RefObject<HTMLDivElement | null> | null;
+  contactRef: RefObject<HTMLDivElement | null> | null;
   setRefs: (refs: Partial<Omit<RefsState, "setRefs">>) => void;
 }
 
