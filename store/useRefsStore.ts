@@ -2,12 +2,12 @@ import { create } from "zustand";
 import { RefObject } from "react";
 
 interface RefsState {
-  experienceRef: RefObject<HTMLDivElement | null> | null;
-  portfolioRef: RefObject<HTMLDivElement | null> | null;
-  skillsRef: RefObject<HTMLDivElement | null> | null;
-  timelineRef: RefObject<HTMLDivElement | null> | null;
-  contactRef: RefObject<HTMLDivElement | null> | null;
-  setRefs: (refs: Partial<Omit<RefsState, "setRefs">>) => void;
+  experienceRef: RefObject<HTMLDivElement | any> | any;
+  portfolioRef: RefObject<HTMLDivElement | any> | any;
+  skillsRef: RefObject<HTMLDivElement | any> | any;
+  timelineRef: RefObject<HTMLDivElement | any> | any;
+  contactRef: RefObject<HTMLDivElement | any> | any;
+  setRefs: (refs: Partial<Omit<RefsState, "setRefs">>) => any;
 }
 
 export const useRefsStore = create<RefsState>((set) => ({
