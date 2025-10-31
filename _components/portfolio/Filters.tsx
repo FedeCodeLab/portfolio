@@ -23,7 +23,7 @@ export const Filters = () => {
   return (
     <div className="flex flex-col gap-2 w-full">
       <p className="font-[600] text-[14px]">Filtros:</p>
-      <div className="flex gap-2 w-full justify-start">
+      <div className="flex flex-wrap gap-2 w-full justify-start">
         <Button
           size={"small"}
           className={`${
