@@ -7,9 +7,15 @@ interface ItemProps {
   sectionRef: any;
   span: string;
   children: ReactNode;
+  isActive?: boolean;
 }
 
-export const Item = ({ sectionRef, span, children }: ItemProps) => {
+export const Item = ({
+  sectionRef,
+  span,
+  children,
+  isActive = false,
+}: ItemProps) => {
   useRefsStore();
 
   const scrollToSection = (ref: RefObject<HTMLElement | null> | null) => {
@@ -30,10 +36,22 @@ export const Item = ({ sectionRef, span, children }: ItemProps) => {
         onClick={() => scrollToSection(sectionRef)}
         className="group cursor-pointer text-neutral-800 dark:text-slate-300"
       >
-        <span className="text-blue-500 dark:text-blue-400 group-hover:text-pink-700 dark:group-hover:text-pink-600 transition-color duration-500">
+        <span
+          className={
+            isActive
+              ? "text-pink-500 dark:text-pink-500"
+              : "text-blue-500 dark:text-blue-400 group-hover:text-pink-700 dark:group-hover:text-pink-600 transition-color duration-500"
+          }
+        >
           {span}{" "}
         </span>
-        <span className="group-hover:text-blue-800 dark:group-hover:text-white">
+        <span
+          className={
+            isActive
+              ? "text-pink-500 dark:text-pink-400"
+              : "group-hover:text-blue-800 dark:group-hover:text-white"
+          }
+        >
           {children}
         </span>
       </button>
