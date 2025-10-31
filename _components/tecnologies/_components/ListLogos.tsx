@@ -1,4 +1,4 @@
-import { ListLogosProps } from "../../../types/useVelocity";
+import { ListLogosProps } from "@/types/useVelocity";
 import logos from "@/services/logos.json";
 import { Logo } from "./Logo";
 
