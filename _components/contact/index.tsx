@@ -1,7 +1,7 @@
 "use client";
 
 import { useRefsStore } from "@/store/useRefsStore";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import ContactForm from "./ContactForm";
 
 export const Contact = () => {
