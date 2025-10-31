@@ -18,7 +18,7 @@ export const Item = ({
 }: ItemProps) => {
   useRefsStore();
 
-  const scrollToSection = (ref: RefObject<HTMLElement | null> | null) => {
+  const scrollToSection = (ref: RefObject<HTMLElement | null> | any) => {
     const element = ref?.current;
     if (element) {
       const offsetTop = element.offsetTop;
