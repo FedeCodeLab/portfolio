@@ -2,7 +2,7 @@
 
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { Project } from "../../../types/project";
+import { Project } from "@/types/project";
 import { useEffect } from "react";
 import Image from "next/image";
 import { CTA } from "./CTA";
@@ -20,7 +20,7 @@ export const ProjectCard = ({
 }: Project) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
   });
 
