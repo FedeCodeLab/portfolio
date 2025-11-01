@@ -8,8 +8,9 @@ export const Description = () => {
           </h3>
         </div>
         <p>
-          Desarrollador Frontend con experiencia en React, Next.js y Tailwind
-          CSS, enfocado en crear soluciones web eficientes y escalables.
+          Desarrollador Frontend especializado en React y Next.js, creando
+          interfaces modernas, optimizadas y centradas en la experiencia del
+          usuario.
         </p>
       </div>
     </div>
