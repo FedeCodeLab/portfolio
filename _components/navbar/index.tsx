@@ -2,6 +2,7 @@
 
 import { NavbarMobile } from "./NavbarMobile";
 import { useEffect, useState } from "react";
+import { MenuMobile } from "./MenuMoible";
 import { CenterNav } from "./CenterNav";
 import { motion } from "framer-motion";
 import { LeftNav } from "./LeftNav";
@@ -27,6 +28,7 @@ export const Navbar = () => {
       className="select-none"
     >
       <NavbarMobile />
+      <MenuMobile />
       <div
         className={`hidden fixed z-30 top-0 h-[70px] lg:flex transition-all duration-500 w-full ${
           isScrolled

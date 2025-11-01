@@ -1,7 +1,6 @@
 "use client";
 
 import { useRefsStore } from "@/store/useRefsStore";
-import { useEffect, useState } from "react";
 import { Item } from "./Item";
 
 export const CenterNav = () => {

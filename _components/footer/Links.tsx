@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { CTA } from "./CTA";
 import { Email } from "../ui/icons";
+import { CTA } from "../ui/CTA";
+import Link from "next/link";
 
 export const Links = () => {
   return (
