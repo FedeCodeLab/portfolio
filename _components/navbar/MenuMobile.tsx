@@ -12,7 +12,7 @@ export const MenuMobile = () => {
   const { isOpen, setIsOpen } = useMenuMobileStore();
   return (
     <div
-      className={`fixed top-0 right-0 h-screen w-full bg-white dark:bg-[#0b0d18] transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
+      className={`fixed top-0 right-0 h-dvh w-full bg-white dark:bg-[#0b0d18] transform transition-transform duration-300 ease-in-out flex flex-col justify-between ${
         isOpen ? "translate-x-0" : "translate-x-full"
       } z-50`}
     >

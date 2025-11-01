@@ -2,7 +2,7 @@
 
 import { NavbarMobile } from "./NavbarMobile";
 import { useEffect, useState } from "react";
-import { MenuMobile } from "./MenuMoible";
+import { MenuMobile } from "./MenuMobile";
 import { CenterNav } from "./CenterNav";
 import { motion } from "framer-motion";
 import { LeftNav } from "./LeftNav";
