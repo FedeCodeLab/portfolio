@@ -1,5 +1,5 @@
 import { Email, Pin } from "../ui/icons";
-import { CTA } from "../footer/CTA";
+import { CTA } from "../ui/CTA";
 
 export const LeftContent = () => {
   return (

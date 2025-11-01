@@ -7,7 +7,7 @@ export const Description = () => {
             Federico Guzmán
           </h3>
         </div>
-        <p className="">
+        <p>
           Desarrollador Frontend con experiencia en React, Next.js y Tailwind
           CSS, enfocado en crear soluciones web eficientes y escalables.
         </p>
