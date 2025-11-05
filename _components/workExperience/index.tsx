@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 const experiences = [
   {
-    title: "Desarrollador Front-end",
+    title: "Desarrollador Front-end Ssr",
     type: "Contrato Temporal",
     company: "BeBot (Argentina - Remoto) | Oct 2024 • Nov 2025",
     name: "BeBot",
