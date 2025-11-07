@@ -25,14 +25,14 @@ export const CTA = () => {
       <LinkButton href="https://github.com/FedeCodeLab">
         <Github size={20} />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
-          Github
+          GitHub
         </span>
       </LinkButton>
 
       <LinkButton href="https://www.linkedin.com/in/federico-guzman/">
         <Linkedin size={20} color="#ffffff" />
         <span className="transition-transform duration-300 group-hover:translate-x-1">
-          Linkedin
+          LinkedIn
         </span>
       </LinkButton>
 
