@@ -10,8 +10,8 @@ interface FilterState {
 
 export const useFilterStore = create<FilterState>((set) => ({
   filterType: "Todos",
-  setFilterType: (type) => set({ filterType: type, visibleCount: 3 }),
-  resetFilter: () => set({ filterType: "Todos", visibleCount: 3 }),
-  visibleCount: 3,
+  setFilterType: (type) => set({ filterType: type, visibleCount: 4 }),
+  resetFilter: () => set({ filterType: "Todos", visibleCount: 4 }),
+  visibleCount: 4,
   setVisibleCount: (count) => set({ visibleCount: count }),
 }));
