@@ -75,16 +75,6 @@ export const projects: Project[] = [
     image: "/portadas/stranger.png",
   },
   {
-    title: "Chatbot",
-    type: "Proyecto",
-    content:
-      "✨ Chatbot interactivo que implementa el modelo LLM Gemini de Google para generar respuestas contextuales e inteligentes en tiempo real. Presenta animaciones de carga, detección dinámica de mensajes y una experiencia de conversación fluida con el asistente virtual.",
-    repository: "https://github.com/FedeCodeLab/chatbot",
-    deploy: "https://chatbot-fedecodelab.vercel.app/",
-    techs: ["Javascript", "HTML", "CSS", "LLM", "Gemini"],
-    image: "/portadas/chatbot.png",
-  },
-  {
     title: "Traductor",
     type: "Proyecto",
     content:
