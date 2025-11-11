@@ -134,6 +134,10 @@ export const projects: Project[] = [
         img: "/logos/gemini.png",
       },
       {
+        name: "Vercel",
+        img: "/logos/Vercel2.png",
+      },
+      {
         name: "LLM",
         img: "",
       },
@@ -166,7 +170,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/vercel.svg",
+        img: "/logos/vercel2.png",
       },
       {
         name: "Zustand",
@@ -204,6 +208,10 @@ export const projects: Project[] = [
         img: "/logos/zustand.svg",
       },
       {
+        name: "Vercel",
+        img: "/logos/Vercel2.png",
+      },
+      {
         name: "API REST",
         img: "",
       },
@@ -233,6 +241,10 @@ export const projects: Project[] = [
       {
         name: "Zustand",
         img: "/logos/zustand.svg",
+      },
+      {
+        name: "Vercel",
+        img: "/logos/Vercel2.png",
       },
       {
         name: "API REST",
@@ -275,7 +287,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/vercel.svg",
+        img: "/logos/vercel2.png",
       },
     ],
     image: "/portadas/spotify.png",
@@ -299,6 +311,10 @@ export const projects: Project[] = [
       {
         name: "HTML",
         img: "/logos/html.svg",
+      },
+      {
+        name: "HTML",
+        img: "/logos/vercel2.png",
       },
     ],
     image: "/portadas/expansiva.png",
@@ -329,7 +345,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/vercel.svg",
+        img: "/logos/Vercel2.png",
       },
       {
         name: "Render",
@@ -415,7 +431,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/vercel.svg",
+        img: "/logos/Vercel2.png",
       },
     ],
     image: "/portadas/tateti.png",
@@ -446,7 +462,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/vercel.svg",
+        img: "/logos/Vercel2.png",
       },
     ],
     image: "/portadas/gameofthrones.png",
