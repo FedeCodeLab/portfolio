@@ -1,38 +1,9 @@
-export type ProjectTech =
-  | "Next.js"
-  | "CSS"
-  | "Redux"
-  | "HTML"
-  | "Javascript"
-  | "Typescript"
-  | "Figma"
-  | "Node.js"
-  | "Firebase"
-  | "Framer Motion"
-  | "Tailwind"
-  | "Vercel"
-  | "Express"
-  | "PostgreSQL"
-  | "Sequelize"
-  | "Shadcn"
-  | "Framer Motion"
-  | "i18n"
-  | "Firebase"
-  | "Astro"
-  | "Svelte"
-  | "Render"
-  | "Octopus"
-  | "Voiceflow"
-  | "FTP"
-  | "MUI"
-  | "Cloudinary"
-  | "Jquery"
-  | "React"
-  | "Zustand"
-  | "Gemini"
-  | "LLM"
-  | "Ssr"
-  | "API REST";
+export interface ProjectTechObject {
+  name: string;
+  img?: string;
+}
+
+export type ProjectTech = string | ProjectTechObject;
 
 export interface Project {
   title: string;

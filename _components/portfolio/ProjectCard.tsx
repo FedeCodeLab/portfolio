@@ -90,9 +90,24 @@ export const ProjectCard = ({
               {techs.map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-blue-100 text-blue-800 dark:bg-[#1E293B] dark:text-white text-xs px-2 py-1 rounded-full font-semibold"
+                  className="bg-blue-100 text-blue-800 dark:bg-[#1E293B] dark:text-white text-xs px-4 py-[6px] rounded-full font-semibold flex items-center gap-2"
                 >
-                  {tech}
+                  {typeof tech === "object" && tech.img && tech.img !== "" ? (
+                    <>
+                      <Image
+                        src={tech.img}
+                        alt={tech.name}
+                        width={100}
+                        height={100}
+                        className="inline-block size-[20px]"
+                      />
+                      {tech.name}
+                    </>
+                  ) : typeof tech === "object" ? (
+                    tech.name
+                  ) : (
+                    tech
+                  )}
                 </span>
               ))}
             </div>

@@ -10,16 +10,46 @@ export const projects: Project[] = [
     deploy: "https://bebot.design/",
     logo: "/brands/bebot.jpg",
     techs: [
-      "Next.js",
-      "Typescript",
-      "Ssr",
-      "Javascript",
-      "Tailwind",
-      "Shadcn",
-      "CSS",
-      "Framer Motion",
-      "i18n",
-      "Firebase",
+      {
+        name: "Next.js",
+        img: "/logos/next.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "Shadcn",
+        img: "/logos/shadcn.webp",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "Framer Motion",
+        img: "/logos/motion.svg",
+      },
+      {
+        name: "Firebase",
+        img: "/logos/firebase.svg",
+      },
+      {
+        name: "i18n",
+        img: "/logos/i18n.png",
+      },
+      {
+        name: "Ssr",
+        img: "",
+      },
     ],
     image: "/portadas/bebot.PNG",
   },
@@ -32,17 +62,50 @@ export const projects: Project[] = [
     repository: "",
     deploy: "https://www.cux.academy/",
     techs: [
-      "Next.js",
-      "Typescript",
-      "Ssr",
-      "Tailwind",
-      "CSS",
-      "Framer Motion",
-      "Firebase",
-      "Octopus",
-      "Voiceflow",
-      "FTP",
-      "Zustand",
+      {
+        name: "Next.js",
+        img: "/logos/next.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Ssr",
+        img: "",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "Framer Motion",
+        img: "/logos/motion.svg",
+      },
+      {
+        name: "Firebase",
+        img: "/logos/firebase.svg",
+      },
+      {
+        name: "Octopus",
+        img: "",
+      },
+      {
+        name: "Voiceflow",
+        img: "/logos/voiceflow.png",
+      },
+      {
+        name: "FTP",
+        img: "",
+      },
+      {
+        name: "Zustand",
+        img: "/logos/zustand.svg",
+      },
     ],
     image: "/portadas/cux.png",
   },
@@ -53,7 +116,28 @@ export const projects: Project[] = [
       "✨ Chatbot interactivo que implementa el modelo LLM Gemini de Google para generar respuestas contextuales e inteligentes en tiempo real. Presenta animaciones de carga, detección dinámica de mensajes y una experiencia de conversación fluida con el asistente virtual.",
     repository: "https://github.com/FedeCodeLab/chatbot",
     deploy: "https://chatbot-fedecodelab.vercel.app/",
-    techs: ["Javascript", "HTML", "CSS", "LLM", "Gemini"],
+    techs: [
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "HTML",
+        img: "/logos/html.svg",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "LLM",
+        img: "",
+      },
+      {
+        name: "Gemini",
+        img: "/logos/gemini.png",
+      },
+    ],
     image: "/portadas/chatbot.png",
   },
   {
@@ -64,13 +148,34 @@ export const projects: Project[] = [
     repository: "https://github.com/FedeCodeLab/stranger-things-countdown",
     deploy: "https://stranger-things-countdown.vercel.app/",
     techs: [
-      "Next.js",
-      "Typescript",
-      "Ssr",
-      "Tailwind",
-      "CSS",
-      "Vercel",
-      "Zustand",
+      {
+        name: "Next.js",
+        img: "/logos/next.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Ssr",
+        img: "",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "Vercel",
+        img: "/logos/vercel.svg",
+      },
+      {
+        name: "Zustand",
+        img: "/logos/zustand.svg",
+      },
     ],
     image: "/portadas/stranger.png",
   },
@@ -81,7 +186,28 @@ export const projects: Project[] = [
       "✨ AI Translator — Aplicación desarrollada con Next.js, TypeScript y Zustand que permite traducir texto en tiempo real, detectar automáticamente el idioma, convertir voz a texto y reproducir la traducción con síntesis de voz utilizando APIs nativas del navegador (Translator, LanguageDetector, SpeechRecognition y SpeechSynthesis).",
     repository: "https://github.com/FedeCodeLab/traductor",
     deploy: "https://traductor-two.vercel.app/",
-    techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
+    techs: [
+      {
+        name: "Next.js",
+        img: "/logos/next.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "Zustand",
+        img: "/logos/zustand.svg",
+      },
+      {
+        name: "API REST",
+        img: "",
+      },
+    ],
     image: "/portadas/traductor.png",
   },
   {
@@ -91,7 +217,28 @@ export const projects: Project[] = [
       "✨ GitHub Users Finder — Aplicación desarrollada con Next.js, Zustand y Tailwind CSS que permite buscar usuarios de GitHub, visualizar su información detallada y explorar sus repositorios públicos en tiempo real mediante la API de GitHub.",
     repository: "https://github.com/FedeCodeLab/github-users-finder",
     deploy: "https://github-users-finder-sepia.vercel.app/",
-    techs: ["Next.js", "Typescript", "Tailwind", "Zustand", "API REST"],
+    techs: [
+      {
+        name: "Next.js",
+        img: "/logos/next.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "Zustand",
+        img: "/logos/zustand.svg",
+      },
+      {
+        name: "API REST",
+        img: "",
+      },
+    ],
     image: "/portadas/github.png",
   },
   {
@@ -102,13 +249,34 @@ export const projects: Project[] = [
     repository: "https://github.com/FedeCodeLab/spotify-clone",
     deploy: "https://spotify-clone-fedecodelab.vercel.app/",
     techs: [
-      "Astro",
-      "Typescript",
-      "Javascript",
-      "Svelte",
-      "React",
-      "Tailwind",
-      "Vercel",
+      {
+        name: "Astro",
+        img: "/logos/astro.png",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "Svelte",
+        img: "/logos/svelte.png",
+      },
+      {
+        name: "React",
+        img: "/logos/react.svg",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "Vercel",
+        img: "/logos/vercel.svg",
+      },
     ],
     image: "/portadas/spotify.png",
   },
@@ -119,7 +287,20 @@ export const projects: Project[] = [
       "✨ Desarrollé el sitio web de Expansiva, una plataforma para un evento artístico que fusiona poesía, tecnología y estética visual. El sitio muestra el programa, artistas invitados, imagen generativa y contenido multimedia de una forma inmersiva y moderna.<br/><br/>🧪 Implementé una experiencia interactiva que combina diseño visual con contenido poético, integré galerías de imágenes, programación de actividades y secciones de contenido artístico, prioricé una interfaz responsiva y estilizada para dispositivos móviles y de escritorio y colaboré con el equipo creativo para reflejar el espíritu experimental del proyecto.",
     repository: "https://github.com/FedeCodeLab/expansiva",
     deploy: "https://expansiva.vercel.app/",
-    techs: ["Javascript", "CSS", "HTML"],
+    techs: [
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "HTML",
+        img: "/logos/html.svg",
+      },
+    ],
     image: "/portadas/expansiva.png",
   },
   {
@@ -130,18 +311,54 @@ export const projects: Project[] = [
     repository: "https://github.com/Delivelozz/deliveloz",
     deploy: "https://deliveloz.netlify.app/home",
     techs: [
-      "React",
-      "Javascript",
-      "Tailwind",
-      "CSS",
-      "Vercel",
-      "Render",
-      "Firebase",
-      "Sequelize",
-      "Express",
-      "PostgreSQL",
-      "MUI",
-      "Cloudinary",
+      {
+        name: "React",
+        img: "/logos/react.svg",
+      },
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "Tailwind",
+        img: "/logos/tailwind.svg",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "Vercel",
+        img: "/logos/vercel.svg",
+      },
+      {
+        name: "Render",
+        img: "/logos/render.png",
+      },
+      {
+        name: "Firebase",
+        img: "/logos/firebase.svg",
+      },
+      {
+        name: "Sequelize",
+        img: "/logos/sequelize.png",
+      },
+      {
+        name: "Express",
+        img: "/logos/express.svg",
+      },
+      {
+        name: "PostgreSQL",
+        img: "/logos/postgre.svg",
+      },
+      {
+        name: "MUI",
+        img: "/logos/mui.svg",
+      },
+      {
+        name: "Cloudinary",
+        img: "",
+      },
     ],
     image: "/portadas/deliveloz.png",
   },
@@ -152,7 +369,24 @@ export const projects: Project[] = [
       "Landing Page diseñada y desarrollada como proyecto final para el curso Maquetación de sitios web dinámicos con Javascript y jQuery desde cero.",
     repository: "",
     deploy: "https://curso-aleman.surge.sh/",
-    techs: ["Javascript", "Jquery", "HTML", "CSS"],
+    techs: [
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "Jquery",
+        img: "/logos/jquery.png",
+      },
+      {
+        name: "HTML",
+        img: "/logos/html.svg",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+    ],
     image: "/portadas/academia.png",
   },
   {
@@ -162,7 +396,28 @@ export const projects: Project[] = [
       "Aplicación web de juego de Ta Te Ti desarrollada para poner en práctica mis conocimientos en Javascript.",
     repository: "https://github.com/FedeCodeLab/ta-te-ti",
     deploy: "https://ta-te-ti-hazel.vercel.app/",
-    techs: ["React", "Typescript", "Javascript", "CSS", "Vercel"],
+    techs: [
+      {
+        name: "React",
+        img: "/logos/react.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "Vercel",
+        img: "/logos/vercel.svg",
+      },
+    ],
     image: "/portadas/tateti.png",
   },
   {
@@ -172,7 +427,28 @@ export const projects: Project[] = [
       "Aplicación web de preguntas y respuestas desarrollada para poner en práctica mis conocimientos en Javascript.",
     repository: "https://github.com/FedeCodeLab/game-of-thrones-quiz",
     deploy: "https://game-of-thrones-quiz.vercel.app/",
-    techs: ["React", "Typescript", "Javascript", "CSS", "Vercel"],
+    techs: [
+      {
+        name: "React",
+        img: "/logos/react.svg",
+      },
+      {
+        name: "Typescript",
+        img: "/logos/typescript.png",
+      },
+      {
+        name: "Javascript",
+        img: "/logos/javascript.png",
+      },
+      {
+        name: "CSS",
+        img: "/logos/css.svg",
+      },
+      {
+        name: "Vercel",
+        img: "/logos/vercel.svg",
+      },
+    ],
     image: "/portadas/gameofthrones.png",
   },
 ];

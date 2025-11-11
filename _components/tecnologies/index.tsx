@@ -24,10 +24,10 @@ export default function Tecnologies() {
         </h2>
         <div className="flex flex-col gap-6">
           <UseVelocity baseVelocity={2}>
-            <ListLogos start={0} end={8} animation="left" />
+            <ListLogos start={0} end={11} animation="left" />
           </UseVelocity>
           <UseVelocity baseVelocity={-2}>
-            <ListLogos start={8} end={18} animation="right" />
+            <ListLogos start={11} end={22} animation="right" />
           </UseVelocity>
         </div>
       </div>
