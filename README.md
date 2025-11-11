@@ -98,12 +98,12 @@ npm run lint     # Ejecuta el linter para encontrar problemas
 
 ```
 NewPortfolio/
+├── _components/         # Componentes reutilizables
 ├── public/              # Archivos estáticos (imágenes, fonts, etc.)
-├── src/
-│   ├── app/            # App Router de Next.js
-│   ├── components/     # Componentes reutilizables
-│   ├── lib/           # Utilidades y helpers
+├── app/
+│   ├── layout/        # Layout principal
 │   └── styles/        # Estilos globales
+├── lib/                 # Utilidades y helpers
 ├── .gitignore
 ├── next.config.ts      # Configuración de Next.js
 ├── package.json        # Dependencias y scripts
