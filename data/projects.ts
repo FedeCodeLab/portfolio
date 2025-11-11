@@ -402,6 +402,10 @@ export const projects: Project[] = [
         name: "CSS",
         img: "/logos/css.svg",
       },
+      {
+        name: "Surge",
+        img: "/logos/surge.png",
+      },
     ],
     image: "/portadas/academia.png",
   },
