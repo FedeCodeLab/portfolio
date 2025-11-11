@@ -7,7 +7,7 @@ export const ListLogos = ({ start, end, animation }: ListLogosProps) => {
 
   return (
     <div
-      className={`flex justify-center gap-[15px] pr-[15px] md:pr-[30px] md:gap-space-m animation-${animation}`}
+      className={`flex justify-center gap-[15px] md:gap-space-m animation-${animation}`}
     >
       {logoss.map((logo) => (
         <Logo key={logo.id} image={logo.image} name={logo.name} />
