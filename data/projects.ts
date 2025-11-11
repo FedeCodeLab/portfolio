@@ -47,7 +47,7 @@ export const projects: Project[] = [
         img: "/logos/i18n.png",
       },
       {
-        name: "Ssr",
+        name: "Server-side rendering (SSR)",
         img: "",
       },
     ],
@@ -71,10 +71,6 @@ export const projects: Project[] = [
         img: "/logos/typescript.png",
       },
       {
-        name: "Ssr",
-        img: "",
-      },
-      {
         name: "Tailwind",
         img: "/logos/tailwind.svg",
       },
@@ -91,20 +87,24 @@ export const projects: Project[] = [
         img: "/logos/firebase.svg",
       },
       {
-        name: "Octopus",
-        img: "",
-      },
-      {
         name: "Voiceflow",
         img: "/logos/voiceflow.png",
       },
       {
-        name: "FTP",
+        name: "Zustand",
+        img: "/logos/zustand.svg",
+      },
+      {
+        name: "Server-side rendering (SSR)",
         img: "",
       },
       {
-        name: "Zustand",
-        img: "/logos/zustand.svg",
+        name: "Octopus",
+        img: "",
+      },
+      {
+        name: "FTP",
+        img: "",
       },
     ],
     image: "/portadas/cux.png",
@@ -130,12 +130,12 @@ export const projects: Project[] = [
         img: "/logos/css.svg",
       },
       {
-        name: "LLM",
-        img: "",
-      },
-      {
         name: "Gemini",
         img: "/logos/gemini.png",
+      },
+      {
+        name: "LLM",
+        img: "",
       },
     ],
     image: "/portadas/chatbot.png",
@@ -157,10 +157,6 @@ export const projects: Project[] = [
         img: "/logos/typescript.png",
       },
       {
-        name: "Ssr",
-        img: "",
-      },
-      {
         name: "Tailwind",
         img: "/logos/tailwind.svg",
       },
@@ -175,6 +171,10 @@ export const projects: Project[] = [
       {
         name: "Zustand",
         img: "/logos/zustand.svg",
+      },
+      {
+        name: "Server-side rendering (SSR)",
+        img: "",
       },
     ],
     image: "/portadas/stranger.png",
