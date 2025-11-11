@@ -135,7 +135,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/Vercel2.png",
+        img: "/logos/vercel2.png",
       },
       {
         name: "LLM",
@@ -209,7 +209,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/Vercel2.png",
+        img: "/logos/vercel2.png",
       },
       {
         name: "API REST",
@@ -244,7 +244,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/Vercel2.png",
+        img: "/logos/vercel2.png",
       },
       {
         name: "API REST",
@@ -313,7 +313,7 @@ export const projects: Project[] = [
         img: "/logos/html.svg",
       },
       {
-        name: "HTML",
+        name: "Vercel",
         img: "/logos/vercel2.png",
       },
     ],
@@ -345,7 +345,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/Vercel2.png",
+        img: "/logos/vercel2.png",
       },
       {
         name: "Render",
@@ -431,7 +431,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/Vercel2.png",
+        img: "/logos/vercel2.png",
       },
     ],
     image: "/portadas/tateti.png",
@@ -462,7 +462,7 @@ export const projects: Project[] = [
       },
       {
         name: "Vercel",
-        img: "/logos/Vercel2.png",
+        img: "/logos/vercel2.png",
       },
     ],
     image: "/portadas/gameofthrones.png",
