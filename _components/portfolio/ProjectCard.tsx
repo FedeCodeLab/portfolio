@@ -99,7 +99,7 @@ export const ProjectCard = ({
                         alt={tech.name}
                         width={100}
                         height={100}
-                        className="inline-block size-[20px]"
+                        className="inline-block size-[20px] object-contain"
                       />
                       {tech.name}
                     </>
