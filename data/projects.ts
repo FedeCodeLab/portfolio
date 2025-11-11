@@ -373,7 +373,7 @@ export const projects: Project[] = [
       },
       {
         name: "Cloudinary",
-        img: "",
+        img: "/logos/cloudinary.webp",
       },
     ],
     image: "/portadas/deliveloz.png",
