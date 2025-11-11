@@ -31,28 +31,28 @@
   },
   {
     "id": "logo-7",
+    "name": "SaSS",
+    "image": "/logos/sass.svg"
+  },
+  {
+    "id": "logo-8",
     "name": "CSS",
     "image": "/logos/css.svg"
   },
   {
-    "id": "logo-8",
+    "id": "logo-9",
     "name": "HTML",
     "image": "/logos/html.svg"
   },
   {
-    "id": "logo-9",
+    "id": "logo-10",
     "name": "Redux",
     "image": "/logos/redux.svg"
   },
   {
-    "id": "logo-10",
+    "id": "logo-11",
     "name": "Zustand",
     "image": "/logos/zustand.svg"
-  },
-  {
-    "id": "logo-11",
-    "name": "SaSS",
-    "image": "/logos/sass.svg"
   },
 
   {
