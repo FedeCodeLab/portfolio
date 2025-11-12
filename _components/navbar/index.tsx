@@ -21,12 +21,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.3 }}
-      className="select-none will-change-transform"
-    >
+    <div className="select-none">
       <NavbarMobile />
       <MenuMobile />
       <div
@@ -36,12 +31,17 @@ export const Navbar = () => {
             : "border-b border-transparent shadow-none"
         }`}
       >
-        <header className="mx-auto w-[90%] flex justify-between items-center">
+        <motion.header
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="will-change-transform mx-auto w-[90%] flex justify-between items-center"
+        >
           <LeftNav />
           <CenterNav />
           <CTA />
-        </header>
+        </motion.header>
       </div>
-    </motion.div>
+    </div>
   );
 };
