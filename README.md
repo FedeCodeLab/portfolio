@@ -174,10 +174,6 @@ Los componentes están diseñados para ser reutilizables y fáciles de modificar
 - GitHub: [@FedeCodeLab](https://github.com/FedeCodeLab)
 - Portfolio: https://fedecodelab.vercel.app/
 
-## 📄 Licencia
-
-Este proyecto es de código abierto y está disponible bajo la licencia MIT.
-
 ---
 
 <div align="center">
