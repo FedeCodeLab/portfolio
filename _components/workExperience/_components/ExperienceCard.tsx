@@ -39,7 +39,7 @@ export const ExperienceCard = ({
           transition: { duration: 0.6, ease: "easeOut" },
         },
       }}
-      className="min-w-full flex-1 relative overflow-hidden rounded-lg p-6 md:p-12 bg-white shadow-lg dark:shadow-none dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1e293b] dark:via-[#0f172a] dark:to-transparent dark:hover:from-transparent dark:hover:to-[#1e293b] transition-colors duration-300"
+      className="will-change-transform min-w-full flex-1 relative overflow-hidden rounded-lg p-6 md:p-12 bg-white shadow-lg dark:shadow-none dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1e293b] dark:via-[#0f172a] dark:to-transparent dark:hover:from-transparent dark:hover:to-[#1e293b] transition-colors duration-300"
     >
       <div className="h-full flex flex-col gap-3 md:border-l-2 border-neutral-500 dakr:border-blue-600 md:pl-6 relative z-10">
         <div className="flex items-center gap-3">
