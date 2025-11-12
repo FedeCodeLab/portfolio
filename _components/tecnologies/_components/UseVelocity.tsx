@@ -44,9 +44,9 @@ export default function UseVelocity({
   });
 
   return (
-    <div className="whitespace-nowrap flex flex-nowrap relative z-5 overflow-visible">
+    <div className="will-change-transform whitespace-nowrap flex flex-nowrap relative z-5 overflow-visible">
       <motion.div
-        className="relative z-[15] text-[190px] flex whitespace-nowrap flex-nowrap text-default font-normal overflow-visible"
+        className="will-change-transform not-odd:relative z-[15] text-[190px] flex whitespace-nowrap flex-nowrap text-default font-normal overflow-visible"
         style={{ x }}
       >
         {Array.from({ length: 3 }).map((_, index) => (

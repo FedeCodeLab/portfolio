@@ -43,7 +43,7 @@ export const ProjectCard = ({
           transition: { duration: 0.6, ease: "easeOut" },
         },
       }}
-      className="relative overflow-hidden rounded-lg flex flex-col"
+      className="will-change-transform relative overflow-hidden rounded-lg flex flex-col"
     >
       <div className="relative z-10 flex flex-col lg:flex-row">
         <div className="relative block lg:hidden w-full h-[250px]">

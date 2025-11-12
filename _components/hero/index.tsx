@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center justify-center md:justify-start">
+    <section className="will-change-transform w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center justify-center md:justify-start">
       <div className="md:max-w-[600px] flex flex-col gap-6">
         <div className="flex flex-col gap-3 md:gap-0 text-center md:text-start">
           <motion.p
