@@ -25,10 +25,10 @@ export const Navbar = () => {
       <NavbarMobile />
       <MenuMobile />
       <div
-        className={`hidden fixed z-30 top-0 h-[70px] lg:flex transition-all duration-500 w-full ${
+        className={`hidden fixed z-30 top-0 h-[70px] lg:flex transition-all duration-500 w-full bg-[#FFFFFF] dark:bg-transparent ${
           isScrolled
-            ? "backdrop-blur-md bg-[#FFFFFF] dark:bg-neutral-950/30 shadow-lg dark:shadow-none dark:border-b dark:border-blue-950"
-            : "border-b border-transparent shadow-none"
+            ? "dark:backdrop-blur-md dark:bg-neutral-950/30 border-b border-[#E8E8E8] dark:border-blue-950"
+            : "border-b border-[#E8E8E8] dark:border-0 dark:border-transparent"
         }`}
       >
         <motion.header
