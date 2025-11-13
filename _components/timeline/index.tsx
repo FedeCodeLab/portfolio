@@ -22,7 +22,7 @@ export const Timeline = () => {
       className="w-[90%] max-w-[1250px] mx-auto min-h-screen pt-20"
     >
       <div className="max-w-5xl mx-auto">
-        <h2 className="heading-3 md:!text-[3rem] !font-semibold text-neutral-800 dark:text-neutral-200">
+        <h2 className="heading-3 text-center md:!text-[4xl] !font-bold  mb-4 text-neutral-800 dark:text-neutral-200">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
             Formación
           </span>{" "}
