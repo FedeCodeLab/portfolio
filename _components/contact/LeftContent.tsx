@@ -3,7 +3,7 @@ import { CTA } from "../ui/CTA";
 
 export const LeftContent = () => {
   return (
-    <div className="flex-1 p-[20px] gap-12 md:p-10 flex flex-col bg-[#F2EAE2] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1a2435] dark:to-[#0f172a]  md:rounded-l-[25px] md:rounded-tr-none md:rounded-bl-[25px]">
+    <div className="flex-1 p-[20px] gap-12 md:p-10 flex flex-col bg-white dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1a2435] dark:to-[#0f172a]  md:rounded-l-[25px] md:rounded-tr-none md:rounded-bl-[25px]">
       <div className="flex flex-col gap-3">
         <h3 className="heading-5 !font-[600] text-[#0a0a3a] dark:text-white">
           ¡Trabajemos juntos!
@@ -16,7 +16,7 @@ export const LeftContent = () => {
       </div>
 
       <div className="flex flex-col gap-3">
-        <div className="flex items-center gap-4 bg-[#3098F3] dark:bg-[#0f172a] px-4 py-6 rounded-[12px]">
+        <div className="flex items-center gap-4 bg-blue-400 dark:bg-[#0f172a] px-4 py-6 rounded-[12px]">
           <div className="text-[#3098F3] dark:text-white bg-white dark:bg-blue-800 p-2 rounded-[6px]">
             <Email size={30} />
           </div>
@@ -28,7 +28,7 @@ export const LeftContent = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 bg-[#3098F3] dark:bg-[#0f172a] px-4 py-6 rounded-[12px]">
+        <div className="flex items-center gap-4 bg-blue-400 dark:bg-[#0f172a] px-4 py-6 rounded-[12px]">
           <div className="text-[#3098F3] dark:text-white bg-white dark:bg-blue-800 p-2 rounded-[6px]">
             <Pin size={30} />
           </div>
