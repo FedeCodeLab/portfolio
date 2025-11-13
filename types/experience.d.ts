@@ -5,4 +5,8 @@ export interface Experience {
   content: string;
   img: string;
   name: string;
+  techs: {
+    name: string;
+    img: string;
+  }[];
 }

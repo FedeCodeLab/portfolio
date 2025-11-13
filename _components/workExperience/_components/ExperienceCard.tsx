@@ -13,6 +13,7 @@ export const ExperienceCard = ({
   type,
   img,
   name,
+  techs,
 }: Experience) => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
@@ -39,9 +40,9 @@ export const ExperienceCard = ({
           transition: { duration: 0.6, ease: "easeOut" },
         },
       }}
-      className="will-change-transform min-w-full flex-1 relative overflow-hidden rounded-lg p-6 md:p-12 bg-white shadow-lg dark:shadow-none dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1e293b] dark:via-[#0f172a] dark:to-transparent dark:hover:from-transparent dark:hover:to-[#1e293b] transition-colors duration-300"
+      className="flex-1 relative overflow-hidden rounded-lg p-8 bg-slate-800 border border-slate-700 hover:border-slate-600 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
     >
-      <div className="h-full flex flex-col gap-3 md:border-l-2 border-neutral-500 dakr:border-blue-600 md:pl-6 relative z-10">
+      <div className="h-full flex flex-col gap-3 relative z-10">
         <div className="flex items-center gap-3">
           {img?.trim() !== "" && (
             <Image
@@ -53,20 +54,41 @@ export const ExperienceCard = ({
             />
           )}
           <div>
-            <p className="text-lg font-semibold text-neutral-900 dark:text-neutral-200">
-              {title}
-            </p>
-            <p className="text-sm font-semibold text-[#4b5563] dark:text-gray-400">
-              {type}
-            </p>
+            <p className="text-lg font-semibold text-white">{title}</p>
+            <p className="text-sm font-semibold text-blue-400">{type}</p>
           </div>
         </div>
+
         <div className="flex flex-col gap-2 max-w-[900px]">
-          <p className="text-base font-medium text-neutral-900 dark:text-gray-200">
-            {company}
-          </p>
-          <p className="text-[#4b5563] dark:text-gray-400">{content}</p>
+          <p className="text-base font-medium text-white">{company}</p>
+          <p className="text-slate-400 text-[15px] font-medium">{content}</p>
         </div>
+
+        {techs && techs.length > 0 && (
+          <div className="flex flex-wrap gap-2 mt-4 max-w-[900px] select-none">
+            {techs.map((tech, index) => (
+              <span
+                key={index}
+                className="bg-blue-100 text-blue-800 dark:bg-[#151f30] dark:text-white text-xs px-4 py-[6px] rounded-full font-semibold flex items-center gap-2"
+              >
+                {tech.img && tech.img !== "" ? (
+                  <>
+                    <Image
+                      src={tech.img}
+                      alt={tech.name}
+                      width={20}
+                      height={20}
+                      className="inline-block size-[20px]"
+                    />
+                    <p>{tech.name}</p>
+                  </>
+                ) : (
+                  tech.name
+                )}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </motion.article>
   );
