@@ -3,7 +3,7 @@ import { CTA } from "../ui/CTA";
 
 export const LeftContent = () => {
   return (
-    <div className="flex-1 p-[20px] gap-12 md:p-10 flex flex-col bg-[#F2EAE2] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1e293b] dark:to-[#0f172a]  md:rounded-l-[25px] md:rounded-tr-none md:rounded-bl-[25px]">
+    <div className="flex-1 p-[20px] gap-12 md:p-10 flex flex-col bg-[#F2EAE2] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#1a2435] dark:to-[#0f172a]  md:rounded-l-[25px] md:rounded-tr-none md:rounded-bl-[25px]">
       <div className="flex flex-col gap-3">
         <h3 className="heading-5 !font-[600] text-[#0a0a3a] dark:text-white">
           ¡Trabajemos juntos!

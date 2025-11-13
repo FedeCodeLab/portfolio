@@ -1,259 +1,102 @@
 "use client";
 
-import { useRefsStore } from "@/store/useRefsStore";
-import { useRef, useEffect } from "react";
-import { Content } from "./_components/Content";
-import { School } from "../ui/icons";
+import { useCertificateStore } from "@/store/useCertificateStore";
+import { events } from "@/data/timelineData";
+import { Button } from "../ui/Button";
 
 export const Timeline = () => {
-  const timelineRef = useRef<HTMLDivElement>(null);
-  const setRefs = useRefsStore((state) => state.setRefs);
+  const { openCertificate } = useCertificateStore();
 
-  useEffect(() => {
-    setRefs({ timelineRef });
-  }, [setRefs]);
   return (
-    <section
-      ref={timelineRef}
-      className="w-[90%] max-w-[1250px] mx-auto pt-20"
-      id="education"
-    >
-      <div>
-        <h2 className="md:!text-[3rem] !font-semibold heading-3 mb-16 text-center text-neutral-800 dark:text-neutral-200">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r  from-blue-600 dark:from-blue-700 via-70% via-pink-600 to-pink-700">
-            Educación
-          </span>{" "}
-          y Certificaciones
-        </h2>
+    <div className="w-[90%] max-w-[1250px] mx-auto min-h-screen pt-20">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-4xl font-bold text-white text-center mb-4">
+          Formación Académica
+        </h1>
+        <p className="text-slate-400 text-center mb-12">
+          Mi trayectoria educativa y certificaciones profesionales
+        </p>
 
-        <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
-          <li>
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color="#ffffff" />
+        <div className="relative pb-6">
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-slate-700 md:left-1/2 md:-translate-x-px" />
+
+          <div className="space-y-8">
+            {events.map((event, index) => (
+              <div key={event.id} className="relative">
+                <div className="absolute left-4 top-6 w-4 h-4 -translate-x-2 md:left-1/2 md:-translate-x-2 z-10">
+                  <div className="w-4 h-4 rounded-full bg-blue-500 ring-4 ring-slate-900" />
+                </div>
+
+                <div className="pl-12 md:pl-0">
+                  <div
+                    className={`md:grid md:grid-cols-2 md:gap-8 md:items-start ${
+                      index % 2 === 0 ? "" : "md:grid-flow-dense"
+                    }`}
+                  >
+                    <div
+                      className={`hidden md:flex md:items-start ${
+                        index % 2 === 0
+                          ? "md:justify-end md:pr-12"
+                          : "md:col-start-2 md:pl-12"
+                      }`}
+                    >
+                      <span className="text-lg font-bold text-slate-500 pt-6">
+                        {event.year}
+                      </span>
+                    </div>
+
+                    <div
+                      className={
+                        index % 2 === 0 ? "md:pl-12" : "md:pr-12 md:col-start-1"
+                      }
+                    >
+                      <span className="inline-block md:hidden text-lg font-bold text-slate-500 mb-2">
+                        {event.year}
+                      </span>
+
+                      <div className="bg-slate-800 rounded-lg p-6 shadow-xl border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <h3 className="text-xl font-bold text-white mb-2">
+                          {event.title}
+                        </h3>
+                        <p className="text-blue-400 text-sm font-medium mb-3">
+                          {event.institution}
+                        </p>
+                        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                          {event.description}
+                        </p>
+                        {event.certificate && (
+                          <Button
+                            size={"small"}
+                            onClick={() =>
+                              openCertificate(event.certificate, event.title)
+                            }
+                          >
+                            Ver Certificado
+                          </Button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2025"
-              title="Curso de Iniciación al Desarrollo con IA"
-              institution="BIG School"
-              description="En este curso aprendí a utilizar NotebookLM para alimentar modelos de inteligencia artificial. También profundicé en la ingeniería de prompts, la integración avanzada de herramientas, la implementación de buenas prácticas de seguridad y auditoría, además de explorar el uso de n8n para automatizar flujos de trabajo de manera eficiente."
-              url="https://drive.google.com/file/d/1-dCdNxa6NywMxT4WctUqamVKOwxhP6Bi/view?usp=sharing"
-            />
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
+            ))}
+          </div>
+        </div>
 
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2024"
-              title="Typescript Esencial"
-              institution="Linkedin Learning - Remoto"
-              description="En este curso, aprendí los fundamentos y conceptos avanzados de TypeScript. Abarcamos desde la configuración de herramientas y la integración de TypeScript en aplicaciones, hasta el uso de tipos avanzados, clases, genéricos y utilidades. También adquirí habilidades en la configuración del compilador, ESLint, y la implementación de interfaces y clases abstractas. Este conocimiento me permite escribir código más seguro, legible y fácil de mantener."
-              url="https://www.linkedin.com/learning/certificates/648b258b58e0ebe7d2a99b69585b03cf4eeed8e81588f9437e29416be50870ed?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BXGfzqLSWTLS5giqmdSedUA%3D%3D"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2024"
-              title="Figma Design"
-              institution="Desafío Latam - Remoto"
-              description="En este curso, aprendí a utilizar Figma para la creación y diseño de interfaces de usuario. Adquirí habilidades en la construcción de prototipos interactivos, la colaboración en tiempo real y la aplicación de principios de diseño visual para desarrollar interfaces atractivas y funcionales."
-              url="https://cursos.desafiolatam.com/certificates/g8fvpwkd2f"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2024"
-              title="CSS Avanzado"
-              institution="Desafío Latam - Remoto"
-              description="En este curso, reforcé conceptos previamente adquiridos como el uso de Flexbox, Grid, transiciones y animaciones. Aprendí a utilizar estas herramientas de CSS para crear diseños web más flexibles y dinámicos, mejorando la estética y la funcionalidad de las interfaces de usuario."
-              url="https://cursos.desafiolatam.com/certificates/pbywfvioj4"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2023 - 2024"
-              title="Fullstack Developer Bootcamp, Henry"
-              institution="Soy Henry - Remoto"
-              description="En el bootcamp Soy Henry, tuve la oportunidad de aprender y trabajar con tecnologías modernas como Redux, React, Express, Sequelize y PostgreSQL. Durante el curso, desarrollé habilidades en la construcción de aplicaciones web completas, tanto en el frontend como en el backend, adquiriendo experiencia en la creación de interfaces de usuario interactivas, gestión del estado de la aplicación, desarrollo de APIs RESTful y manejo de bases de datos relacionales."
-              url="https://drive.google.com/file/d/1hDSqnfZ_llRaZjaA30NxB7oxsPCbGsRs/view"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2022"
-              title="Alemán A2"
-              institution="Universidad Nacional de La Rioja"
-              description="Durante el curso de Alemán A2, adquirí habilidades fundamentales en la lengua alemana, incluyendo gramática básica, vocabulario esencial, y habilidades conversacionales. Este curso me permitió mejorar mi capacidad para comunicarme en alemán en situaciones cotidianas."
-              url="https://drive.google.com/file/d/1JHJeWuqUm1NzCtJ9DaGoJfEXXMC7MfSW/view?usp=sharing"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2022"
-              title="Maquetación de sitios web dinámicos con Javascript y jQuery
-                desde cero"
-              institution="Crehana - Remoto"
-              description="En este curso, aprendí a maquetar sitios web utilizando JavaScript y jQuery para crear diseños responsivos. Adquirí habilidades en la implementación de interfaces de usuario interactivas y dinámicas, así como en la optimización de sitios web para diversos dispositivos y tamaños de pantalla."
-              url="https://s3.amazonaws.com/public-lessons.crehana.com/images/certificate/participation-pdf/9f26c0ad/3486e01c.pdf?source_page=User%20Dashboard&source_detail=Diploma%20Card"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2022"
-              title="PHP 8 y MYSQL: El Curso Completo, Práctico y Desde Cero"
-              institution="Udemy - Remoto"
-              description="Durante este curso, aprendí sobre bases de datos con MySQL y PhpMyAdmin. Adquirí conocimientos fundamentales sobre la creación, gestión y optimización de bases de datos, así como habilidades prácticas en la implementación y administración de bases de datos utilizando MySQL y la interfaz de PhpMyAdmin."
-              url="https://udemy-certificate.s3.amazonaws.com/pdf/UC-9e30cf9d-c055-4b00-8200-e562a44636cf.pdf"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-
-          <li>
-            <hr className="bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2021"
-              title="Alemán A1"
-              institution="Universidad Nacional de La Rioja"
-              description="Durante el curso de Alemán A1, adquirí conocimientos básicos de la lengua alemana, incluyendo la gramática elemental, el vocabulario inicial y las habilidades básicas de comprensión y expresión oral. Este curso me proporcionó una base sólida para el aprendizaje continuo del idioma."
-              url="https://drive.google.com/file/d/1YNxNgE2wgyNYk2f2KK35EcaLhxQP_OjJ/view?usp=sharing"
-            />
-
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-          </li>
-
-          <li>
-            <hr className="bg-[#3098F3] dark:bg-blue-800" />
-            <div className="timeline-middle">
-              <div className="border-2 border-blue-600 dark:border-blue-800 bg-gradient-to-tr from-[#3098F3] to-[#2480d1] dark:from-blue-900 dark:to-blue-500 rounded-full p-2">
-                <School size={24} color={"#ffffff"} />
-              </div>
-              <path
-                fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                clipRule="evenodd"
-              />
-            </div>
-            <Content
-              year="2018 - 2021"
-              title="Diseño y Producción Multimedia"
-              institution="Universidad Nacional de La Rioja (Sin terminar)"
-              description="Estudié durante varios años la carrera de diseño y producción multimedia en la UNLAR. Durante este tiempo, adquirí una amplia gama de conocimientos, que incluyen la teoría del diseño, así como habilidades prácticas en HTML, CSS, base de datos y PHP. Este programa de estudios me proporcionó una comprensión sólida de los fundamentos del diseño multimedia y me permitió desarrollar habilidades técnicas en diversas áreas relacionadas con la producción de contenido digital."
-              url="Ver Certificado"
-              active={false}
-            />
-          </li>
-        </ul>
+        <div className="text-start md:text-center">
+          <div className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 rounded-full border border-slate-700">
+            <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+            <span className="text-slate-300 text-sm font-medium flex items-center gap-1">
+              En constante aprendizaje
+              <span className="flex items-end gap-[2px] ml-1">
+                <span className="dot w-1.5 h-1.5 bg-slate-300 rounded-full inline-block animate-bounce1"></span>
+                <span className="dot w-1.5 h-1.5 bg-slate-300 rounded-full inline-block animate-bounce2"></span>
+                <span className="dot w-1.5 h-1.5 bg-slate-300 rounded-full inline-block animate-bounce3"></span>
+              </span>
+            </span>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };

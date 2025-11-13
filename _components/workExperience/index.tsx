@@ -34,6 +34,7 @@ export const WorkExperience = () => {
             content={exp.content}
             img={exp.img}
             name={exp.name}
+            techs={exp.techs}
           />
         ))}
       </div>
