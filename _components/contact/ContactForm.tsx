@@ -48,17 +48,20 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row w-full rounded-[25px]">
+    <div className="flex flex-col md:flex-row w-full rounded-[25px]  border border-[#E8E8E8] dark:border-transparent shadow-xl">
       <LeftContent />
 
-      <div className="bg-[#f3e3d4] dark:bg-[#0f172a] px-[20px] pt-[20px] pb-20 md:p-10 flex-1">
+      <div className="bg-blue-400 dark:bg-[#0f172a] px-[20px] pt-[20px] pb-20 md:p-10 flex-1">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
-          <h3 className="heading-5 !font-[600] text-[#0a0a3a] dark:text-blue-500">
+          <h3 className="heading-5 !font-[600] text-white dark:text-blue-500">
             Enviame un mensaje
           </h3>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="text-[.9rem] font-semibold">
+            <label
+              htmlFor="name"
+              className="text-[.9rem] font-semibold text-white"
+            >
               Nombre *
             </label>
             <input
@@ -75,7 +78,10 @@ export default function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[.9rem] font-semibold" htmlFor="subject">
+            <label
+              className="text-white text-[.9rem] font-semibold"
+              htmlFor="subject"
+            >
               Asunto *
             </label>
             <input
@@ -92,7 +98,10 @@ export default function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[.9rem] font-semibold" htmlFor="email">
+            <label
+              className="text-white text-[.9rem] font-semibold"
+              htmlFor="email"
+            >
               Email *
             </label>
             <input
@@ -109,7 +118,10 @@ export default function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-[.9rem] font-semibold" htmlFor="message">
+            <label
+              className="text-white text-[.9rem] font-semibold"
+              htmlFor="message"
+            >
               Mensaje *
             </label>
             <textarea
@@ -128,7 +140,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className="rounded-full bg-[#3098F3] hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 text-white py-3 px-4 cursor-pointer"
+            className="rounded-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 text-white py-3 px-4 cursor-pointer"
           >
             {loading ? "Enviando..." : "Enviar mensaje"}
           </button>
