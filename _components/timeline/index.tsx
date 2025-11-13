@@ -1,14 +1,26 @@
 "use client";
 
 import { useCertificateStore } from "@/store/useCertificateStore";
+import { useRefsStore } from "@/store/useRefsStore";
 import { events } from "@/data/timelineData";
+import { useRef, useEffect } from "react";
 import { Button } from "../ui/Button";
 
 export const Timeline = () => {
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const setRefs = useRefsStore((state) => state.setRefs);
+
+  useEffect(() => {
+    setRefs({ timelineRef });
+  }, [setRefs]);
+
   const { openCertificate } = useCertificateStore();
 
   return (
-    <div className="w-[90%] max-w-[1250px] mx-auto min-h-screen pt-20">
+    <div
+      ref={timelineRef}
+      className="w-[90%] max-w-[1250px] mx-auto min-h-screen pt-20"
+    >
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-white text-center mb-4">
           Formación Académica

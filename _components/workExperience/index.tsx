@@ -2,8 +2,8 @@
 
 import { ExperienceCard } from "./_components/ExperienceCard";
 import { useRefsStore } from "@/store/useRefsStore";
-import { useEffect, useRef } from "react";
 import { experiences } from "@/data/experiences";
+import { useEffect, useRef } from "react";
 
 export const WorkExperience = () => {
   const experienceRef = useRef<HTMLDivElement>(null);
