@@ -40,7 +40,7 @@ export const ExperienceCard = ({
           transition: { duration: 0.6, ease: "easeOut" },
         },
       }}
-      className="flex-1 relative overflow-hidden rounded-lg p-8 bg-slate-800 border border-slate-700 hover:border-slate-600 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
+      className="flex-1 relative overflow-hidden rounded-lg p-8 bg-white dark:bg-slate-800 border border-[#EDEBE8] dark:border-slate-700 shadow-xl"
     >
       <div className="h-full flex flex-col gap-3 relative z-10">
         <div className="flex items-center gap-3">
@@ -54,14 +54,20 @@ export const ExperienceCard = ({
             />
           )}
           <div>
-            <p className="text-lg font-semibold text-white">{title}</p>
-            <p className="text-sm font-semibold text-blue-400">{type}</p>
+            <p className="text-lg font-semibold text-neutral-900 dark:text-white">
+              {title}
+            </p>
+            <p className="text-sm font-semibold text-blue-600">{type}</p>
           </div>
         </div>
 
         <div className="flex flex-col gap-2 max-w-[900px]">
-          <p className="text-base font-medium text-white">{company}</p>
-          <p className="text-slate-400 text-[15px] font-medium">{content}</p>
+          <p className="text-[15px] font-semibold text-[#666666] dark:text-white">
+            {company}
+          </p>
+          <p className="text-[#666666] dark:text-slate-400 text-[15px] font-medium">
+            {content}
+          </p>
         </div>
 
         {techs && techs.length > 0 && (
@@ -69,7 +75,7 @@ export const ExperienceCard = ({
             {techs.map((tech, index) => (
               <span
                 key={index}
-                className="bg-blue-100 text-blue-800 dark:bg-[#151f30] dark:text-white text-xs px-4 py-[6px] rounded-full font-semibold flex items-center gap-2"
+                className="bg-neutral-100 text-neutral-800 dark:bg-[#151f30] dark:text-white text-xs px-4 py-[6px] rounded-full font-semibold flex items-center gap-2 border border-[#E8E8E8] dark:dark:border-slate-700"
               >
                 {tech.img && tech.img !== "" ? (
                   <>

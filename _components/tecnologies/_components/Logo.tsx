@@ -13,7 +13,7 @@ export const Logo = ({ name, image }: BrandProps) => {
           className="object-contain size-[60px] md:size-[80px]"
         />
       </div>
-      <span className="text-xs font-semibold text-neutral-800 dark:text-neutral-200 bg-blue-200 dark:bg-[#1E293B] px-2 py-1 rounded-full">
+      <span className="text-xs font-semibold text-neutral-800 dark:text-neutral-200 bg-white dark:bg-[#1E293B] px-2 py-1 rounded-full border border-[#E8E8E8] dark:dark:border-slate-700">
         {name}
       </span>
     </div>
