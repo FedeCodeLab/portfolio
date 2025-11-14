@@ -19,7 +19,7 @@ export default function RootLayout({
         className={`${pixelify.variable} ${inter.variable} antialiased relative min-h-screen`}
       >
         {/* Fondo fijo */}
-        <div className="fixed inset-0 h-screen w-screen bg-[#F4F2EE] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#0f1220] from-[30%] dark:via-slate-800 dark:to-[#0f1220] -z-10" />
+        <div className="fixed inset-0 h-screen w-screen bg-[#F4F2EE] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#0f1220] from-[10%] dark:via-neutral-950 dark:to-[#2c142c] -z-10" />
 
         {/* Contenido */}
         <GoogleReCaptcha>
