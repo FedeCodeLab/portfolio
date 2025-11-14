@@ -8,29 +8,21 @@ export const Hero = () => {
   return (
     <section className="will-change-transform w-[90%] min-h-screen lg:max-w-[1250px] mx-auto flex items-center justify-center md:justify-start">
       <div className="md:max-w-[600px] flex flex-col gap-6">
-        <div className="flex flex-col gap-3 md:gap-0 text-center md:text-start">
+        <div className="flex flex-col text-center md:text-start">
           <motion.div
-            className="hidden md:block min-h-[72px] font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-600 via-pink-700 dark:via-pink-600 to-pink-700 text-[48px]"
+            className="md:min-h-[72px] font-inter font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-600 via-pink-700 dark:via-pink-600 to-pink-700 text-[2.2rem] md:text-[48px]"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             Hola, soy Federico
-          </motion.div>
-          <motion.div
-            className="block md:hidden  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 dark:from-blue-400 via-pink-700"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            Federico Guzmán
           </motion.div>
 
           <motion.h3
             className="text-lg text-neutral-900 dark:text-white font-inter font-bold "
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
             <TypeAnimation
               cursor={true}
@@ -57,7 +49,7 @@ export const Hero = () => {
             className="text-lg text-gray-700 dark:text-gray-400 text-center md:text-start font-medium"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
           >
             Mi expertise en Frontend consiste en crear interfaces web accesibles
             y de alto rendimiento. Utilizo React y Next.js para desarrollar
@@ -69,7 +61,7 @@ export const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 2.1 }}
+            transition={{ duration: 0.5, delay: 1 }}
             className="w-full md:auto"
           >
             <CTA />
