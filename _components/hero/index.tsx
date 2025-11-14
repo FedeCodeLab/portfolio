@@ -19,7 +19,7 @@ export const Hero = () => {
           </motion.div>
 
           <motion.h3
-            className="text-lg text-neutral-900 dark:text-white font-inter font-bold "
+            className="text-neutral-900 dark:text-white font-inter font-bold"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -37,8 +37,8 @@ export const Hero = () => {
                 3000,
                 "",
               ]}
-              wrapper="h2"
-              className="!text-[1.8rem] leading-[36px]"
+              wrapper="h3"
+              className="!text-[1.4rem] md:!text-[1.8rem] leading-[36px]"
               repeat={Infinity}
             />
           </motion.h3>
