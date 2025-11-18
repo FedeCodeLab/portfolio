@@ -28,7 +28,7 @@ export default function Tecnologies() {
             <ListLogos start={0} end={11} animation="left" />
           </UseVelocity>
           <UseVelocity baseVelocity={-1.5}>
-            <ListLogos start={11} end={22} animation="right" />
+            <ListLogos start={11} end={23} animation="right" />
           </UseVelocity>
         </div>
       </div>

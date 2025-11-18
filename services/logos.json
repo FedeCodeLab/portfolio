@@ -62,46 +62,51 @@
   },
   {
     "id": "logo-13",
+    "name": "jQuery",
+    "image": "/logos/jquery.png"
+  },
+  {
+    "id": "logo-14",
     "name": "Node.js",
     "image": "/logos/node.svg"
   },
   {
-    "id": "logo-14",
+    "id": "logo-15",
     "name": "PostgreSQL",
     "image": "/logos/postgre.svg"
   },
   {
-    "id": "logo-15",
+    "id": "logo-16",
     "name": "Sequelize",
     "image": "/logos/sequelize.png"
   },
   {
-    "id": "logo-16",
+    "id": "logo-17",
     "name": "Express.js",
     "image": "/logos/express.svg"
   },
   {
-    "id": "logo-17",
+    "id": "logo-18",
     "name": "Figma",
     "image": "/logos/figma.svg"
   },
   {
-    "id": "logo-18",
+    "id": "logo-19",
     "name": "MUI",
     "image": "/logos/mui.svg"
   },
   {
-    "id": "logo-19",
+    "id": "logo-20",
     "name": "Motion",
     "image": "/logos/motion.svg"
   },
   {
-    "id": "logo-20",
+    "id": "logo-21",
     "name": "Firebase",
     "image": "/logos/firebase.svg"
   },
   {
-    "id": "logo-21",
+    "id": "logo-22",
     "name": "Vercel",
     "image": "/logos/vercel2.png"
   }
