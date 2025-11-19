@@ -18,7 +18,7 @@ export const Hero = () => {
             Hola, soy Federico
           </motion.div>
 
-          <motion.h3
+          <motion.div
             className="text-neutral-900 dark:text-white font-inter font-bold"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export const Hero = () => {
               className="!text-[1.4rem] md:!text-[1.8rem] leading-[36px]"
               repeat={Infinity}
             />
-          </motion.h3>
+          </motion.div>
         </div>
 
         <div className="flex flex-col gap-6">

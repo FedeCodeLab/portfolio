@@ -52,6 +52,7 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/bebot.PNG",
+    images: ["/portadas/bebot/bebot.PNG", "/portadas/bebot/training.mp4", "/portadas/bebot/blog.png", "/portadas/bebot/people.mp4", "/portadas/bebot/cards.png", "/portadas/bebot/contact.png", "/portadas/bebot/tab.png"]
   },
   {
     title: "CUX Academy",
@@ -108,6 +109,8 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/cux.png",
+    images: ["/portadas/cux/hero.png", "/portadas/cux/shapes.mp4", "/portadas/cux/courses.png", "/portadas/cux/trainingVideo.mp4", "/portadas/cux/highlight.png", "/portadas/cux/training.png"]
+
   },
   {
     title: "Chatbot",
@@ -143,6 +146,7 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/chatbot.png",
+    images: ["/portadas/chatbot/chatbot.mp4", "/portadas/chatbot/chatbot.mp4", "/portadas/chatbot/empty.png", "/portadas/chatbot/ask.png"]
   },
   {
     title: "Stranger Things Countdown",
@@ -182,6 +186,8 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/stranger.png",
+    images: ["/portadas/strangerthings/stranger.png", "/portadas/strangerthings/highlight.png", "/portadas/strangerthings/videos.png", "/portadas/strangerthings/quiz.png", "/portadas/strangerthings/footer.png"]
+
   },
   {
     title: "Traductor",
@@ -217,6 +223,7 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/traductor.png",
+    images: ["/portadas/traductor/chino.png", "/portadas/traductor/traductor.mp4", "/portadas/traductor/ingles.png", "/portadas/traductor/light.png", "/portadas/traductor/traductor.png"]
   },
   {
     title: "Github Users Finder",
@@ -252,6 +259,7 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/github.png",
+    images: ["/portadas/github/portada.png", "/portadas/github/search.png", "/portadas/github/profile.png", "/portadas/github/profile2.png", "/portadas/github/projects.png"]
   },
   {
     title: "Spotify Clone",
@@ -318,6 +326,7 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/expansiva.png",
+    images: ["/portadas/expansiva/hero.png", "/portadas/expansiva/video.mp4", "/portadas/expansiva/expansiva.png", "/portadas/expansiva/dates.png", "/portadas/expansiva/footer.png"]
   },
   {
     title: "Deliveloz",
