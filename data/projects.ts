@@ -146,7 +146,7 @@ export const projects: Project[] = [
       },
     ],
     image: "/portadas/chatbot.png",
-    images: ["/portadas/chatbot/chatbot.mp4", "/portadas/chatbot/chatbot.mp4", "/portadas/chatbot/empty.png", "/portadas/chatbot/ask.png"]
+    images: ["/portadas/chatbot/chatbot.png", "/portadas/chatbot/chatbot.mp4", "/portadas/chatbot/empty.png", "/portadas/chatbot/ask.png"]
   },
   {
     title: "Stranger Things Countdown",
