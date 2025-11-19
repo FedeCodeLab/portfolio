@@ -46,15 +46,6 @@ export const events = [
   },
   {
     id: 6,
-    year: "2023 - 2024",
-    title: "Fullstack Developer Bootcamp",
-    institution: "Soy Henry - Remoto",
-    description:
-      "En el bootcamp Soy Henry, tuve la oportunidad de aprender y trabajar con tecnologías modernas como Redux, React, Express, Sequelize y PostgreSQL. Durante el curso, desarrollé habilidades en la construcción de aplicaciones web completas, tanto en el frontend como en el backend, adquiriendo experiencia en la creación de interfaces de usuario interactivas, gestión del estado de la aplicación, desarrollo de APIs RESTful y manejo de bases de datos relacionales.",
-    certificate: "/certificates/henry-fullstack.pdf",
-  },
-  {
-    id: 7,
     year: "2024",
     title: "EF SET English Certificate 45/100 - B1 Intermediate",
     institution: "EF",
@@ -63,7 +54,7 @@ export const events = [
     certificate: "/certificates/EF-SET-certificate.pdf",
   },
   {
-    id: 8,
+    id: 7,
     year: "2022",
     title:
       "Maquetación de sitios web dinámicos con Javascript y jQuery desde cero",
@@ -73,7 +64,7 @@ export const events = [
     certificate: "/certificates/javascript-jquery.pdf",
   },
   {
-    id: 9,
+    id: 8,
     year: "2022",
     title: "PHP 8 y MYSQL: El Curso Completo, Práctico y Desde Cero",
     institution: "Udemy - Remoto",
@@ -82,7 +73,7 @@ export const events = [
     certificate: "/certificates/php-mysql.pdf",
   },
   {
-    id: 10,
+    id: 9,
     year: "2021",
     title: "Alemán A1",
     institution: "Universidad Nacional de La Rioja",
@@ -91,7 +82,7 @@ export const events = [
     certificate: "/certificates/aleman-a1.png",
   },
   {
-    id: 11,
+    id: 10,
     year: "2018 - 2021",
     title: "Diseño y Producción Multimedia",
     institution: "Universidad Nacional de La Rioja (Sin terminar)",
