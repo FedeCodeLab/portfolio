@@ -76,11 +76,15 @@ export const ProjectCard = ({
     >
       <div className="relative z-10 flex flex-col lg:flex-row">
         {/* -------- Mobile Image/Carousel -------- */}
-        <div 
+        <div
           className="relative block lg:hidden w-full h-[250px] cursor-pointer"
           onClick={() => {
-            const currentImage = images && images.length > 0 ? images[currentIndex] : image;
-            openProjectModal(currentImage, isVideo(currentImage) ? "video" : "image");
+            const currentImage =
+              images && images.length > 0 ? images[currentIndex] : image;
+            openProjectModal(
+              currentImage,
+              isVideo(currentImage) ? "video" : "image"
+            );
           }}
         >
           {images && images.length > 0 ? (
@@ -191,11 +195,16 @@ export const ProjectCard = ({
         <div className="relative w-full hidden lg:flex flex-col gap-4 md:w-auto md:min-w-[500px]">
           {images && images.length > 0 ? (
             <div className="flex flex-col gap-4">
-              <div 
+              <div
                 className="relative w-full h-[300px] rounded-md group cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                onClick={() => openProjectModal(images[currentIndex], isVideo(images[currentIndex]) ? "video" : "image")}
+                onClick={() =>
+                  openProjectModal(
+                    images[currentIndex],
+                    isVideo(images[currentIndex]) ? "video" : "image"
+                  )
+                }
               >
                 <AnimatePresence mode="popLayout">
                   <motion.div
@@ -226,13 +235,13 @@ export const ProjectCard = ({
                     )}
                   </motion.div>
                 </AnimatePresence>
-                
+
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     prevSlide();
                   }}
-                  className="absolute size-10 flex items-center justify-center left-2 top-1/2 -translate-y-1/2 bg-blue-800/50 hover:bg-blue-800 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-20"
+                  className="absolute size-10 flex items-center justify-center left-2 top-1/2 -translate-y-1/2 bg-blue-800/50 hover:bg-blue-800 text-white p-2 rounded-full z-20"
                 >
                   <ChevronLeft size={22} />
                 </button>
@@ -241,10 +250,9 @@ export const ProjectCard = ({
                     e.stopPropagation();
                     nextSlide();
                   }}
-                  className="absolute size-10 flex items-center justify-center right-2 top-1/2 -translate-y-1/2 bg-blue-800/50 hover:bg-blue-800 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-20"
+                  className="absolute size-10 flex items-center justify-center right-2 top-1/2 -translate-y-1/2 bg-blue-800/50 hover:bg-blue-800 text-white p-2 rounded-full z-20"
                 >
                   <ChevronRight size={22} />
-                  
                 </button>
               </div>
 
@@ -253,7 +261,11 @@ export const ProjectCard = ({
                   const index = (currentIndex + offset) % images.length;
                   const item = images[index];
                   return (
-                    <div key={index} className="relative w-full h-full rounded-md overflow-hidden cursor-pointer" onClick={() => setCurrentIndex(index)}>
+                    <div
+                      key={index}
+                      className="relative w-full h-full rounded-md overflow-hidden cursor-pointer"
+                      onClick={() => setCurrentIndex(index)}
+                    >
                       {isVideo(item) ? (
                         <video
                           src={item}
@@ -275,7 +287,7 @@ export const ProjectCard = ({
               </div>
             </div>
           ) : (
-            <div 
+            <div
               className="relative w-full h-[300px] rounded-md cursor-pointer"
               onClick={() => openProjectModal(image, "image")}
             >
@@ -294,4 +306,3 @@ export const ProjectCard = ({
     </motion.article>
   );
 };
-
