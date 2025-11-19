@@ -56,6 +56,7 @@ export const Portfolio = () => {
               repository={project.repository}
               deploy={project.deploy}
               image={project.image}
+              images={project.images}
               techs={project.techs}
               list={project.list}
               logo={project.logo}

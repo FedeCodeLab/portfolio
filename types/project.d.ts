@@ -15,6 +15,7 @@ export interface Project {
   content: string;
   techs: ProjectTech[];
   image: string;
+  images?: string[];
 }
 
 export interface ProjectLinks {
