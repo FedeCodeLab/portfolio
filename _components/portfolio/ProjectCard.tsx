@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { Project } from "@/types/project";
 import Image from "next/image";
 import { CTA } from "./CTA";
+import { useProjectStore } from "@/store/useProjectStore";
 
 export const ProjectCard = ({
   title,
@@ -28,6 +29,7 @@ export const ProjectCard = ({
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const openProjectModal = useProjectStore((state) => state.openProjectModal);
 
   useEffect(() => {
     if (inView) {
@@ -74,7 +76,13 @@ export const ProjectCard = ({
     >
       <div className="relative z-10 flex flex-col lg:flex-row">
         {/* -------- Mobile Image/Carousel -------- */}
-        <div className="relative block lg:hidden w-full h-[250px]">
+        <div 
+          className="relative block lg:hidden w-full h-[250px] cursor-pointer"
+          onClick={() => {
+            const currentImage = images && images.length > 0 ? images[currentIndex] : image;
+            openProjectModal(currentImage, isVideo(currentImage) ? "video" : "image");
+          }}
+        >
           {images && images.length > 0 ? (
             <AnimatePresence mode="popLayout">
               <motion.div
@@ -184,9 +192,10 @@ export const ProjectCard = ({
           {images && images.length > 0 ? (
             <div className="flex flex-col gap-4">
               <div 
-                className="relative w-full h-[300px] rounded-md group"
+                className="relative w-full h-[300px] rounded-md group cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={() => openProjectModal(images[currentIndex], isVideo(images[currentIndex]) ? "video" : "image")}
               >
                 <AnimatePresence mode="popLayout">
                   <motion.div
@@ -266,7 +275,10 @@ export const ProjectCard = ({
               </div>
             </div>
           ) : (
-            <div className="relative w-full h-[300px] rounded-md">
+            <div 
+              className="relative w-full h-[300px] rounded-md cursor-pointer"
+              onClick={() => openProjectModal(image, "image")}
+            >
               <Image
                 src={image}
                 fill

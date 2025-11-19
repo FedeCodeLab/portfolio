@@ -4,6 +4,7 @@ import { pixelify, inter } from "@/lib/fonts";
 import { Navbar } from "@/_components/navbar";
 import { Footer } from "@/_components/footer";
 import { CertificateModal } from "@/_components/CertificateModal";
+import { ProjectModal } from "@/_components/portfolio/ProjectModal";
 import "./globals.css";
 
 export const metadata = siteMetadata;
@@ -27,6 +28,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <CertificateModal />
+          <ProjectModal />
         </GoogleReCaptcha>
       </body>
     </html>
